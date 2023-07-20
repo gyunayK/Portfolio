@@ -20,7 +20,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="w-[400px] h-[400px] bg-[#242222] rounded-full"></div>
+              {/* <div className="w-[400px] h-[400px] bg-[#242222] rounded-full"></div> */}
             </div>
             <div className="flex items-center justify-center gap-4"></div>
           </div>

@@ -5,10 +5,10 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="fixed w-full h-full">
+    <div className="fixed w-full ">
       <div
         id="nav-icon2"
-        className={`p-8 absolute top-10 right-5 z-10 sm:block md:hidden scale-75 ${
+        className={`p-8 absolute top-10 right-5 z-10 sm:block md:hidden scale-75  ${
           isMenuOpen ? "open" : ""
         }`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -23,7 +23,7 @@ function Navbar() {
       </div>
 
       <div
-        className={`bg-black text-white w-screen h-full fixed top-0 right-0 transition-transform duration-[200ms] ease-in-out transform overflow-hidden ${
+        className={`bg-white text-black w-screen h-full fixed top-0 right-0 transition-transform duration-[200ms] ease-in-out transform overflow-hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
