@@ -6,7 +6,7 @@ h3 {
   border-right: 3px solid hsl(0, 0%, 100%);
   white-space: nowrap;
   animation: typewriter 2s steps(44) 1s 1 normal both,
-    blinkTextCursor 700ms infinite;
+    blinkTextCursor 900ms infinite;
 }
 
 @keyframes typewriter {
@@ -18,7 +18,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   @keyframes typewriter {
     from {
       width: 0;
@@ -32,7 +32,7 @@ h3 {
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: hsl(0, 0%, 80%);
+    border-right-color: hsl(0, 0%, 100%);
   }
   to {
     border-right-color: transparent;

@@ -22,11 +22,11 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", checkScroll);
     };
-  }, []);
+  });
 
   return (
     <div className="font-Tektur z-30">
-      <h2 className="text-[30px] fixed  top-7 left-6 md:top-5 md:left-20 z-10 text-white border rounded-lg px-2">
+      <h2 className="text-[30px] fixed  top-7 left-6 md:top-5 md:left-20 z-10 text-white border-2 rounded-lg px-2">
         GK
       </h2>
       <div
@@ -70,7 +70,7 @@ function Navbar() {
           isScrolled ? "h-[83px]" : "h-0"
         } md:fixed hidden md:block`}
       >
-        <ul className="text-xl text-white flex gap-7 items-end justify-end p-8 fixed right-32 top-0">
+        <ul className="text-xl text-white flex gap-10 items-end justify-end p-8 fixed right-40 top-0">
           <li className="cursor-pointer border-transparent border-b-2 hover:border-white">
             HOME
           </li>
