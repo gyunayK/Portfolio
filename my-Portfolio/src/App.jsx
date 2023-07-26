@@ -2,6 +2,7 @@ import "./App.css";
 import About from "./sections/about/About";
 import Hero from "./sections/hero/Hero";
 import Navbar from "./sections/navbar/Navbar";
+import Projects from "./sections/projects/Projects";
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
           <Hero />
         </div>
         <About />
-        <div className="h-screen">
-
-        </div>
+        <Projects/>
       </div>
     </>
   );

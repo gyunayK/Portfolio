@@ -18,7 +18,6 @@ function Navbar() {
 
     window.addEventListener("scroll", checkScroll);
 
-    // Clean up function
     return () => {
       window.removeEventListener("scroll", checkScroll);
     };
@@ -26,22 +25,22 @@ function Navbar() {
 
   return (
     <div className="font-Tektur z-30">
-      <h2 className="text-[30px] fixed  top-7 left-6 md:top-5 md:left-20 z-10 text-white border-2 rounded-lg px-2">
+      <h2 className={`text-[30px] fixed  top-7 left-6 md:top-5 md:left-20 z-10 text-white border-2 border-white ${isScrolled ? "border-black text-black md:border-white md:text-white" : ""} rounded-lg px-2`}>
         GK
       </h2>
-      <div
+      <div 
         id="nav-icon2"
         className={`p-7 fixed top-7 right-6 z-30 sm:block md:hidden scale-75 cursor-pointer ${
           isMenuOpen ? "open" : ""
         }`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span style={{ backgroundColor: isScrolled ? "black" : 'white' }}></span>
+        <span style={{ backgroundColor: isScrolled ? "black" : 'white' }}></span>
+        <span style={{ backgroundColor: isScrolled ? "black" : 'white' }}></span>
+        <span style={{ backgroundColor: isScrolled ? "black" : 'white' }}></span>
+        <span style={{ backgroundColor: isScrolled ? "black" : 'white' }}></span>
+        <span style={{ backgroundColor: isScrolled ? "black" : 'white' }}></span>
       </div>
 
       <div
