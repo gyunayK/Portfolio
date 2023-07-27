@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'hero': "url('https://ik.imagekit.io/riviaa/beach.jpg?updatedAt=1689284195871')",
+        'project1': "url('https://ik.imagekit.io/riviaa/Portfolio/Group%201.png?updatedAt=1690421772725')",
       },
       colors: {
         'special-purple': '#e49dfc',
@@ -21,19 +22,12 @@ export default {
     },
     screens: {
       'xs': '375px',
-
       'xs-max': '450px',
-
       'sm': '640px',
-
       'md': '768px',
-
       'lg': '1024px',
-
       'xl': '1280px',
-
       '2xl': '1536px',
-
       'max': '2000px'
     },
 
