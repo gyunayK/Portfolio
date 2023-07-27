@@ -8,7 +8,8 @@ export default {
     extend: {
       backgroundImage: {
         'hero': "url('https://ik.imagekit.io/riviaa/beach.jpg?updatedAt=1689284195871')",
-        'project1': "url('https://ik.imagekit.io/riviaa/Portfolio/Group%202%20(1).png?updatedAt=1690456945715')",
+        'contactBG': "url('https://ik.imagekit.io/riviaa/Portfolio/IMG_2476%201.png?updatedAt=1690470475643')",
+
       },
       colors: {
         'special-purple': '#e49dfc',
@@ -17,6 +18,7 @@ export default {
 
     fontFamily: {
       Tektur: ['Tektur', 'cursive'],
+      Roboto: ['Roboto', 'sans-serif'],
       'sans': ['ui-sans-serif', 'system-ui'],
       'serif': ['ui-serif', 'Georgia'],
     },

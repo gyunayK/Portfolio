@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { projects } from "./projects";
+import { projects } from "./projectsList";
 
 function Projects() {
   return (
@@ -18,8 +18,8 @@ function Projects() {
             </h4>
           </div>
           <div className="mt-24 grid md:grid-cols-2 gap-6">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} {...project} />
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
             ))}
           </div>
         </div>
