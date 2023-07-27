@@ -50,7 +50,7 @@ function Contact() {
               possible.
             </h4>
           </div>
-          <div className="mt-40 mx-auto flex flex-col md:flex-row gap-20">
+          <div className="mt-28 mx-auto flex flex-col md:flex-row gap-20">
             <div className="w-[300px]  md:w-[400px]">
               <Box
                 component="form"
