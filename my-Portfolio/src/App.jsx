@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./sections/about/About";
+import Contact from "./sections/contact/Contact";
 import Hero from "./sections/hero/Hero";
 import Navbar from "./sections/navbar/Navbar";
 import Projects from "./sections/projects/Projects";
@@ -15,6 +16,7 @@ function App() {
         </div>
         <About />
         <Projects/>
+        <Contact />
       </div>
     </>
   );

@@ -14,7 +14,7 @@ const About = () => {
       <div className="w-full h-full bg-white py-32">
         <div className="flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
-            <h2 className="font-Tektur text-[#b931f8] text-lg font-bold tracking-wider">
+            <h2 className="font-Tektur text-[#b931f8] text-lg font-bold tracking-widest">
               ABOUT
             </h2>
             <h1 className="text-5xl font-serif font-medium leading-8">

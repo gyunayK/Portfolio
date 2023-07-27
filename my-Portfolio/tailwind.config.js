@@ -8,7 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'hero': "url('https://ik.imagekit.io/riviaa/beach.jpg?updatedAt=1689284195871')",
-        'project1': "url('https://ik.imagekit.io/riviaa/Portfolio/Group%201.png?updatedAt=1690421772725')",
+        'project1': "url('https://ik.imagekit.io/riviaa/Portfolio/Group%202%20(1).png?updatedAt=1690456945715')",
       },
       colors: {
         'special-purple': '#e49dfc',
