@@ -11,18 +11,18 @@ import { TbBrandNextjs } from "react-icons/tb";
 const About = () => {
   return (
     <section>
-      <div className="bg-white py-32">
+      <div className="w-full h-full bg-white py-32">
         <div className="flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
-            <h2 className="font-Tektur text-[#be37fd] text-lg font-bold tracking-widest">
+            <h2 className="font-Tektur text-[#b931f8] text-lg font-bold tracking-wider">
               ABOUT
             </h2>
             <h1 className="text-5xl font-serif font-medium leading-8">
               Personal Info
             </h1>
-            <h4 className="font-medium text-lg">Get to know more about me </h4>
+            <h4 className="font-medium text-lg text-[#4d4d4d]">Get to know more about me </h4>
           </div>
-          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-28 font-Roboto">
+          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-28">
             <div className="w-full px-2 md:px-0 md:max-w-[500px]">
               <h1 className="text-2xl font-semibold">Hello!</h1>
               <p className="text-xl mt-4 text-[#515151]">

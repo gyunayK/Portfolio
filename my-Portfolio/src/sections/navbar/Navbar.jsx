@@ -5,11 +5,28 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const triggerLength = window.innerHeight * 0.1;
+  console.log(window.scrollY);
 
   useEffect(() => {
     const checkScroll = () => {
-      if (window.scrollY > window.innerHeight - triggerLength) {
+      let bottomSectionTrigger;
+      const triggerLength = window.innerHeight * 0.1;
+
+      if (window.innerWidth > 768) {
+        bottomSectionTrigger = 300;
+      } else {
+        bottomSectionTrigger = 665;
+      }
+
+
+      if (
+        window.scrollY >
+        document.documentElement.scrollHeight -
+          window.innerHeight -
+          bottomSectionTrigger
+      ) {
+        setIsScrolled(false);
+      } else if (window.scrollY > window.innerHeight - triggerLength) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -21,7 +38,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", checkScroll);
     };
-  });
+  }, []);
 
   return (
     <div className="font-Tektur z-30">

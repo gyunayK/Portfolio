@@ -34,7 +34,7 @@ function Contact() {
   };
 
   return (
-    <section>
+    <section >
       <div className="relative w-full h-full bg-contactBG bg-cover bg-center bg-no-repeat py-32">
         <div className="absolute inset-0 bg-black opacity-[0.79]"></div>
         <div className="relative flex flex-col items-center justify-center ">
@@ -101,12 +101,12 @@ function Contact() {
             </div>
             <div className="text-white space-y-10">
               <div>
-                <h2 className="font-Roboto font-bold">PHONE</h2>
+                <h2 className="font-Roboto font-extrabold">PHONE</h2>
                 <p className="pt-1 text-[#d3d3d3]">+1 (778)861-9031</p>
               </div>
               <div>
-                <h2 className="font-Roboto font-bold">EMAIL</h2>
-                <p className="pt-1 text-[#d3d3d3]">
+                <h2 className="font-Roboto font-thin">EMAIL</h2>
+                <p className="pt-1 text-[#d3d3d3]" >
                   <a
                     href="mailto:gyunay@hotmail.dk"
                     target="_blank"
@@ -117,8 +117,10 @@ function Contact() {
                 </p>
               </div>
               <div>
-                <h2 className="font-Roboto font-bold">ADRESS</h2>
-                <p className="pt-1 text-[#d3d3d3]">Down Town, Vancouver, Canada</p>
+                <h2 className="font-Roboto font-bold">ADDRESS</h2>
+                <p className="pt-1 text-[#d3d3d3]">
+                  Downtown, Vancouver, Canada
+                </p>
               </div>
             </div>
           </div>

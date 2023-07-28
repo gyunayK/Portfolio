@@ -13,7 +13,7 @@ function Projects() {
             <h1 className="text-5xl font-serif font-medium leading-8">
               Latest Projects
             </h1>
-            <h4 className="font-medium text-lg text-center">
+            <h4 className="font-medium text-lg text-center text-[#4d4d4d]">
               Here you can find some of the projects i created recently{" "}
             </h4>
           </div>
