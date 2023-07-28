@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "url('https://ik.imagekit.io/riviaa/beach.jpg?updatedAt=1689284195871')",
+        'hero': "url('https://ik.imagekit.io/riviaa/beach%20(1)%201.png?updatedAt=1690554009528')",
         'contactBG': "url('https://ik.imagekit.io/riviaa/Portfolio/IMG_2476%201.png?updatedAt=1690470475643')",
 
       },

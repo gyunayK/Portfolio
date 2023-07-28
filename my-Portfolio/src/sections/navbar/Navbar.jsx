@@ -18,12 +18,12 @@ function Navbar() {
         bottomSectionTrigger = 665;
       }
 
-
       if (
         window.scrollY >
-        document.documentElement.scrollHeight -
-          window.innerHeight -
-          bottomSectionTrigger
+          document.documentElement.scrollHeight -
+            window.innerHeight -
+            bottomSectionTrigger &&
+        window.innerWidth < 2000
       ) {
         setIsScrolled(false);
       } else if (window.scrollY > window.innerHeight - triggerLength) {
