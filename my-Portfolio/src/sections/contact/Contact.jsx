@@ -25,12 +25,19 @@ function Contact() {
   });
 
   const onSubmit = async (formdata) => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        console.log(formdata);
-        resolve();
-      }, 2000);
+    const response = await fetch("https://formsubmit.co/gyunay@hotmail.dk", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formdata), // stringify your form data
     });
+
+    if (response.ok) {
+      console.log("success");
+    } else {
+      console.log("error");
+    }
   };
 
   return (
@@ -82,7 +89,7 @@ function Contact() {
                   id={"subject"}
                   register={register}
                   errors={errors}
-                  name={"subject"}
+                  name={"_subject"}
                   label={"Subject"}
                 />
 
@@ -106,7 +113,7 @@ function Contact() {
               </div>
               <div>
                 <h2 className="font-Roboto font-thin">EMAIL</h2>
-                <p className="pt-1 text-[#d3d3d3]" >
+                <p className="pt-1 text-[#d3d3d3]">
                   <a
                     href="mailto:gyunay@hotmail.dk"
                     target="_blank"

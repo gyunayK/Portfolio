@@ -141,7 +141,9 @@ function Navbar() {
             CONTACT
           </li>
           <li className="absolute right-[-90px] top-5 cursor-pointer border-2 p-3 hover:bg-black rounded-md">
-            RESUME
+            <a href="/Gyunay_Resume.pdf" target="_black">
+              RESUME
+            </a>
           </li>
         </ul>
       </div>
