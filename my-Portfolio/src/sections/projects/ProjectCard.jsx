@@ -13,7 +13,12 @@ function ProjectCard({
     <div className="max-w-sm bg-white  xs:mx-4 md:mx-0 items-center justify-center  py-10 rounded-md border-2 border-transparent hover:border-[#850fbb]">
       <div className="flex flex-col space-y-5 text-center px-5 relative">
         <div className="absolute right-5 -top-6">
-          <a href={githubLink}>
+          <a
+            href={githubLink}
+            aria-label="Github Link"
+            target="_black"
+            rel="noopener noreferrer"
+          >
             <FaGithub className=" text-3xl cursor-pointer" />
           </a>
         </div>

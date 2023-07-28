@@ -5,7 +5,12 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  console.log(window.scrollY);
+  const SCROLLED_COLOR = "black";
+  const NOT_SCROLLED_COLOR = "white";
+
+  const navIconStyles = {
+    backgroundColor: isScrolled ? SCROLLED_COLOR : NOT_SCROLLED_COLOR,
+  };
 
   useEffect(() => {
     const checkScroll = () => {
@@ -40,6 +45,14 @@ function Navbar() {
     };
   }, []);
 
+  const scrollToSection = (section) => {
+    document.getElementById(section).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="font-Tektur z-30">
       <h2
@@ -54,24 +67,12 @@ function Navbar() {
         }`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        <span
-          style={{ backgroundColor: isScrolled ? "black" : "white" }}
-        ></span>
-        <span
-          style={{ backgroundColor: isScrolled ? "black" : "white" }}
-        ></span>
-        <span
-          style={{ backgroundColor: isScrolled ? "black" : "white" }}
-        ></span>
-        <span
-          style={{ backgroundColor: isScrolled ? "black" : "white" }}
-        ></span>
-        <span
-          style={{ backgroundColor: isScrolled ? "black" : "white" }}
-        ></span>
-        <span
-          style={{ backgroundColor: isScrolled ? "black" : "white" }}
-        ></span>
+        <span style={navIconStyles}></span>
+        <span style={navIconStyles}></span>
+        <span style={navIconStyles}></span>
+        <span style={navIconStyles}></span>
+        <span style={navIconStyles}></span>
+        <span style={navIconStyles}></span>
       </div>
 
       <div
@@ -82,16 +83,28 @@ function Navbar() {
         }`}
       >
         <ul className="text-3xl flex flex-col items-center justify-center space-y-4 h-full gap-8 ">
-          <li className="cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+          <li
+            className="cursor-pointer"
+            onClick={() => scrollToSection("home")}
+          >
             HOME{" "}
           </li>
-          <li className="cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+          <li
+            className="cursor-pointer"
+            onClick={() => scrollToSection("about")}
+          >
             ABOUT{" "}
           </li>
-          <li className="cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+          <li
+            className="cursor-pointer"
+            onClick={() => scrollToSection("work")}
+          >
             WORK{" "}
           </li>
-          <li className="cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+          <li
+            className="cursor-pointer"
+            onClick={() => scrollToSection("contact")}
+          >
             CONTACT{" "}
           </li>
         </ul>
@@ -103,16 +116,28 @@ function Navbar() {
         } md:fixed hidden md:block`}
       >
         <ul className="text-xl text-white flex gap-10 items-end justify-end p-8 fixed right-40 top-0 tracking-wide">
-          <li className="cursor-pointer border-transparent border-b-2 hover:border-white">
+          <li
+            className="cursor-pointer border-transparent border-b-2 hover:border-white"
+            onClick={() => scrollToSection("home")}
+          >
             HOME
           </li>
-          <li className="cursor-pointer border-transparent border-b-2 hover:border-white">
+          <li
+            className="cursor-pointer border-transparent border-b-2 hover:border-white"
+            onClick={() => scrollToSection("about")}
+          >
             ABOUT
           </li>
-          <li className="cursor-pointer border-transparent border-b-2 hover:border-white">
+          <li
+            className="cursor-pointer border-transparent border-b-2 hover:border-white"
+            onClick={() => scrollToSection("work")}
+          >
             WORK
           </li>
-          <li className="cursor-pointer border-transparent border-b-2 hover:border-white">
+          <li
+            className="cursor-pointer border-transparent border-b-2 hover:border-white"
+            onClick={() => scrollToSection("contact")}
+          >
             CONTACT
           </li>
           <li className="absolute right-[-90px] top-5 cursor-pointer border-2 p-3 hover:bg-black rounded-md">

@@ -34,7 +34,7 @@ function Contact() {
   };
 
   return (
-    <section >
+    <section id="contact">
       <div className="relative w-full h-full bg-contactBG bg-cover bg-center bg-no-repeat py-32">
         <div className="absolute inset-0 bg-black opacity-[0.79]"></div>
         <div className="relative flex flex-col items-center justify-center ">
@@ -45,10 +45,10 @@ function Contact() {
             <h1 className="text-5xl font-serif font-medium leading-8 text-white">
               Say Hello.
             </h1>
-            <h4 className=" font-medium text-lg text-center text-[#a0a0a0] mt-4">
+            <h2 className=" font-medium text-lg text-center text-[#a0a0a0] mt-4">
               Submit the form bellow and I will get back to you as soon as
               possible.
-            </h4>
+            </h2>
           </div>
           <div className="mt-28 mx-auto flex flex-col md:flex-row gap-20">
             <div className="w-[300px]  md:w-[400px]">

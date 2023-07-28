@@ -4,10 +4,10 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 function Hero() {
   return (
     <div className="text-white flex flex-col self-center xs:pl-[5%] lg:pl-[15%] pb-2 z-10">
-      <h4 className="mb-1 text-2xl text-special-purple">
+      <h2 className="mb-1 text-2xl text-special-purple">
         <span className="inline-block h-[2px] w-8 bg-[#e49dfc] mr-2 mb-1"></span>
         HELLO THERE
-      </h4>
+      </h2>
       <h1 className="text-5xl md:text-6xl text-white font-Tektur">
         I am Gyunay Kadirov.
       </h1>
