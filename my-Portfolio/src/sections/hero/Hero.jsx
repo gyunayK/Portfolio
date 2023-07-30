@@ -13,7 +13,7 @@ function Hero() {
       </h1>
       <Text />
       <div className="flex items-center translate-y-20">
-        <h3 className="text-lg tracking-widest mr-2">SCROLL DOWN</h3>
+        <h3 className="text-sm md:text-lg tracking-widest mr-2">SCROLL DOWN</h3>
         <MdKeyboardArrowDown color="#e49dfc" size={"28px"} />
       </div>
     </div>

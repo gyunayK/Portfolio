@@ -36,10 +36,10 @@ function Contact() {
   const sendEmail = async () => {
     try {
       const response = await emailjs.sendForm(
-        serviceID,
-        templateID,
+        'service_c60y4kb',
+        'template_xlhx7hj',
         form.current,
-        publicKEY
+        'tfrJ4KkGsoiHAZ6i1'
       );
     } catch (error) {
       console.log(error.text);
@@ -119,7 +119,7 @@ function Contact() {
                 <p className="pt-1 text-[#d3d3d3]">+1 (778)861-9031</p>
               </div>
               <div>
-                <h2 className="font-Roboto font-thin">EMAIL</h2>
+                <h2 className="font-Roboto font-extrabold">EMAIL</h2>
                 <p className="pt-1 text-[#d3d3d3]">
                   <a
                     href="mailto:gyunay@hotmail.dk"

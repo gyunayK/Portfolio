@@ -111,7 +111,7 @@ StyledTextField2.propTypes = {
 export function StyledButton({ isSubmitting, isSubmitted }) {
   return (
     <LoadingButton
-      loading={isSubmitting}
+      loading={isSubmitted ? false : isSubmitting}
       variant="contained"
       type="submit"
       size="large"
@@ -123,8 +123,9 @@ export function StyledButton({ isSubmitting, isSubmitted }) {
         fontFamily: "Tektur",
         fontSize: "1.2rem",
         "&:hover": {
-          background: "#dc90ff",
+          background: isSubmitted ? "#7000a3" : "#dc90ff",
         },
+
       }}
       loadingIndicator={<CircularProgress color="primary" size={35} />}
     >
