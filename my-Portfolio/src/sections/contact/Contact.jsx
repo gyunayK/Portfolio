@@ -13,6 +13,11 @@ import { useRef } from "react";
 
 function Contact() {
   const form = useRef();
+
+  const serviceID = import.meta.env.VITE_SERVICE_ID;
+  const publicKEY = import.meta.env.VITE_PUBLIC_KEY;
+  const templateID = import.meta.env.VITE_TEMPLATE_ID;
+
   const schema = z.object({
     user_name: z.string().min(2, { message: "Please enter a valid name." }),
     user_email: z.string().email({ message: "Please enter a valid email." }),
@@ -29,21 +34,14 @@ function Contact() {
   });
 
   const sendEmail = () => {
-    emailjs
-      .sendForm(
-        "service_c60y4kb",
-        "template_xlhx7hj",
-        form.current,
-        "tfrJ4KkGsoiHAZ6i1"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(serviceID, templateID, form.current, publicKEY).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (
