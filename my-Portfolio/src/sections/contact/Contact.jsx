@@ -33,15 +33,17 @@ function Contact() {
     resolver: zodResolver(schema),
   });
 
-  const sendEmail = () => {
-    emailjs.sendForm(serviceID, templateID, form.current, publicKEY).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+  const sendEmail = async () => {
+    try {
+      const response = await emailjs.sendForm(
+        serviceID,
+        templateID,
+        form.current,
+        publicKEY
+      );
+    } catch (error) {
+      console.log(error.text);
+    }
   };
 
   return (
@@ -61,7 +63,7 @@ function Contact() {
               possible.
             </h2>
           </div>
-          <div className="mt-28 mx-auto flex flex-col md:flex-row gap-20">
+          <div className="mt-20 mx-auto flex flex-col md:flex-row gap-20">
             <div className="w-[300px]  md:w-[400px]">
               <Box
                 component="form"

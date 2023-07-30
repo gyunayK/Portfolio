@@ -10,10 +10,13 @@ function App() {
     <>
       <div className="flex flex-col mx-auto">
         <div className="absolute inset-0 bg-black opacity-75"></div>
-        <div className="bg-hero w-full h-screen bg-cover bg-no-repeat bg-center bg-black flex "id="home">
+        <section
+          className="bg-hero w-full h-screen bg-cover bg-no-repeat bg-center bg-black flex "
+          id="home"
+        >
           <Navbar />
           <Hero />
-        </div>
+        </section>
         <About />
         <Projects />
         <Contact />

@@ -1,4 +1,4 @@
-
+import "./footerSyled.css";
 function Footer() {
   return (
     <footer>
@@ -9,7 +9,7 @@ function Footer() {
               href="https://github.com/gyunayK"
               target={"_blank"}
               rel="noopener noreferrer"
-              className="text-white font-Tektur tracking-widest"
+              className="text-white font-Tektur tracking-widest lineStyle"
             >
               {" "}
               GITHUB
@@ -18,7 +18,7 @@ function Footer() {
               href="https://www.linkedin.com/in/gyunayk/"
               target={"_blank"}
               rel="noopener noreferrer"
-              className="text-white font-Tektur tracking-widest"
+              className="text-white font-Tektur tracking-widest lineStyle"
             >
               {" "}
               LINKEDIN

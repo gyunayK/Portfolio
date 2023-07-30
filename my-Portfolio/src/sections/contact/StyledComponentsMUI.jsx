@@ -120,7 +120,7 @@ export function StyledButton({ isSubmitting, isSubmitted }) {
         background: "#a237d3",
         borderRadius: "0.5rem",
         color: "white",
-        fontFamily: "sans-serif",
+        fontFamily: "Tektur",
         fontSize: "1.2rem",
         "&:hover": {
           background: "#dc90ff",

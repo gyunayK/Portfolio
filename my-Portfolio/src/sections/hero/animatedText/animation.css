@@ -1,4 +1,4 @@
-h3 {
+.animatedText {
   position: relative;
   color: hsl(0, 0%, 100%);
   letter-spacing: 3px !important;
@@ -27,7 +27,6 @@ h3 {
       width: 240px;
     }
   }
- 
 }
 
 @keyframes blinkTextCursor {

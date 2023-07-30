@@ -1,0 +1,26 @@
+.lineStyle {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.lineStyle:hover {
+  color: rgb(255, 255, 255);
+}
+
+.lineStyle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.lineStyle:hover::before {
+  transform: scaleX(1);
+}

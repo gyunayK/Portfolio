@@ -1,10 +1,4 @@
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaSass,
-  FaNodeJs,
-} from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaSass, FaNodeJs } from "react-icons/fa";
 import { SiJavascript, SiTailwindcss, SiMongodb } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
@@ -20,7 +14,9 @@ const About = () => {
             <h1 className="text-5xl font-serif font-medium leading-8">
               Personal Info
             </h1>
-            <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know more about me </h2>
+            <h2 className="font-medium text-lg text-[#4d4d4d]">
+              Get to know more about me{" "}
+            </h2>
           </div>
           <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-28">
             <div className="w-full px-2 md:px-0 md:max-w-[500px]">
