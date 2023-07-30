@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <div className="flex flex-col mx-auto">
-        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="absolute inset-0 bg-black opacity-75 h-[100dvh]"></div>
         <section
-          className="bg-hero w-full h-screen bg-cover bg-no-repeat bg-center bg-black flex "
+          className="bg-hero w-full h-[100dvh] bg-cover bg-no-repeat bg-center bg-black flex "
           id="home"
         >
           <Navbar />
