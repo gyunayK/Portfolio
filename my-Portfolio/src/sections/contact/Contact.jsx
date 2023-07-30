@@ -7,12 +7,16 @@ import {
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import emailjs from "@emailjs/browser";
+
+import { useRef } from "react";
 
 function Contact() {
+  const form = useRef();
   const schema = z.object({
-    name: z.string().min(2, { message: "Please enter a valid name." }),
-    email: z.string().email({ message: "Please enter a valid email." }),
-    subject: z.string().min(3, { message: "Subject is too short." }),
+    user_name: z.string().min(2, { message: "Please enter a valid name." }),
+    user_email: z.string().email({ message: "Please enter a valid email." }),
+    user_subject: z.string().min(3, { message: "Subject is too short." }),
     message: z.string().min(5, { message: "Message is too short." }),
   });
 
@@ -24,20 +28,22 @@ function Contact() {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = async (formdata) => {
-    const response = await fetch("https://formsubmit.co/gyunay@hotmail.dk", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formdata), // stringify your form data
-    });
-
-    if (response.ok) {
-      console.log("success");
-    } else {
-      console.log("error");
-    }
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        "service_c60y4kb",
+        "template_xlhx7hj",
+        form.current,
+        "tfrJ4KkGsoiHAZ6i1"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -67,30 +73,31 @@ function Contact() {
                   flexDirection: "column",
                   gap: "2rem",
                 }}
-                onSubmit={handleSubmit(onSubmit)}
-                noValidate
+                onSubmit={handleSubmit(sendEmail)}
                 autoComplete="off"
+                ref={form}
               >
                 <StyledTextField
                   id={"name"}
                   register={register}
                   errors={errors}
-                  name={"name"}
+                  name={"user_name"}
                   label={"Name"}
                 />
                 <StyledTextField
                   id={"email"}
                   register={register}
                   errors={errors}
-                  name={"email"}
+                  name={"user_email"}
                   label={"Email"}
                 />
                 <StyledTextField
                   id={"subject"}
                   register={register}
                   errors={errors}
-                  name={"_subject"}
+                  name={"user_subject"}
                   label={"Subject"}
+                  formname={"_subject"}
                 />
 
                 <StyledTextField2

@@ -15,6 +15,7 @@ export function StyledTextField({ register, errors, name, label, id }) {
       label={label}
       variant="outlined"
       color="secondary"
+      name={name}
       fullWidth
       inputProps={{ style: { color: "white" } }}
       sx={{
@@ -66,6 +67,7 @@ export function StyledTextField2({ register, errors, name, label, id }) {
       label={label}
       multiline
       maxRows={4}
+      name={name}
       fullWidth
       inputProps={{ style: { color: "white" } }}
       sx={{
@@ -131,7 +133,7 @@ export function StyledButton({ isSubmitting, isSubmitted }) {
           <GiPartyPopper size={30} /> SUCCESS <GiPartyPopper size={35} />
         </>
       ) : (
-        "SEND"
+        "SUBMIT"
       )}
     </LoadingButton>
   );
