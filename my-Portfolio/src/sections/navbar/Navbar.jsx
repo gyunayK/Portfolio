@@ -25,7 +25,7 @@ function Navbar() {
   };
 
   return (
-    <div className="font-Tektur z-30">
+    <nav className="font-Tektur z-30">
       <h2
         className={`hidden md:block text-[30px] fixed  top-7 left-6 md:top-5 md:left-20 border-2 text-white rounded-lg px-2 z-50`}
       >
@@ -134,7 +134,7 @@ function Navbar() {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 
