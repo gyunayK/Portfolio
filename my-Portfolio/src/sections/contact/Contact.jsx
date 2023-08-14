@@ -14,9 +14,6 @@ import { useRef } from "react";
 function Contact() {
   const form = useRef();
 
-  const serviceID = import.meta.env.VITE_SERVICE_ID;
-  const publicKEY = import.meta.env.VITE_PUBLIC_KEY;
-  const templateID = import.meta.env.VITE_TEMPLATE_ID;
 
   const schema = z.object({
     user_name: z.string().min(2, { message: "Please enter a valid name." }),

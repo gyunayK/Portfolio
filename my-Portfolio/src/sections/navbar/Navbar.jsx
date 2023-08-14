@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import useActiveSection from "@/hooks/activeSection_ID";
 import useScrollCheck from "@/hooks/useScrollCheck";
 import "./hamburgeStyle.css";
