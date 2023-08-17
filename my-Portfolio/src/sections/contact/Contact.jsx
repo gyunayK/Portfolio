@@ -13,11 +13,6 @@ import { useRef } from "react";
 
 function Contact() {
   const form = useRef();
-
-  const serviceID = import.meta.env.VITE_SERVICE_ID;
-  const publicKEY = import.meta.env.VITE_PUBLIC_KEY;
-  const templateID = import.meta.env.VITE_TEMPLATE_ID;
-
   const schema = z.object({
     user_name: z.string().min(2, { message: "Please enter a valid name." }),
     user_email: z.string().email({ message: "Please enter a valid email." }),
@@ -35,7 +30,7 @@ function Contact() {
 
   const sendEmail = async () => {
     try {
-      const response = await emailjs.sendForm(
+      await emailjs.sendForm(
         'service_c60y4kb',
         'template_xlhx7hj',
         form.current,
@@ -48,8 +43,8 @@ function Contact() {
 
   return (
     <section id="contact">
-      <div className="relative w-full h-full bg-contactBG bg-cover bg-center bg-no-repeat py-32">
-        <div className="absolute inset-0 bg-black opacity-[0.79]"></div>
+      <div className="relative w-full h-full  bg-cover bg-center bg-no-repeat py-32">
+        <div className="absolute inset-0 bg-black opacity-[0.9]"></div>
         <div className="relative flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
             <h2 className="font-Tektur text-[#ad43de] text-lg font-bold tracking-widest">
@@ -58,7 +53,7 @@ function Contact() {
             <h1 className="text-5xl font-serif font-medium leading-8 text-white">
               Say Hello.
             </h1>
-            <h2 className=" font-medium text-lg text-center text-[#a0a0a0] mt-4">
+            <h2 className=" font-medium text-lg text-center text-[#a0a0a0] mt-4 px-5 ">
               Submit the form bellow and I will get back to you as soon as
               possible.
             </h2>
@@ -113,7 +108,7 @@ function Contact() {
                 />
               </Box>
             </div>
-            <div className="text-white space-y-10">
+            <div className="text-white space-y-10 px-1">
               <div>
                 <h2 className="font-Roboto font-extrabold">PHONE</h2>
                 <p className="pt-1 text-[#d3d3d3]">+1 (778)861-9031</p>

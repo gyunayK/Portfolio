@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import useActiveSection from "@/hooks/activeSection_ID";
 import useScrollCheck from "@/hooks/useScrollCheck";
 import "./hamburgeStyle.css";
@@ -6,7 +6,7 @@ import "./hamburgeStyle.css";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const activeSection = useActiveSection(0.2);
+  const activeSection = useActiveSection(0.5);
   const isScrolled = useScrollCheck();
 
   const SCROLLED_COLOR = "black";
@@ -26,11 +26,6 @@ function Navbar() {
 
   return (
     <nav className="font-Tektur z-[9999]">
-      {/* <h2
-        className={`hidden md:block text-[30px] fixed  top-7 left-6 md:top-5 md:left-20 border-2 text-white rounded-lg px-2 z-50`}
-      >
-        GK
-      </h2> */}
       <div
         id="nav-icon2"
         className={`p-7 fixed top-7 right-6 z-50 sm:block md:hidden scale-75 cursor-pointer ${
@@ -94,9 +89,9 @@ function Navbar() {
           isScrolled ? "h-[100px]" : "h-0"
         } md:fixed hidden md:block relative z-50`}
       >
-        <div className="w-[1000px] mx-auto flex justify-between items-center ">
+        <div className="max-w-[2000px] mx-auto flex justify-between items-center px-10 ">
           <h2
-            className={`hidden md:block text-[30px] border-2 text-white rounded-lg px-2 z-50`}
+            className={`hidden md:block text-[30px] border-2 text-white rounded-lg px-2 `}
           >
             GK
           </h2>

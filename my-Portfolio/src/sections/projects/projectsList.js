@@ -3,7 +3,7 @@ export const projects = [
     {
         title: "Movie Deck",
         description:
-            "It's a place where movie lovers can discover new films, delve into details about each one, and save their favorites to return to later.",
+            "It's a place where movie lovers can discover new films, delve into details, save favorites, and discuss in the comment section.",
         techStack:
             "React, Node.js, MongoDB, TailwindCSS, API, Styled-components, JSON Web Token, bcrypt.",
         liveLink: "https://movie-deck-client.vercel.app/",

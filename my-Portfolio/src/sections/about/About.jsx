@@ -47,7 +47,7 @@ const About = () => {
                   </div>
                   <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
                     <SiJavascript className="text-4xl " />
-                    <h2>Java Script</h2>
+                    <h2 className="whitespace-nowrap">Java Script</h2>
                   </div>
                   <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
                     <TbBrandNextjs className="text-4xl " />

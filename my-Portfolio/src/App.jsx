@@ -8,11 +8,10 @@ import Footer from "./sections/footer/Footer";
 function App() {
   return (
     <>
-        <Navbar />
-      <div className="flex flex-col mx-auto max-w-6xl">
-       
+      <Navbar />
+      <div className="flex flex-col mx-auto max-w-[2560px]">
         <section
-          className="bg-hero w-full h-[100dvh] bg-cover bg-no-repeat bg-center bg-black flex "
+          className="bg-hero w-full h-[100dvh] bg-cover bg-no-repeat bg-center flex "
           id="home"
         >
           <Hero />
