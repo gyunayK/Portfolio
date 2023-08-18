@@ -129,7 +129,7 @@ function Navbar() {
               CONTACT
             </li>
             <a
-              href="/Gyunay_Resume.pdf"
+              href="/Gyunay_Resume2.pdf"
               target="_blank"
               className="w-full h-full"
             >

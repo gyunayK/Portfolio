@@ -1,6 +1,4 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaSass, FaNodeJs } from "react-icons/fa";
-import { SiJavascript, SiTailwindcss, SiMongodb } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
+import { skillsArray } from "./skills";
 
 const About = () => {
   return (
@@ -37,44 +35,15 @@ const About = () => {
               <h1 className="text-2xl font-semibold">Skills</h1>
               <div className="mt-4">
                 <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-3 gap-10 text-[#ffffff]">
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <FaHtml5 className="text-4xl " />
-                    <h2>HTML</h2>
-                  </div>
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <FaCss3Alt className="text-4xl " />
-                    <h2>CSS</h2>
-                  </div>
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <SiJavascript className="text-4xl " />
-                    <h2 className="whitespace-nowrap">Java Script</h2>
-                  </div>
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <TbBrandNextjs className="text-4xl " />
-                    <h2>Next.js</h2>
-                  </div>
-
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <FaReact className="text-4xl " />
-                    <h2>React</h2>
-                  </div>
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <FaNodeJs className="text-4xl " />
-                    <h2>Node.js</h2>
-                  </div>
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <SiMongodb className="text-4xl " />
-                    <h2>MongoDB</h2>
-                  </div>
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <SiTailwindcss className="text-4xl " />
-                    <h2>Tailwind</h2>
-                  </div>
-
-                  <div className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center">
-                    <FaSass className="text-4xl " />
-                    <h2>SASS</h2>
-                  </div>
+                  {skillsArray.map((skill) => (
+                    <div
+                      key={skill.id}
+                      className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center gap-y-1"
+                    >
+                      {skill.icon}
+                      <h2>{skill.name}</h2>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
