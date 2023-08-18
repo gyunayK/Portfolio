@@ -128,11 +128,15 @@ function Navbar() {
             >
               CONTACT
             </li>
-            <li className="cursor-pointer border-2 p-3 hover:bg-black rounded-md">
-              <a href="/Gyunay_Resume.pdf" target="_black">
+            <a
+              href="/Gyunay_Resume.pdf"
+              target="_blank"
+              className="w-full h-full"
+            >
+              <li className="cursor-pointer border-2 p-3 hover:bg-black rounded-md">
                 RESUME
-              </a>
-            </li>
+              </li>
+            </a>
           </ul>
         </div>
       </div>
