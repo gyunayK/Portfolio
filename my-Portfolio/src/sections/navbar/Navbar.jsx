@@ -81,6 +81,19 @@ function Navbar() {
           >
             CONTACT{" "}
           </li>
+          <li
+            className={`border-2 p-3 rounded-md ${
+              isScrolled ? "border-black" : "border-white"
+            }`}
+          >
+            <a
+              href="/Gyunay_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RESUME
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -128,15 +141,15 @@ function Navbar() {
             >
               CONTACT
             </li>
-            <a
-              href="/Gyunay_Resume2.pdf"
-              target="_blank"
-              className="w-full h-full"
-            >
-              <li className="cursor-pointer border-2 p-3 hover:bg-black rounded-md">
+            <li className="border-2 p-3 rounded-md border-white hover:bg-black">
+              <a
+                href="/Gyunay_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 RESUME
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

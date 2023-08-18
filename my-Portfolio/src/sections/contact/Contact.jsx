@@ -114,7 +114,7 @@ function Contact() {
                 <p className="pt-1 text-[#d3d3d3]">+1 (778)861-9031</p>
               </div>
               <div>
-                <h2 className="font-Roboto font-extrabold">EMAIL</h2>
+                <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
                 <p className="pt-1 text-[#d3d3d3]">
                   <a
                     href="mailto:gyunay@hotmail.dk"

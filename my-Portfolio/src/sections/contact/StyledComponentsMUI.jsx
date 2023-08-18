@@ -66,7 +66,8 @@ export function StyledTextField2({ register, errors, name, label, id }) {
       id={id}
       label={label}
       multiline
-      maxRows={4}
+      minRows={4}
+      maxRows={8}
       name={name}
       fullWidth
       inputProps={{ style: { color: "white" } }}
