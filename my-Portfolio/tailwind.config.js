@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero': "linear-gradient(180deg, rgba(0, 0, 0, 0.5), #000000 100%),url('https://ik.imagekit.io/riviaa/beach%20(1)%201.png?updatedAt=1690554009528')"
+        'hero': "linear-gradient(180deg, rgba(0, 0, 0, 0.5), #000000 100%),url('/img/beach.webp')"
       },
       colors: {
         'special-purple': '#e49dfc',
