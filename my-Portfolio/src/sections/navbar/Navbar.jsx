@@ -99,7 +99,7 @@ function Navbar() {
 
       <div
         className={`bg-black w-full transition-all duration-200 ease-in-out ${
-          isScrolled ? "h-[100px]" : "h-0"
+          isScrolled ? "h-[80px]" : "h-0"
         } md:fixed hidden md:block relative z-50`}
       >
         <div className="max-w-[2000px] mx-auto flex justify-between items-center px-10 ">
@@ -108,7 +108,7 @@ function Navbar() {
           >
             GK
           </h2>
-          <ul className="text-xl text-white flex gap-10 items-center justify-center  p-8  tracking-wide">
+          <ul className="text-xl text-white flex gap-10 items-center justify-center  p-4  tracking-wide">
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
                 activeSection === "home" && "text-[#D16EFF]"
