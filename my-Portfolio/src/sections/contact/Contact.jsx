@@ -43,8 +43,8 @@ function Contact() {
 
   return (
     <section id="contact">
-      <div className="relative w-full h-full  bg-cover bg-center bg-no-repeat py-32">
-        <div className="absolute inset-0 bg-black opacity-[0.9]"></div>
+      <div className="relative w-full h-full  bg-cover bg-center bg-no-repeat py-32 bg-white">
+        <div className="absolute inset-0 bg-black opacity-[0.95]"></div>
         <div className="relative flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
             <h2 className="font-Tektur text-[#ad43de] text-lg font-bold tracking-widest">

@@ -10,7 +10,7 @@ function ProjectCard({
   projectIMG,
 }) {
   return (
-    <div className="max-w-sm bg-white  xs:mx-4 md:mx-0 items-center justify-center  py-10 rounded-md border-2 border-transparent hover:border-[#850fbb]">
+    <div className="max-w-sm bg-white  xs:mx-4 md:mx-0 items-center justify-center  py-10 rounded-md border-2 border-transparent hover:border-[#850fbb] scale-90">
       <div className="flex flex-col space-y-5 text-center px-5 relative h-full max-h-[800px] justify-between ">
         <div className="absolute right-5 -top-6">
           <a

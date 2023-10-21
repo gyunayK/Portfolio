@@ -20,7 +20,7 @@ const About = () => {
             <div className="w-full px-2 md:px-0 md:max-w-[500px]">
               <h1 className="text-2xl font-semibold">Hello!</h1>
               <p className="text-xl mt-4 text-[#515151]">
-                My name is Gyunay Kadirov I am a Full Stack Developer who
+                My name is Gyunay Kadirov I am a Front-End Developer who
                 expertly combines professionalism with a dash of fun. I thrive
                 on tackling challenges head-on, all while fostering a
                 collaborative team environment. I am a self-motivated individual
@@ -35,9 +35,9 @@ const About = () => {
               <h1 className="text-2xl font-semibold">Skills</h1>
               <div className="mt-4">
                 <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-3 gap-10 text-[#ffffff]">
-                  {skillsArray.map((skill) => (
+                  {skillsArray.map((skill, index) => (
                     <div
-                      key={skill.id}
+                      key={index}
                       className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center gap-y-1"
                     >
                       {skill.icon}
