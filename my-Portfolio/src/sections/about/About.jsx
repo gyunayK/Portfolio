@@ -20,11 +20,13 @@ const About = () => {
             <div className="w-full px-2 md:px-0 md:max-w-[500px]">
               <h1 className="text-2xl font-semibold">Hello!</h1>
               <p className="text-xl mt-4 text-[#515151]">
-                My name is Gyunay Kadirov I am a Front-End Developer who
-                expertly combines professionalism with a dash of fun. I thrive
-                on tackling challenges head-on, all while fostering a
-                collaborative team environment. I am a self-motivated individual
-                who embraces growth.
+                A detail-oriented front-end developer skilled in React.js and
+                JavaScript, I deliver responsive and visually appealing
+                websites. Proficient in various front-end technologies, I ensure
+                high-quality and timely project completion. With strong
+                problem-solving skills and effective communication, I thrive in
+                team settings, quickly adapting to new tools and frameworks as
+                needed.
               </p>
               <p className="text-xl mt-10 text-[#515151]">
                 My skill set spans a diverse range of front-end and back-end

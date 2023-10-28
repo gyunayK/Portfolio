@@ -128,7 +128,7 @@ function Contact() {
               <div>
                 <h2 className="font-Roboto font-bold">ADDRESS</h2>
                 <p className="pt-1 text-[#d3d3d3]">
-                  Downtown, Vancouver, Canada
+                  Vancouver, Canada
                 </p>
               </div>
             </div>
