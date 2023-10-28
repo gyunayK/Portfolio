@@ -6,7 +6,7 @@ export const projects = [
             "Kadirov: Your fashion-forward marketplace. Discover curated clothing and unique makeup accessories. Filter, search, and add favorites with ease. Checkout securely with Stripe. Sign up for personalized shopping and order tracking.",
         techStack:
             "React, SASS, Strapi, Stripe, PostgreSQL",
-        liveLink: "https://my-comerce-kadirov.vercel.app/",
+        liveLink: "https://my-commerce-kadirov.vercel.app/",
         githubLink: "https://github.com/gyunayK/Ecomerce_Strapi",
         projectIMG:
             "/img/mockKadirov.webp",

@@ -117,11 +117,11 @@ function Contact() {
                 <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
                 <p className="pt-1 text-[#d3d3d3]">
                   <a
-                    href="mailto:gyunay@hotmail.dk"
+                    href="mailto:gyunaykadirov123@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    gyunay@hotmail.dk
+                    gyunaykadirov123@gmail.com
                   </a>
                 </p>
               </div>
