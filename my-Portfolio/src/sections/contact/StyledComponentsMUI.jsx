@@ -115,6 +115,7 @@ export function StyledButton({ isSubmitting, isSubmitted }) {
       loading={isSubmitted ? false : isSubmitting}
       variant="contained"
       type="submit"
+      disabled={isSubmitted ? true : false}
       size="large"
       sx={{
         width: "100%",
@@ -126,7 +127,15 @@ export function StyledButton({ isSubmitting, isSubmitted }) {
         "&:hover": {
           background: isSubmitted ? "#7000a3" : "#dc90ff",
         },
-
+        ...(isSubmitted && {
+          "&.Mui-disabled": {
+            background: "#7000a3",
+            color: "white",
+            "&:hover": {
+              background: "#7000a3",
+            },
+          },
+        }),
       }}
       loadingIndicator={<CircularProgress color="primary" size={35} />}
     >

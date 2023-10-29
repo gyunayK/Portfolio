@@ -31,10 +31,10 @@ function Contact() {
   const sendEmail = async () => {
     try {
       await emailjs.sendForm(
-        'service_c60y4kb',
-        'template_xlhx7hj',
+        "service_c60y4kb",
+        "template_xlhx7hj",
         form.current,
-        'tfrJ4KkGsoiHAZ6i1'
+        "tfrJ4KkGsoiHAZ6i1"
       );
     } catch (error) {
       console.log(error.text);
@@ -111,25 +111,23 @@ function Contact() {
             <div className="text-white space-y-10 px-1">
               <div>
                 <h2 className="font-Roboto font-extrabold">PHONE</h2>
-                <p className="pt-1 text-[#d3d3d3]">+1 (778)861-9031</p>
+                <p className="pt-1 text-[#d3d3d3]">+1 (778) 861-9031</p>
               </div>
               <div>
                 <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
                 <p className="pt-1 text-[#d3d3d3]">
                   <a
-                    href="mailto:gyunaykadirov123@gmail.com"
+                    href="mailto:web-dev@gyunay-kadirov.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    gyunaykadirov123@gmail.com
+                    web-dev@gyunay-kadirov.com
                   </a>
                 </p>
               </div>
               <div>
                 <h2 className="font-Roboto font-bold">ADDRESS</h2>
-                <p className="pt-1 text-[#d3d3d3]">
-                  Vancouver, Canada
-                </p>
+                <p className="pt-1 text-[#d3d3d3]">Vancouver, Canada</p>
               </div>
             </div>
           </div>
