@@ -1,4 +1,4 @@
-import { skillsArray } from "./skills";
+import { skills } from "./skills";
 
 const About = () => {
   return (
@@ -16,8 +16,8 @@ const About = () => {
               Get to know more about me{" "}
             </h2>
           </div>
-          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-28">
-            <div className="w-full px-2 md:px-0 md:max-w-[500px]">
+          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-28 px-5">
+            <div className="w-full md:max-w-[500px]">
               <h1 className="text-2xl font-semibold">Hello!</h1>
               <p className="text-xl mt-4 text-[#515151]">
                 A detail-oriented front-end developer skilled in React.js and
@@ -33,11 +33,11 @@ const About = () => {
                 technologies and frameworks.
               </p>
             </div>
-            <div className="w-full px-2 md:px-0 md:max-w-[500px]">
+            <div className="w-full md:max-w-[500px]">
               <h1 className="text-2xl font-semibold">Skills</h1>
               <div className="mt-4">
                 <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-3 gap-10 text-[#ffffff]">
-                  {skillsArray.map((skill, index) => (
+                  {skills.map((skill, index) => (
                     <div
                       key={index}
                       className="bg-[#6e6e6e] p-3 rounded-md flex flex-col items-center gap-y-1"

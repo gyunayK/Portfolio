@@ -7,7 +7,7 @@ import {
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
-export const skillsArray = [
+export const skills = [
   {
     name: "React",
     icon: <FaReact className="text-4xl " />,
@@ -34,7 +34,7 @@ export const skillsArray = [
     icon: <SiMongodb className="text-4xl " />,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: <SiTailwindcss className="text-4xl " />,
   },
   {

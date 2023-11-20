@@ -17,7 +17,7 @@ function Projects() {
               Here you can find some of the projects i created recently{" "}
             </h2>
           </div>
-          <div className="mt-24 grid md:grid-cols-2 gap-[100px]">
+          <div className="mt-24 grid md:grid-cols-2 gap-0 md:gap-[100px]">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
