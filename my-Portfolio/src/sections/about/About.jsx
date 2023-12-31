@@ -20,13 +20,14 @@ const About = () => {
             <div className="w-full md:max-w-[500px]">
               <h1 className="text-2xl font-semibold">Hello!</h1>
               <p className="text-xl mt-4 text-[#515151]">
-                A detail-oriented front-end developer skilled in React.js and
-                JavaScript, I deliver responsive and visually appealing
-                websites. Proficient in various front-end technologies, I ensure
-                high-quality and timely project completion. With strong
-                problem-solving skills and effective communication, I thrive in
-                team settings, quickly adapting to new tools and frameworks as
-                needed.
+                I am an innovative front-end developer with a solid expertise in
+                React and Node.js. I specialize in delivering enhanced website
+                performance and creating superior user experiences through
+                responsive design and strategic content management. I am skilled
+                in applying SEO best practices and advanced programming
+                techniques to drive web project success. I am committed to
+                collaborative development, continuous technical improvement, and
+                deploying robust, high-quality web solutions.
               </p>
               <p className="text-xl mt-10 text-[#515151]">
                 My skill set spans a diverse range of front-end and back-end
