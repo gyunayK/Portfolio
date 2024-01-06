@@ -1,49 +1,62 @@
-import { FaReact, FaHtml5, FaSass, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaHtml5, FaSass, FaNodeJs, FaDocker, FaAws } from "react-icons/fa";
 import {
   SiJavascript,
   SiTailwindcss,
   SiMongodb,
   SiTypescript,
+  SiGraphql
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 export const skills = [
   {
     name: "React",
-    icon: <FaReact className="text-4xl " />,
+    icon: <FaReact />,
   },
   {
     name: "Next.js",
-    icon: <TbBrandNextjs className="text-4xl " />,
+    icon: <TbBrandNextjs />,
   },
   {
     name: "JavaScript",
-    icon: <SiJavascript className="text-4xl " />,
+    icon: <SiJavascript />,
   },
   {
     name: "TypeScript",
-    icon: <SiTypescript className="text-4xl " />,
+    icon: <SiTypescript />,
   },
 
   {
     name: "Node.js",
-    icon: <FaNodeJs className="text-4xl " />,
+    icon: <FaNodeJs />,
   },
   {
     name: "MongoDB",
-    icon: <SiMongodb className="text-4xl " />,
+    icon: <SiMongodb />,
   },
   {
     name: "Tailwind",
-    icon: <SiTailwindcss className="text-4xl " />,
+    icon: <SiTailwindcss />,
   },
   {
     name: "SASS",
-    icon: <FaSass className="text-4xl " />,
+    icon: <FaSass />,
   },
 
   {
     name: "HTML",
-    icon: <FaHtml5 className="text-4xl " />,
+    icon: <FaHtml5 />,
+  },
+  {
+    name: "Docker",
+    icon: <FaDocker />,
+  },
+  {
+    name: "AWS",
+    icon: <FaAws />,
+  },
+  {
+    name: "GraphQL",
+    icon: <SiGraphql />,
   },
 ];
