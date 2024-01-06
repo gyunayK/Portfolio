@@ -67,11 +67,11 @@ const TimelineItem = ({ item, alignment }) => {
             ></div>
           </div>
           <div className="relative z-20 flex  items-center">
-            <div className="p-4 md:w-1/5 h-full">
+            <div className="p-4 md:w-1/5 h-full  flex flex-col text-center items-center">
               <span className="text-lg text-gray-700 ">{item.date}</span>
               {item.endDate && (
                 <>
-                  <TbTilde className="text-lg text-gray-700 ml-3 " />
+                  <TbTilde className="text-lg text-gray-700" />
                   <span className="text-lg text-gray-700 ">{item.endDate}</span>
                 </>
               )}
