@@ -21,7 +21,7 @@ const useScrollCheck = () => {
             bottomSectionTrigger &&
         window.innerWidth < 2000
       ) {
-        setIsScrolled(false);
+        setIsScrolled(true);
       } else if (window.scrollY > window.innerHeight - triggerLength) {
         setIsScrolled(true);
       } else {
