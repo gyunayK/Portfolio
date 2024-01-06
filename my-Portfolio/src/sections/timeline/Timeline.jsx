@@ -3,8 +3,6 @@ import { FaReact, FaBriefcase } from "react-icons/fa";
 import { TbTilde } from "react-icons/tb";
 import { MdSchool } from "react-icons/md";
 
-
-
 const items = [
   {
     date: "Aug 2022",
@@ -63,8 +61,8 @@ const TimelineItem = ({ item, alignment }) => {
             }`}
           >
             <div
-              className={`hidden h-10 origin-${
-                isLeftAligned ? "bottom-left" : "top-right"
+              className={`hidden h-10 ${
+                isLeftAligned ? "origin-bottom-left" : "origin-top-right"
               } transform -rotate-45 bg-white shadow lg:block `}
             ></div>
           </div>
@@ -100,7 +98,7 @@ const TimelineItem = ({ item, alignment }) => {
 
 export default function Timeline() {
   return (
-    <section className="bg-[#e7e7ea] py-32">
+    <section className="bg-[#e7e7ea] py-32" id="timeline">
       <div className="flex flex-col justify-center">
         <div className="w-full px-4 mx-auto lg:max-w-5xl">
           <div className="flex flex-col items-center gap-4 mb-28">

@@ -6,7 +6,7 @@ import "./hamburgeStyle.css";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const activeSection = useActiveSection(0.5);
+  const activeSection = useActiveSection(0.41);
   const isScrolled = useScrollCheck();
 
   const SCROLLED_COLOR = "black";
@@ -67,6 +67,14 @@ function Navbar() {
           </li>
           <li
             className={`cursor-pointer ${
+              activeSection === "timeline" && "text-[#8E00D0]"
+            }`}
+            onClick={() => scrollToSection("timeline")}
+          >
+            TIMELINE{" "}
+          </li>
+          <li
+            className={`cursor-pointer ${
               activeSection === "work" && "text-[#8E00D0]"
             }`}
             onClick={() => scrollToSection("work")}
@@ -82,7 +90,7 @@ function Navbar() {
             CONTACT{" "}
           </li>
           <li
-            className={`border-2 p-3 rounded-md ${
+            className={`border-2 p-2 mr-1 rounded-md ${
               isScrolled ? "border-black" : "border-white"
             }`}
           >
@@ -104,11 +112,11 @@ function Navbar() {
       >
         <div className="max-w-[2000px] mx-auto flex justify-between items-center px-10 ">
           <h2
-            className={`hidden md:block text-[30px] border-2 text-white rounded-lg px-2 `}
+            className={`hidden md:block text-3xl border-2 text-white rounded-lg px-2 `}
           >
             GK
           </h2>
-          <ul className="text-xl text-white flex gap-10 items-center justify-center  p-4  tracking-wide">
+          <ul className="text-xl text-white flex gap-10 items-center justify-center p-4 tracking-wide">
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
                 activeSection === "home" && "text-[#D16EFF]"
@@ -127,12 +135,21 @@ function Navbar() {
             </li>
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
+                activeSection === "timeline" && "text-[#D16EFF]"
+              }`}
+              onClick={() => scrollToSection("timeline")}
+            >
+              TIMELINE
+            </li>
+            <li
+              className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
                 activeSection === "work" && "text-[#D16EFF]"
               }`}
               onClick={() => scrollToSection("work")}
             >
               WORK
             </li>
+        
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
                 activeSection === "contact" && "text-[#D16EFF]"
@@ -141,7 +158,7 @@ function Navbar() {
             >
               CONTACT
             </li>
-            <li className="border-2 p-3 rounded-md border-white hover:bg-black">
+            <li className="border-2 p-2 m-1 rounded-md border-white hover:bg-black">
               <a
                 href="/Gyunay_Resume.pdf"
                 target="_blank"
