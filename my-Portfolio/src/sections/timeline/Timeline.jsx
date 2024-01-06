@@ -30,7 +30,7 @@ const items = [
   {
     date: "Aug 2023",
     endDate: "Dec 2023",
-    cardTitle: "Front End Developer",
+    cardTitle: "Front-end Developer",
     cardDetailedText:
       "At eEpic Technologies, I crafted responsive web solutions using Next.js and TypeScript, focusing on mobile-first design. My integration of diverse APIs enhanced the app's dynamic content and user engagement. I also improved performance by 15% with advanced GraphQL queries. Collaboratively, I helped integrate front and backend components, boosting team synergy and communication.",
     icon: <FaBriefcase />,
@@ -38,7 +38,7 @@ const items = [
   {
     date: "Aug 2022",
     endDate: "Present",
-    cardTitle: "Front End Developer",
+    cardTitle: "Front-end Developer",
     cardDetailedText:
       "At Summations, I improved SEO and website performance through Next.js 14 for server-side rendering and mobile responsiveness. I reduced load times by 30% with asset optimization and code splitting. I also developed seven custom React hooks for better code efficiency and integrated custom Mantine UI components for an enhanced user experience, especially for academic users.",
     icon: <FaBriefcase />,
