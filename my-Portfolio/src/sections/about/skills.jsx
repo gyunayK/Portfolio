@@ -1,10 +1,17 @@
-import { FaReact, FaHtml5, FaSass, FaNodeJs, FaDocker, FaAws } from "react-icons/fa";
+import {
+  FaReact,
+  FaHtml5,
+  FaSass,
+  FaNodeJs,
+  FaDocker,
+  FaAws,
+} from "react-icons/fa";
 import {
   SiJavascript,
   SiTailwindcss,
   SiMongodb,
   SiTypescript,
-  SiGraphql
+  SiGraphql,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 

@@ -149,7 +149,7 @@ function Navbar() {
             >
               WORK
             </li>
-        
+
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
                 activeSection === "contact" && "text-[#D16EFF]"

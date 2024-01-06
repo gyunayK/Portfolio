@@ -18,7 +18,7 @@ function App() {
           <Hero />
         </section>
         <About />
-        <Timeline/>
+        <Timeline />
         <Projects />
         <Contact />
         <Footer />

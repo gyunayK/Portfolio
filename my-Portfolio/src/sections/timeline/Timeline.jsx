@@ -23,7 +23,8 @@ const items = [
     date: "Aug 2023",
     endDate: "Oct 2023",
     cardTitle: "Kadirov - Full Stack App",
-    cardDetailedText: "Kadirov: Your fashion-forward marketplace offers a curated selection of clothing and unique makeup accessories. Users can effortlessly filter, search, and favorite items. With secure Stripe checkout and personalized shopping features, it provides a seamless and enjoyable online shopping experience.",
+    cardDetailedText:
+      "Kadirov: Your fashion-forward marketplace offers a curated selection of clothing and unique makeup accessories. Users can effortlessly filter, search, and favorite items. With secure Stripe checkout and personalized shopping features, it provides a seamless and enjoyable online shopping experience.",
     icon: <FaReact />,
   },
   {
@@ -38,7 +39,8 @@ const items = [
     date: "Aug 2022",
     endDate: "Present",
     cardTitle: "Front End Developer",
-    cardDetailedText: "At Summations, I improved SEO and website performance through Next.js 14 for server-side rendering and mobile responsiveness. I reduced load times by 30% with asset optimization and code splitting. I also developed seven custom React hooks for better code efficiency and integrated custom Mantine UI components for an enhanced user experience, especially for academic users.",
+    cardDetailedText:
+      "At Summations, I improved SEO and website performance through Next.js 14 for server-side rendering and mobile responsiveness. I reduced load times by 30% with asset optimization and code splitting. I also developed seven custom React hooks for better code efficiency and integrated custom Mantine UI components for an enhanced user experience, especially for academic users.",
     icon: <FaBriefcase />,
   },
 ];
