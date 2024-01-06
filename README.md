@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Portfolio</h1>
 
-<p align="center"><img src="https://ik.imagekit.io/riviaa/Portfolio/Screenshot%202023-08-05%20at%202.34.35%20PM.png?updatedAt=1691271339721" alt="project-image"></p>
+<p align="center"><img src="https://ik.imagekit.io/riviaa/Portfolio/image.png?updatedAt=1704579598513" alt="project-image"></p>
 
 <h2>🚀 Demo</h2>
 
@@ -10,11 +10,12 @@
 
 <img src="https://ik.imagekit.io/riviaa/Portfolio/Screenshot%202023-07-30%20at%204.08.52%20PM.png?updatedAt=1691271644557" alt="project-screenshot" width="750" height="400/">
 
-<img src="https://ik.imagekit.io/riviaa/Portfolio/Screenshot%202023-08-05%20at%202.37.12%20PM.png?updatedAt=1691271571384" alt="project-screenshot" width="750" height="400/">
+<img src="https://ik.imagekit.io/riviaa/Portfolio/image-3.png?updatedAt=1704579596171" alt="project-screenshot" width="750" height="400/">
+<img src="https://ik.imagekit.io/riviaa/Portfolio/image-2.png?updatedAt=1704579594232" alt="project-screenshot" width="750" height="400/">
 
-<img src="https://ik.imagekit.io/riviaa/Portfolio/Screenshot%202023-08-05%20at%202.37.53%20PM.png?updatedAt=1691271571731" alt="project-screenshot" width="750" height="400/">
+<img src="https://ik.imagekit.io/riviaa/Portfolio/image-1.png?updatedAt=1704579593954" alt="project-screenshot" width="750" height="400/">
 
-<img src="https://ik.imagekit.io/riviaa/Portfolio/Screenshot%202023-08-05%20at%202.38.56%20PM.png?updatedAt=1691271597437" alt="project-screenshot" width="750" height="400/">
+<img src="https://ik.imagekit.io/riviaa/Portfolio/image-4.png?updatedAt=1704579593867" alt="project-screenshot" width="750" height="400/">
 
   
   
@@ -45,6 +46,8 @@ Technologies used in the project:
 *   EmailJS
 *   React-Hook-Form
 *   zod
+*   Material UI
+*   Tailwind CSS
 
 <h2>🛡️ License:</h2>
 
