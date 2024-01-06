@@ -43,17 +43,17 @@ function Contact() {
 
   return (
     <section id="contact">
-      <div className="relative w-full h-full  bg-cover bg-center bg-no-repeat py-32 bg-white">
-        <div className="absolute inset-0 bg-black opacity-[0.95]"></div>
+      <div className="relative w-full h-full  bg-cover bg-center bg-no-repeat py-32">
+        <div className="absolute inset-0 bg-[#e5e5e5]"></div>
         <div className="relative flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
-            <h2 className="font-Tektur text-[#ad43de] text-lg font-bold tracking-widest">
+            <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">
               CONTACT
             </h2>
-            <h1 className="text-5xl font-serif font-medium leading-8 text-white">
+            <h1 className="text-5xl font-serif font-medium leading-8 ">
               Say Hello.
             </h1>
-            <h2 className=" font-medium text-lg text-center text-[#a0a0a0] mt-4 px-5 ">
+            <h2 className=" font-medium text-lg text-center text-gray-500  mt-3 px-5 ">
               Submit the form bellow and I will get back to you as soon as
               possible.
             </h2>
@@ -108,14 +108,14 @@ function Contact() {
                 />
               </Box>
             </div>
-            <div className="text-white space-y-10 px-1">
+            <div className="text-black space-y-10 px-1">
               <div>
                 <h2 className="font-Roboto font-extrabold">PHONE</h2>
-                <p className="pt-1 text-[#d3d3d3]">+1 (778) 861-9031</p>
+                <p className="pt-1">+1 (778) 861-9031</p>
               </div>
               <div>
                 <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
-                <p className="pt-1 text-[#d3d3d3]">
+                <p className="pt-1 underline">
                   <a
                     href="mailto:web-dev@gyunay-kadirov.com"
                     target="_blank"
@@ -127,7 +127,7 @@ function Contact() {
               </div>
               <div>
                 <h2 className="font-Roboto font-bold">ADDRESS</h2>
-                <p className="pt-1 text-[#d3d3d3]">Vancouver, Canada</p>
+                <p className="pt-1 ">Vancouver, BC, Canada</p>
               </div>
             </div>
           </div>

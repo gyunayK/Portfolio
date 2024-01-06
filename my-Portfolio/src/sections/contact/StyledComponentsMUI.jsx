@@ -17,17 +17,17 @@ export function StyledTextField({ register, errors, name, label, id }) {
       color="secondary"
       name={name}
       fullWidth
-      inputProps={{ style: { color: "white" } }}
+      inputProps={{ style: { color: "black" } }}
       sx={{
         "& label.Mui-focused": {
-          color: "#F3F3F3",
+          color: "black",
         },
         "& label": {
-          color: "#F3F3F3",
+          color: "black",
           fontFamily: "sans-serif",
         },
         "& .MuiInput-underline:after": {
-          borderBottomColor: "white",
+          borderBottomColor: "black",
         },
         "& .MuiOutlinedInput-root": {
           "& fieldset": {
@@ -70,17 +70,17 @@ export function StyledTextField2({ register, errors, name, label, id }) {
       maxRows={8}
       name={name}
       fullWidth
-      inputProps={{ style: { color: "white" } }}
+      inputProps={{ style: { color: "black" } }}
       sx={{
         "& label.Mui-focused": {
-          color: "white",
+          color: "black",
         },
         "& label": {
-          color: "white",
+          color: "black",
           fontFamily: "sans-serif",
         },
         "& .MuiInput-underline:after": {
-          borderBottomColor: "white",
+          borderBottomColor: "black",
         },
         "& .MuiOutlinedInput-root": {
           "& fieldset": {
