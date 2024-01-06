@@ -12,7 +12,7 @@ const About = () => {
             <h1 className="text-5xl font-serif font-medium leading-8">
               Personal Info
             </h1>
-            <h2 className="font-medium text-lg ">Get to know more about me </h2>
+            <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know more about me </h2>
           </div>
           <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-28 px-5">
             <div className="w-full max-w-[500px] text-xl">
