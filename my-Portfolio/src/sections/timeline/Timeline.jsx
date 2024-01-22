@@ -100,10 +100,10 @@ const TimelineItem = ({ item, alignment }) => {
 
 export default function Timeline() {
   return (
-    <section className="bg-[#e7e7ea] py-32" id="timeline">
+    <section className="bg-[#e7e7ea] py-16" id="timeline">
       <div className="flex flex-col justify-center">
         <div className="w-full px-4 mx-auto lg:max-w-5xl">
-          <div className="flex flex-col items-center gap-4 mb-28">
+          <div className="flex flex-col items-center gap-4 mb-12">
             <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">
               TIMELINE
             </h2>
@@ -115,10 +115,9 @@ export default function Timeline() {
             </h2>
           </div>
 
-          <div className="relative">
+          <div className="relative scale-90">
             {/* Vertical line */}
             <div className="absolute hidden w-1 h-full transform -translate-x-1/2 bg-[#c9e2f5]  lg:block left-1/2"></div>
-
             {/* Items */}
             {items.map((item, index) => (
               <TimelineItem

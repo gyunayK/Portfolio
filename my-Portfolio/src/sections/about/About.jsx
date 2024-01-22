@@ -3,7 +3,7 @@ import { skills } from "./skills";
 const About = () => {
   return (
     <section id="about">
-      <div className="w-full h-full bg-white py-32 ">
+      <div className="w-full h-full bg-white py-16">
         <div className="flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
             <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">

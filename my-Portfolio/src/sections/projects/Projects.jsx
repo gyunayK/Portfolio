@@ -4,7 +4,7 @@ import { projects } from "./projectsList";
 function Projects() {
   return (
     <section id="work">
-      <div className="w-full h-full bg-[#ededed] py-32">
+      <div className="w-full h-full bg-[#ededed] py-16">
         <div className="flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
             <h2 className="font-Tektur text-[#A200EC] text-lg font-bold tracking-widest">
