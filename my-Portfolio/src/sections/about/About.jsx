@@ -12,24 +12,30 @@ const About = () => {
             <h1 className="text-5xl font-serif font-medium leading-8">
               Personal Info
             </h1>
-            <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know more about me </h2>
+            <h2 className="font-medium text-lg text-[#4d4d4d]">
+              Get to know more about me{" "}
+            </h2>
           </div>
           <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-28 px-5">
-            <div className="w-full max-w-[500px] text-xl">
+            <div className="w-full max-w-[500px] text-lg">
               <h1 className="text-2xl font-semibold">Hello!</h1>
               <p className="mt-4">
-                I am an innovative front-end developer with a solid expertise in
-                React and Node.js. I specialize in delivering enhanced website
-                performance and creating superior user experiences through
-                responsive design and strategic content management. I am skilled
-                in applying SEO best practices and advanced programming
-                techniques to drive web project success. I am committed to
-                collaborative development, continuous technical improvement, and
-                deploying robust, high-quality web solutions.
+                I&apos;m a Software Developer with a rich background in both
+                front-end and back-end technologies. My journey in software
+                development is driven by a genuine love for crafting robust web
+                applications that not only perform exceptionally but also
+                provide enjoyable user experiences. In each project, my aim is
+                to blend functional beauty with technical efficiency, creating
+                applications that are user-friendly and wonderfully responsive.
               </p>
               <p className="mt-10">
-                My skill set spans a diverse range of front-end and back-end
-                technologies.
+                I have a keen interest in optimizing application performance,
+                with a particular focus on enhancing speed, responsiveness, and
+                efficiency. Embracing technical excellence and a team-oriented
+                approach, I enjoy working collaboratively to bring to life
+                high-quality, meaningful software. My aspiration is to build
+                scalable web applications that shine in client-side usability as
+                well as in server-side effectiveness.
               </p>
             </div>
             <div className="w-full max-w-[500px]">
