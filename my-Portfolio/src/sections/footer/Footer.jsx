@@ -2,7 +2,7 @@ import "./footerSyled.css";
 function Footer() {
   return (
     <footer>
-      <div className="bg-black py-7">
+      <div className="bg-black">
         <div className=" text-center flex flex-col items-center  justify-center  ">
           <div className="flex space-x-20 pt-10">
             <a
@@ -24,7 +24,7 @@ function Footer() {
               LINKEDIN
             </a>
           </div>
-          <p className="text-[#acacac] font-Roboto mt-8 pt-10">
+          <p className="text-[#acacac] font-Roboto pt-10">
             All rights reserved © 2023 by Gyunay K.
           </p>
         </div>
