@@ -4,8 +4,8 @@ const About = () => {
   return (
     <section id="about">
       <div className="w-full h-full bg-white py-16">
-        <div className="flex flex-col items-center justify-center ">
-          <div className=" flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center gap-4">
             <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">
               ABOUT
             </h2>
@@ -16,7 +16,7 @@ const About = () => {
               Get to know more about me{" "}
             </h2>
           </div>
-          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-28 px-5">
+          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-12 px-5 scale-90">
             <div className="w-full max-w-[500px] text-lg">
               <h1 className="text-2xl font-semibold">Hello!</h1>
               <p className="mt-4">

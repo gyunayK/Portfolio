@@ -36,7 +36,7 @@ export const timelineEvents = [
   {
     date: "Aug 2022",
     endDate: "Present",
-    cardTitle: "Front-end Developer",
+    cardTitle: "Front-end Developer Intern",
     cardDetailedText:
       "At Summations, I improved SEO and website performance through Next.js 14 for server-side rendering and mobile responsiveness. I reduced load times by 30% with asset optimization and code splitting. I also developed seven custom React hooks for better code efficiency and integrated custom Mantine UI components for an enhanced user experience, especially for academic users.",
     icon: <FaBriefcase />,

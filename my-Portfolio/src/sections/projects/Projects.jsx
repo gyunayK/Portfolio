@@ -14,10 +14,10 @@ function Projects() {
               Latest Projects
             </h1>
             <h2 className="font-medium text-lg text-center text-[#4d4d4d]">
-              Here you can find some of the projects i created recently{" "}
+              Explore My Recent Creations{" "}
             </h2>
           </div>
-          <div className="mt-24 grid md:grid-cols-2 gap-0 md:gap-[100px]">
+          <div className="mt-12 grid md:grid-cols-2 gap-0 md:gap-[100px] scale-90">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
