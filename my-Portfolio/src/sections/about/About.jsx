@@ -18,24 +18,23 @@ const About = () => {
           </div>
           <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-12 px-5 scale-90">
             <div className="w-full max-w-[500px] text-lg">
-              <h1 className="text-2xl font-semibold">Hello!</h1>
+              <h1 className="text-2xl font-semibold">Hey there!</h1>
               <p className="mt-4">
-                I&apos;m a Software Developer with a rich background in both
-                front-end and back-end technologies. My journey in software
-                development is driven by a genuine love for crafting robust web
-                applications that not only perform exceptionally but also
-                provide enjoyable user experiences. In each project, my aim is
-                to blend functional beauty with technical efficiency, creating
-                applications that are user-friendly and wonderfully responsive.
+                I&apos;m a software developer with a rich background in front-end and
+                back-end technologies. I love crafting robust web applications
+                that perform exceptionally and provide enjoyable user
+                experiences. In each project, I aim to blend functional beauty
+                with technical efficiency, creating super responsive and
+                user-friendly applications.
               </p>
               <p className="mt-10">
-                I have a keen interest in optimizing application performance,
-                with a particular focus on enhancing speed, responsiveness, and
-                efficiency. Embracing technical excellence and a team-oriented
-                approach, I enjoy working collaboratively to bring to life
-                high-quality, meaningful software. My aspiration is to build
-                scalable web applications that shine in client-side usability as
-                well as in server-side effectiveness.
+                I&apos;m really into optimizing application performance and making
+                sure that everything is speedy, responsive, and efficient. I&apos;m
+                all about embracing technical excellence and working
+                collaboratively with others to bring high-quality, meaningful
+                software to life. My ultimate goal is to build scalable web
+                applications that are not only effective but also a joy to use
+                both on the client side and server side.
               </p>
             </div>
             <div className="w-full max-w-[500px]">

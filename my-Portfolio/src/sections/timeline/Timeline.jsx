@@ -71,7 +71,6 @@ export default function Timeline() {
               A Chronicle of My Career
             </h2>
           </div>
-
           <div className="relative scale-90">
             {/* Vertical line */}
             <div className="absolute hidden w-1 h-full transform -translate-x-1/2 bg-[#c9e2f5]  lg:block left-1/2"></div>

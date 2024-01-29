@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer>
       <div className="bg-black">
-        <div className=" text-center flex flex-col items-center  justify-center  ">
+        <div className=" text-center flex flex-col items-center justify-center">
           <div className="flex space-x-20 pt-10">
             <a
               href="https://github.com/gyunayK"
@@ -24,7 +24,7 @@ function Footer() {
               LINKEDIN
             </a>
           </div>
-          <p className="text-[#acacac] font-Roboto pt-10">
+          <p className="text-[#acacac] font-Roboto pt-10 pb-2">
             All rights reserved © 2023 by Gyunay K.
           </p>
         </div>
