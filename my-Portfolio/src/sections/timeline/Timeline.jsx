@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { TbTilde } from "react-icons/tb";
 import { timelineEvents } from "./timelineEvents";
+import Reveal from "../../components/Reaveal/Reveal";
 
 const TimelineItem = ({ item, alignment }) => {
   const isLeftAligned = alignment === "left";
@@ -13,36 +14,40 @@ const TimelineItem = ({ item, alignment }) => {
       <div
         className={`w-full lg:w-1/2 ${isLeftAligned ? "lg:pr-8" : "lg:pl-8"}`}
       >
-        <div className="relative flex-1 mb-10 bg-white rounded shadow lg:mb-8 ">
-          <div
-            className={`absolute inline-block w-4 overflow-hidden -translate-y-1/2 ${
-              isLeftAligned ? "top-3 -right-4" : "top-7 -left-4"
-            }`}
-          >
+        <Reveal width={"w-fit"}>
+          <div className="relative flex-1 mb-10 bg-white rounded shadow lg:mb-8 ">
             <div
-              className={`hidden h-10 ${
-                isLeftAligned ? "origin-bottom-left" : "origin-top-right"
-              } transform -rotate-45 bg-white shadow lg:block `}
-            ></div>
-          </div>
-          <div className="relative z-20 flex  items-center">
-            <div className="p-4 md:w-1/5 h-full  flex flex-col text-center items-center">
-              <span className="text-lg text-gray-700 ">{item.date}</span>
-              {item.endDate && (
-                <>
-                  <TbTilde className="text-lg text-gray-700" />
-                  <span className="text-lg text-gray-700 ">{item.endDate}</span>
-                </>
-              )}
+              className={`absolute inline-block w-4 overflow-hidden -translate-y-1/2 ${
+                isLeftAligned ? "top-3 -right-4" : "top-7 -left-4"
+              }`}
+            >
+              <div
+                className={`hidden h-10 ${
+                  isLeftAligned ? "origin-bottom-left" : "origin-top-right"
+                } transform -rotate-45 bg-white shadow lg:block `}
+              ></div>
             </div>
-            <div className="flex-1 p-4 pr-4 border-l border-gray-300">
-              <p className="text-2xl font-bold text-gray-700 text-bold">
-                {item.cardTitle}
-              </p>
-              <p className="text-gray-700 mt-2">{item.cardDetailedText}</p>
+            <div className="relative z-20 flex  items-center">
+              <div className="p-4 md:w-1/5 h-full  flex flex-col text-center items-center">
+                <span className="text-lg text-gray-700 ">{item.date}</span>
+                {item.endDate && (
+                  <>
+                    <TbTilde className="text-lg text-gray-700" />
+                    <span className="text-lg text-gray-700 ">
+                      {item.endDate}
+                    </span>
+                  </>
+                )}
+              </div>
+              <div className="flex-1 p-4 pr-4 border-l border-gray-300">
+                <p className="text-2xl font-bold text-gray-700 text-bold">
+                  {item.cardTitle}
+                </p>
+                <p className="text-gray-700 mt-2">{item.cardDetailedText}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
       <div
         className={`absolute flex items-center justify-center w-8 h-8 text-white transform -translate-x-1/2 -translate-y-4 bg-fuchsia-500 rounded-full left-1/2 ${
