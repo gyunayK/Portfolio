@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   const scrollToSection = (section) => {
-    const headerOffset = 50; 
+    const headerOffset = window.innerWidth > 768 ? 50 : 0;
     const elementPosition = document.getElementById(section).getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.scrollY - headerOffset;
   
@@ -29,8 +29,6 @@ function Navbar() {
     setIsMenuOpen(false);
   };
   
-  
-
   return (
     <nav className="font-Tektur z-[9999]">
       <div
@@ -57,41 +55,26 @@ function Navbar() {
       >
         <ul className="text-3xl flex flex-col items-center justify-center space-y-4 h-full gap-8 ">
           <li
-            className={`cursor-pointer ${
-              activeSection === "home" && "text-[#D16EFF]"
-            }`}
             onClick={() => scrollToSection("home")}
           >
             HOME{" "}
           </li>
           <li
-            className={`cursor-pointer ${
-              activeSection === "about" && "text-[#8E00D0]"
-            }`}
             onClick={() => scrollToSection("about")}
           >
             ABOUT{" "}
           </li>
           <li
-            className={`cursor-pointer ${
-              activeSection === "timeline" && "text-[#8E00D0]"
-            }`}
             onClick={() => scrollToSection("timeline")}
           >
             TIMELINE{" "}
           </li>
           <li
-            className={`cursor-pointer ${
-              activeSection === "work" && "text-[#8E00D0]"
-            }`}
             onClick={() => scrollToSection("work")}
           >
             WORK{" "}
           </li>
           <li
-            className={`cursor-pointer ${
-              activeSection === "contact" && "text-[#D16EFF]"
-            }`}
             onClick={() => scrollToSection("contact")}
           >
             CONTACT{" "}
