@@ -31,7 +31,7 @@ export function StyledTextField({ register, errors, name, label, id }) {
         },
         "& .MuiOutlinedInput-root": {
           "& fieldset": {
-            borderColor: "#692489",
+            borderColor: "#190622",
           },
           "&:hover fieldset": {
             borderColor: "#dc90ff",
@@ -84,7 +84,7 @@ export function StyledTextField2({ register, errors, name, label, id }) {
         },
         "& .MuiOutlinedInput-root": {
           "& fieldset": {
-            borderColor: "#692489",
+            borderColor: "#190622",
           },
           "&:hover fieldset": {
             borderColor: "#dc90ff",
