@@ -26,7 +26,7 @@ export const timelineEvents = [
     icon: <FaReact />,
   },
   {
-    date: "Aug 2023",
+    date: "Jun 2023",
     endDate: "Dec 2023",
     cardTitle: "Front-end Developer",
     cardDetailedText:
@@ -41,4 +41,12 @@ export const timelineEvents = [
       "At Summations, I improved SEO and website performance through Next.js 14 for server-side rendering and mobile responsiveness. I reduced load times by 30% with asset optimization and code splitting. I also developed seven custom React hooks for better code efficiency and integrated custom Mantine UI components for an enhanced user experience, especially for academic users.",
     icon: <FaBriefcase />,
   },
+  {
+    date: "Dec 2022",
+    endDate: "Present",
+    cardTitle: "Full-stack Developer",
+    cardDetailedText:
+      "At Waniskāw Foundation, I improved the technology infrastructure and user interface. I used Node.js for efficient server-side processes and AWS S3 for data handling. I optimized the interface design with SASS and integrated MongoDB to improve scalability and data management.",
+    icon: <FaBriefcase />,
+  }
 ];
