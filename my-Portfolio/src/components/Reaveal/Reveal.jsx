@@ -15,7 +15,10 @@ function Reveal({ children, width }) {
     }
   }, [isInView]);
   return (
-    <div ref={ref} className={`relative ${width} overflow-hidden`}>
+    <div
+      ref={ref}
+      className={`relative ${width ? width : "w-fit"} overflow-hidden`}
+    >
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -35,7 +38,7 @@ function Reveal({ children, width }) {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute top-0 left-0 w-full h-full bg-fuchsia-800 z-50"
+        className="absolute top-0 left-0 w-full h-full bg-[rgb(88,61,141)] z-50"
       />
     </div>
   );

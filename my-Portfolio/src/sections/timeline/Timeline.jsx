@@ -66,15 +66,21 @@ export default function Timeline() {
       <div className="flex flex-col justify-center">
         <div className="w-full px-4 mx-auto lg:max-w-5xl">
           <div className="flex flex-col items-center gap-4 mb-12">
-            <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">
-              TIMELINE
-            </h2>
-            <h1 className="text-5xl font-serif font-medium leading-8">
-              Professional Path
-            </h1>
-            <h2 className="font-medium text-lg text-[#4d4d4d]">
-              A Chronicle of My Career
-            </h2>
+            <Reveal>
+              <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">
+                TIMELINE
+              </h2>
+            </Reveal>
+            <Reveal>
+              <h1 className="text-5xl font-serif font-medium leading-8">
+                Professional Path
+              </h1>
+            </Reveal>
+            <Reveal>
+              <h2 className="font-medium text-lg text-[#4d4d4d]">
+                A Chronicle of My Career
+              </h2>
+            </Reveal>
           </div>
           <div className="relative scale-90">
             {/* Vertical line */}
