@@ -17,12 +17,19 @@ function Navbar() {
   };
 
   const scrollToSection = (section) => {
-    document.getElementById(section).scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+    const headerOffset = 50; 
+    const elementPosition = document.getElementById(section).getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+  
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
     });
+  
     setIsMenuOpen(false);
   };
+  
+  
 
   return (
     <nav className="font-Tektur z-[9999]">
