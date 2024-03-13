@@ -1,4 +1,5 @@
 import Box from "@mui/material/Box";
+import Reveal from "@/components/Reveal/Reveal";
 import {
   StyledTextField,
   StyledTextField2,
@@ -48,15 +49,21 @@ function Contact() {
         <div className="absolute inset-0 bg-[#e5e5e5]"></div>
         <div className="relative flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4">
-            <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">
-              CONTACT
-            </h2>
-            <h1 className="text-5xl font-serif font-medium leading-8 ">
-              Say Hello
-            </h1>
-            <h2 className=" font-medium text-lg text-center text-gray-500  mt-3 px-5 ">
-              Submit the form below and I&apos;ll promptly be in touch
-            </h2>
+            <Reveal>
+              <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">
+                CONTACT
+              </h2>
+            </Reveal>
+            <Reveal width='p-3 -m-3'>
+              <h1 className="text-5xl font-serif font-medium leading-8 ">
+                Say Hello
+              </h1>
+            </Reveal>
+            <Reveal>
+              <h2 className=" font-medium text-lg text-center text-gray-500  mt-3 px-5 ">
+                Submit the form below and I&apos;ll promptly be in touch
+              </h2>
+            </Reveal>
           </div>
           <div className="mt-14 mx-auto flex flex-col md:flex-row gap-20 scale-90">
             <div className="w-[300px]  md:w-[400px] ">
@@ -72,62 +79,83 @@ function Contact() {
                 autoComplete="off"
                 ref={form}
               >
-                <StyledTextField
-                  id={"name"}
-                  register={register}
-                  errors={errors}
-                  name={"user_name"}
-                  label={"Name"}
-                />
-                <StyledTextField
-                  id={"email"}
-                  register={register}
-                  errors={errors}
-                  name={"user_email"}
-                  label={"Email"}
-                />
-                <StyledTextField
-                  id={"subject"}
-                  register={register}
-                  errors={errors}
-                  name={"user_subject"}
-                  label={"Subject"}
-                  formname={"_subject"}
-                />
-
-                <StyledTextField2
-                  id={"message"}
-                  register={register}
-                  errors={errors}
-                  name={"message"}
-                  label={"Message"}
-                />
+                <Reveal width="w-full">
+                  <StyledTextField
+                    id={"name"}
+                    register={register}
+                    errors={errors}
+                    name={"user_name"}
+                    label={"Name"}
+                  />
+                </Reveal>
+                <Reveal width="w-full">
+                  <StyledTextField
+                    id={"email"}
+                    register={register}
+                    errors={errors}
+                    name={"user_email"}
+                    label={"Email"}
+                  />
+                </Reveal>
+                <Reveal width="w-full">
+                  <StyledTextField
+                    id={"subject"}
+                    register={register}
+                    errors={errors}
+                    name={"user_subject"}
+                    label={"Subject"}
+                    formname={"_subject"}
+                  />
+                </Reveal>
+                <Reveal width="w-full">
+                  <StyledTextField2
+                    id={"message"}
+                    register={register}
+                    errors={errors}
+                    name={"message"}
+                    label={"Message"}
+                  />
+                </Reveal>
+                <Reveal width='w-full'>
                 <StyledButton
                   isSubmitting={isSubmitting}
                   isSubmitted={isSubmitSuccessful}
                 />
+                </Reveal>
               </Box>
             </div>
             <div className="text-black space-y-10 px-1">
               <div>
-                <h2 className="font-Roboto font-extrabold">PHONE</h2>
-                <p className="pt-1">+1 (778) 861-9031</p>
+                <Reveal>
+                  <h2 className="font-Roboto font-extrabold">PHONE</h2>
+                </Reveal>
+                <Reveal>
+                  <p>+1 (778) 861-9031</p>
+                </Reveal>
               </div>
               <div>
-                <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
-                <p className="pt-1 underline">
-                  <a
-                    href="mailto:web-dev@gyunay-kadirov.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    web-dev@gyunay-kadirov.com
-                  </a>
-                </p>
+                <Reveal>
+                  <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
+                </Reveal>
+                <Reveal>
+                  <p className="underline">
+                    <a
+                      href="mailto:web-dev@gyunay-kadirov.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      web-dev@gyunay-kadirov.com
+                    </a>
+                  </p>
+                </Reveal>
               </div>
               <div>
-                <h2 className="font-Roboto font-bold">ADDRESS</h2>
-                <p className="pt-1 ">Vancouver, BC, Canada</p>
+                <Reveal>
+                  <h2 className="font-Roboto font-bold">ADDRESS</h2>
+                </Reveal>
+                <Reveal>
+                  <p>Vancouver, BC, Canada</p>
+                </Reveal>
               </div>
             </div>
           </div>

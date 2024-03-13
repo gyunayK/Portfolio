@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import PropTypes from "prop-types";
+import Reveal from "@/components/Reveal/Reveal";
 
 function ProjectCard({
   title,
@@ -22,26 +23,31 @@ function ProjectCard({
             <FaGithub className=" text-3xl cursor-pointer" />
           </a>
         </div>
+
         <div
           className=" w-full h-[200px] bg-no-repeat bg-contain "
           style={{ backgroundImage: `url('${projectIMG}')` }}
         ></div>
-        <div>
-          <h2 className="text-lg font-bold mb-1">{title}</h2>
-          <p className="">{description}</p>
-        </div>
+        <Reveal>
+          <div>
+            <h2 className="text-lg font-bold mb-1">{title}</h2>
+            <p className="">{description}</p>
+          </div>
+        </Reveal>
         <div className="pt-4">
-          <h2 className="font-bold mb-1">Tech Stack</h2>
-          <p>{techStack}</p>
+          <Reveal width="w-full">
+            <h2 className="font-bold mb-1">Tech Stack</h2>
+            <p>{techStack}</p>
+          </Reveal>
         </div>
-        <a
-          href={liveLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-[#a111e4] py-3 text-white font-Tektur text-xs tracking-widest border-2 border-transparent hover:bg-transparent hover:text-black hover:border-black"
-        >
-          SEE LIVE
-        </a>
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#a111e4] py-3 text-white font-Tektur text-xs tracking-widest border-2 border-transparent hover:bg-transparent hover:text-black hover:border-black"
+          >
+            SEE LIVE
+          </a>
       </div>
     </div>
   );

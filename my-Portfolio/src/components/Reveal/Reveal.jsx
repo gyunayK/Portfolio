@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 function Reveal({ children, width }) {
@@ -38,7 +38,7 @@ function Reveal({ children, width }) {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute top-0 left-0 w-full h-full bg-[rgb(88,61,141)] z-50"
+        className="absolute top-0 left-0 bottom-0 right-0 bg-purple-500 "
       />
     </div>
   );

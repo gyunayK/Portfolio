@@ -13,7 +13,7 @@ const About = () => {
                 ABOUT
               </h2>
             </Reveal>
-            <Reveal>
+            <Reveal width='p-3 -m-3'>
               <h1 className="text-5xl font-serif font-medium leading-8">
                 Personal Info
               </h1>
@@ -54,7 +54,9 @@ const About = () => {
               </Reveal>
             </div>
             <div className="w-full max-w-[500px]">
+              <Reveal>
               <h1 className="text-2xl font-semibold">Skills</h1>
+              </Reveal>
               <div className="mt-4">
                 <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-10 text-white">
                   {skills.map((skill, index) => (

@@ -71,8 +71,8 @@ export default function Timeline() {
                 TIMELINE
               </h2>
             </Reveal>
-            <Reveal>
-              <h1 className="text-5xl font-serif font-medium leading-8">
+            <Reveal width='p-3 -m-3'>
+              <h1 className="text-5xl font-serif font-medium leading-10 text-center">
                 Professional Path
               </h1>
             </Reveal>
