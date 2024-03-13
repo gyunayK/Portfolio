@@ -29,13 +29,14 @@ function Contact() {
   });
 
   const sendEmail = async () => {
+    const serviceID = import.meta.env.VITE_SERVICE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+    const templateID = import.meta.env.VITE_TEMPLATE_ID;
+
+    if (!serviceID || !publicKey) return;
+
     try {
-      await emailjs.sendForm(
-        "service_c60y4kb",
-        "template_xlhx7hj",
-        form.current,
-        "tfrJ4KkGsoiHAZ6i1"
-      );
+      await emailjs.sendForm(serviceID, templateID, form.current, publicKey);
     } catch (error) {
       console.log(error.text);
     }
