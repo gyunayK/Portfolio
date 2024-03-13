@@ -1,5 +1,6 @@
 import ProjectCard from "./ProjectCard";
 import { projects } from "./projectsList";
+import Reveal from "@/components/Reveal/Reveal";
 
 function Projects() {
   return (
@@ -7,9 +8,11 @@ function Projects() {
       <div className="w-full h-full bg-[#ededed] py-16">
         <div className="flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
-            <h2 className="font-Tektur text-[#A200EC] text-lg font-bold tracking-widest">
-              WORKS
-            </h2>
+            <Reveal>
+              <h2 className="font-Tektur text-[#A200EC] text-lg font-bold tracking-widest">
+                WORKS
+              </h2>
+            </Reveal>
             <h1 className="text-5xl font-serif font-medium leading-8">
               Latest Projects
             </h1>

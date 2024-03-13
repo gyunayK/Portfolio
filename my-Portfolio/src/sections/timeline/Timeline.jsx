@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { TbTilde } from "react-icons/tb";
 import { timelineEvents } from "./timelineEvents";
-import Reveal from "../../components/Reaveal/Reveal";
+import Reveal from "../../components/Reveal/Reveal";
 
 const TimelineItem = ({ item, alignment }) => {
   const isLeftAligned = alignment === "left";

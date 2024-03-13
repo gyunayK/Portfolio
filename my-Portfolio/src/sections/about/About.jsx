@@ -1,4 +1,4 @@
-import Reveal from "@/components/Reaveal/Reveal";
+import Reveal from "@/components/Reveal/Reveal";
 import { skills } from "./skills";
 import { motion } from "framer-motion";
 
@@ -64,6 +64,7 @@ const About = () => {
                       viewport={{ once: true }}
                       transition={{ duration: 0.5 }}
                       className="bg-[#4d4d4d] p-3 rounded-md flex flex-col items-center gap-y-1 text-4xl"
+                      key={index}
                     >
                       {skill.icon}
                       <h2 className="text-xl">{skill.name}</h2>
