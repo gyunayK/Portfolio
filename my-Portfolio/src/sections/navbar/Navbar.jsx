@@ -6,7 +6,7 @@ import "./hamburgeStyle.css";
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const activeSection = useActiveSection(0.41);
+  const activeSection = useActiveSection(0.39);
   const isScrolled = useScrollCheck();
 
   const SCROLLED_COLOR = "black";
