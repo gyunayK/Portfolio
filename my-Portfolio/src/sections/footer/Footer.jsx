@@ -25,7 +25,7 @@ function Footer() {
             </a>
           </div>
           <p className="text-[#acacac] font-Roboto pt-10 pb-2">
-            All rights reserved © 2023 by Gyunay K.
+            All rights reserved © 2024 by Gyunay K.
           </p>
         </div>
       </div>

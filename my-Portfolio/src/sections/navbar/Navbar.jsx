@@ -17,7 +17,7 @@ function Navbar() {
   };
 
   const scrollToSection = (section) => {
-    const headerOffset = window.innerWidth > 768 ? 50 : 0;
+    const headerOffset = window.innerWidth > 768 ? 40 : 0;
     const elementPosition = document.getElementById(section).getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.scrollY - headerOffset;
   

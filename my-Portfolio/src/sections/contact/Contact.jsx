@@ -79,7 +79,7 @@ function Contact() {
                 autoComplete="off"
                 ref={form}
               >
-                 <Reveal width="w-full py-3 -my-3">
+                 <Reveal width="w-full py-2 -my-2">
                   <StyledTextField
                     id={"name"}
                     register={register}
@@ -88,7 +88,7 @@ function Contact() {
                     label={"Name"}
                   />
                 </Reveal>
-                 <Reveal width="w-full py-3 -my-3">
+                 <Reveal width="w-full py-2 -my-2">
                   <StyledTextField
                     id={"email"}
                     register={register}
@@ -97,7 +97,7 @@ function Contact() {
                     label={"Email"}
                   />
                 </Reveal>
-                <Reveal width="w-full py-3 -my-3">
+                <Reveal width="w-full py-2 -my-2">
                   <StyledTextField
                     id={"subject"}
                     register={register}
@@ -107,7 +107,7 @@ function Contact() {
                     formname={"_subject"}
                   />
                 </Reveal>
-                 <Reveal width="w-full py-3 -my-3">
+                 <Reveal width="w-full py-2 -my-2">
                   <StyledTextField2
                     id={"message"}
                     register={register}
@@ -154,7 +154,7 @@ function Contact() {
                   <h2 className="font-Roboto font-bold">ADDRESS</h2>
                 </Reveal>
                 <Reveal>
-                  <p>Vancouver, BC, Canada</p>
+                  <p>Vancouver BC, Canada</p>
                 </Reveal>
               </div>
             </div>
