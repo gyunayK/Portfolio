@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Portfolio</h1>
 
-<p align="center"><img src="https://ik.imagekit.io/riviaa/Portfolio/image.png?updatedAt=1704579598513" alt="project-image"></p>
+<p align="center"><img src="https://ik.imagekit.io/riviaa/Portfolio/image.png?updatedAt=1710377445780" alt="project-image"></p>
 
 <h2>🚀 Demo</h2>
 
