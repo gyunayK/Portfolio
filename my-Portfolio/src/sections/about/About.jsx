@@ -32,22 +32,22 @@ const About = () => {
               </Reveal>
               <Reveal width="mt-4">
                 <p>
-                  I am a software developer specializing in both front-end and
-                  back-end development. My passion lies in crafting web
-                  applications that stand out for their performance and
-                  user-centric design. Each project is an opportunity to blend
-                  innovative functionality with aesthetic appeal, ensuring a
-                  seamless and engaging user experience.
+                  Hey there! I am a software developer specializing in both
+                  front-end and back-end development. My passion lies in
+                  crafting web applications that stand out for their performance
+                  and user-centric design. Each project is an opportunity to
+                  blend innovative functionality with aesthetic appeal, ensuring
+                  a seamless and engaging user experience.
                 </p>
               </Reveal>
               <Reveal width="mt-10">
                 <p>
-                  In my work, I focus on the nuts and bolts of application
-                  performance, striving for responsiveness and efficiency. My
-                  goal is to create software that is not just powerful and
-                  reliable, but also intuitive and enjoyable to use.
-                  Collaborating with teams to bring high-quality, scalable
-                  applications to life is what drives me in the tech industry.
+                  I focus on application performance, striving for
+                  responsiveness and efficiency. My goal is to create software
+                  that is not just powerful and reliable, but also intuitive and
+                  enjoyable to use. Collaborating with teams to bring
+                  high-quality, scalable applications to life is what drives me
+                  in the tech industry.
                 </p>
               </Reveal>
             </div>
