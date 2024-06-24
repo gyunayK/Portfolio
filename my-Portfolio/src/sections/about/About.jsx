@@ -32,7 +32,7 @@ const About = () => {
               </Reveal>
               <Reveal width="mt-4">
                 <p>
-                  Hey there! I am a software developer specializing in both
+                  I am a software developer specializing in
                   front-end and back-end development. My passion lies in
                   crafting web applications that stand out for their performance
                   and user-centric design. Each project is an opportunity to
