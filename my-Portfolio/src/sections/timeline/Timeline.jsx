@@ -1,29 +1,29 @@
 /* eslint-disable react/prop-types */
-import { TbTilde } from "react-icons/tb";
-import { timelineEvents } from "./timelineEvents";
-import Reveal from "../../components/Reveal/Reveal";
+import { TbTilde } from 'react-icons/tb'
+import { timelineEvents } from './timelineEvents'
+import Reveal from '../../components/Reveal/Reveal'
 
 const TimelineItem = ({ item, alignment }) => {
-  const isLeftAligned = alignment === "left";
+  const isLeftAligned = alignment === 'left'
   return (
     <div
       className={`flex ${
-        isLeftAligned ? "justify-start" : "justify-end"
+        isLeftAligned ? 'justify-start' : 'justify-end'
       } items-start w-full mx-auto`}
     >
       <div
-        className={`w-full lg:w-1/2 ${isLeftAligned ? "lg:pr-8" : "lg:pl-8"}`}
+        className={`w-full lg:w-1/2 ${isLeftAligned ? 'lg:pr-8' : 'lg:pl-8'}`}
       >
-        <Reveal width={"w-fit"}>
+        <Reveal width={'w-fit'}>
           <div className="relative flex-1 mb-10 bg-white rounded shadow lg:mb-8 ">
             <div
               className={`absolute inline-block w-4 overflow-hidden -translate-y-1/2 ${
-                isLeftAligned ? "top-3 -right-4" : "top-7 -left-4"
+                isLeftAligned ? 'top-3 -right-4' : 'top-7 -left-4'
               }`}
             >
               <div
                 className={`hidden h-10 ${
-                  isLeftAligned ? "origin-bottom-left" : "origin-top-right"
+                  isLeftAligned ? 'origin-bottom-left' : 'origin-top-right'
                 } transform -rotate-45 bg-white shadow lg:block `}
               ></div>
             </div>
@@ -43,7 +43,9 @@ const TimelineItem = ({ item, alignment }) => {
                 <p className="text-2xl font-bold text-gray-700 text-bold text-center sm:text-start">
                   {item.jobTitle}
                 </p>
-                <p className="text-gray-700 mt-2 text-start">{item.jobDetails}</p>
+                <p className="text-gray-700 mt-2 text-start">
+                  {item.jobDetails}
+                </p>
               </div>
             </div>
           </div>
@@ -51,14 +53,14 @@ const TimelineItem = ({ item, alignment }) => {
       </div>
       <div
         className={`absolute flex items-center justify-center w-8 h-8 text-white transform -translate-x-1/2 -translate-y-4 bg-fuchsia-500 rounded-full left-1/2 ${
-          isLeftAligned ? "lg:translate-y-[4px]" : "lg:translate-y-[3px]"
+          isLeftAligned ? 'lg:translate-y-[4px]' : 'lg:translate-y-[3px]'
         }`}
       >
         {item.icon}
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default function Timeline() {
   return (
@@ -71,7 +73,7 @@ export default function Timeline() {
                 TIMELINE
               </h2>
             </Reveal>
-            <Reveal width='p-3 -m-3'>
+            <Reveal width="p-3 -m-3">
               <h1 className="text-5xl font-serif font-medium leading-10 text-center">
                 Professional Path
               </h1>
@@ -90,12 +92,12 @@ export default function Timeline() {
               <TimelineItem
                 key={index}
                 item={item}
-                alignment={index % 2 === 0 ? "left" : "right"}
+                alignment={index % 2 === 0 ? 'left' : 'right'}
               />
             ))}
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

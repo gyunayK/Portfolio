@@ -1,47 +1,47 @@
-import Box from "@mui/material/Box";
-import Reveal from "@/components/Reveal/Reveal";
+import Box from '@mui/material/Box'
+import Reveal from '@/components/Reveal/Reveal'
 import {
   StyledTextField,
   StyledTextField2,
-  StyledButton,
-} from "./StyledComponentsMUI";
-import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import emailjs from "@emailjs/browser";
+  StyledButton
+} from './StyledComponentsMUI'
+import { z } from 'zod'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import emailjs from '@emailjs/browser'
 
-import { useRef } from "react";
+import { useRef } from 'react'
 
 function Contact() {
-  const form = useRef();
+  const form = useRef()
   const schema = z.object({
-    user_name: z.string().min(2, { message: "Please enter a valid name." }),
-    user_email: z.string().email({ message: "Please enter a valid email." }),
-    user_subject: z.string().min(3, { message: "Subject is too short." }),
-    message: z.string().min(5, { message: "Message is too short." }),
-  });
+    user_name: z.string().min(2, { message: 'Please enter a valid name.' }),
+    user_email: z.string().email({ message: 'Please enter a valid email.' }),
+    user_subject: z.string().min(3, { message: 'Subject is too short.' }),
+    message: z.string().min(5, { message: 'Message is too short.' })
+  })
 
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting, isSubmitSuccessful }
   } = useForm({
-    resolver: zodResolver(schema),
-  });
+    resolver: zodResolver(schema)
+  })
 
   const sendEmail = async () => {
-    const serviceID = import.meta.env.VITE_SERVICE_ID;
-    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
-    const templateID = import.meta.env.VITE_TEMPLATE_ID;
+    const serviceID = import.meta.env.VITE_SERVICE_ID
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY
+    const templateID = import.meta.env.VITE_TEMPLATE_ID
 
-    if (!serviceID || !publicKey) return;
+    if (!serviceID || !publicKey) return
 
     try {
-      await emailjs.sendForm(serviceID, templateID, form.current, publicKey);
+      await emailjs.sendForm(serviceID, templateID, form.current, publicKey)
     } catch (error) {
-      console.log(error.text);
+      console.log(error.text)
     }
-  };
+  }
 
   return (
     <section id="contact">
@@ -54,7 +54,7 @@ function Contact() {
                 CONTACT
               </h2>
             </Reveal>
-            <Reveal width='p-3 -m-3'>
+            <Reveal width="p-3 -m-3">
               <h1 className="text-5xl font-serif font-medium leading-8 ">
                 Say Hello
               </h1>
@@ -70,57 +70,57 @@ function Contact() {
               <Box
                 component="form"
                 sx={{
-                  textEmphasisColor: "white",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "2rem",
+                  textEmphasisColor: 'white',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '2rem'
                 }}
                 onSubmit={handleSubmit(sendEmail)}
                 autoComplete="off"
                 ref={form}
               >
-                 <Reveal width="w-full py-2 -my-2">
+                <Reveal width="w-full py-2 -my-2">
                   <StyledTextField
-                    id={"name"}
+                    id={'name'}
                     register={register}
                     errors={errors}
-                    name={"user_name"}
-                    label={"Name"}
-                  />
-                </Reveal>
-                 <Reveal width="w-full py-2 -my-2">
-                  <StyledTextField
-                    id={"email"}
-                    register={register}
-                    errors={errors}
-                    name={"user_email"}
-                    label={"Email"}
+                    name={'user_name'}
+                    label={'Name'}
                   />
                 </Reveal>
                 <Reveal width="w-full py-2 -my-2">
                   <StyledTextField
-                    id={"subject"}
+                    id={'email'}
                     register={register}
                     errors={errors}
-                    name={"user_subject"}
-                    label={"Subject"}
-                    formname={"_subject"}
+                    name={'user_email'}
+                    label={'Email'}
                   />
                 </Reveal>
-                 <Reveal width="w-full py-2 -my-2">
+                <Reveal width="w-full py-2 -my-2">
+                  <StyledTextField
+                    id={'subject'}
+                    register={register}
+                    errors={errors}
+                    name={'user_subject'}
+                    label={'Subject'}
+                    formname={'_subject'}
+                  />
+                </Reveal>
+                <Reveal width="w-full py-2 -my-2">
                   <StyledTextField2
-                    id={"message"}
+                    id={'message'}
                     register={register}
                     errors={errors}
-                    name={"message"}
-                    label={"Message"}
+                    name={'message'}
+                    label={'Message'}
                   />
                 </Reveal>
-                <Reveal width='w-full'>
-                <StyledButton
-                  isSubmitting={isSubmitting}
-                  isSubmitted={isSubmitSuccessful}
-                />
+                <Reveal width="w-full">
+                  <StyledButton
+                    isSubmitting={isSubmitting}
+                    isSubmitted={isSubmitSuccessful}
+                  />
                 </Reveal>
               </Box>
             </div>
@@ -162,7 +162,7 @@ function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Contact;
+export default Contact

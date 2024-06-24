@@ -1,6 +1,6 @@
-import Reveal from "@/components/Reveal/Reveal";
-import { skills } from "./skills";
-import { motion } from "framer-motion";
+import Reveal from '@/components/Reveal/Reveal'
+import { skills } from './skills'
+import { motion } from 'framer-motion'
 
 const About = () => {
   return (
@@ -20,7 +20,7 @@ const About = () => {
             </Reveal>
             <Reveal>
               <h2 className="font-medium text-lg text-[#4d4d4d]">
-                Get to know more about me{" "}
+                Get to know more about me{' '}
               </h2>
             </Reveal>
           </div>
@@ -32,12 +32,12 @@ const About = () => {
               </Reveal>
               <Reveal width="mt-4">
                 <p>
-                  I am a software developer specializing in
-                  front-end and back-end development. My passion lies in
-                  crafting web applications that stand out for their performance
-                  and user-centric design. Each project is an opportunity to
-                  blend innovative functionality with aesthetic appeal, ensuring
-                  a seamless and engaging user experience.
+                  I am a software developer specializing in front-end and
+                  back-end development. My passion lies in crafting web
+                  applications that stand out for their performance and
+                  user-centric design. Each project is an opportunity to blend
+                  innovative functionality with aesthetic appeal, ensuring a
+                  seamless and engaging user experience.
                 </p>
               </Reveal>
               <Reveal width="mt-10">
@@ -77,7 +77,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

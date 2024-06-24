@@ -1,10 +1,10 @@
-import About from "./sections/about/About";
-import Hero from "./sections/hero/Hero";
-import Navbar from "./sections/navbar/Navbar";
-import Projects from "./sections/projects/Projects";
-import Contact from "./sections/contact/Contact";
-import Footer from "./sections/footer/Footer";
-import Timeline from "./sections/timeline/Timeline";
+import About from './sections/about/About'
+import Hero from './sections/hero/Hero'
+import Navbar from './sections/navbar/Navbar'
+import Projects from './sections/projects/Projects'
+import Contact from './sections/contact/Contact'
+import Footer from './sections/footer/Footer'
+import Timeline from './sections/timeline/Timeline'
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         <Footer />
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

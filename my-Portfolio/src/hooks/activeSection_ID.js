@@ -1,36 +1,36 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
 const useActiveSection = (threshold) => {
-  const [activeSection, setActiveSection] = useState(null ?? "home");
+  const [activeSection, setActiveSection] = useState(null ?? 'home')
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+            setActiveSection(entry.target.id)
           }
-        });
+        })
       },
       {
-        threshold: threshold,
+        threshold: threshold
       }
-    );
+    )
 
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll('section')
 
     sections.forEach((section) => {
-      observer.observe(section);
-    });
+      observer.observe(section)
+    })
 
     return () => {
       sections.forEach((section) => {
-        observer.unobserve(section);
-      });
-    };
-  }, [threshold]);
+        observer.unobserve(section)
+      })
+    }
+  }, [threshold])
 
-  return activeSection;
-};
+  return activeSection
+}
 
-export default useActiveSection;
+export default useActiveSection

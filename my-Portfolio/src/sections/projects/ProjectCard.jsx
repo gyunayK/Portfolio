@@ -1,6 +1,6 @@
-import { FaGithub } from "react-icons/fa";
-import PropTypes from "prop-types";
-import Reveal from "@/components/Reveal/Reveal";
+import { FaGithub } from 'react-icons/fa'
+import PropTypes from 'prop-types'
+import Reveal from '@/components/Reveal/Reveal'
 
 function ProjectCard({
   title,
@@ -8,7 +8,7 @@ function ProjectCard({
   techStack,
   liveLink,
   githubLink,
-  projectIMG,
+  projectIMG
 }) {
   return (
     <div className="max-w-sm bg-white  xs:mx-4 md:mx-0 items-center justify-center  py-10 rounded-md border-2 border-transparent hover:border-[#850fbb] scale-90">
@@ -25,7 +25,7 @@ function ProjectCard({
         </div>
 
         <div
-          className=" w-full h-[200px] bg-no-repeat bg-contain "
+          className="w-full h-[200px] bg-no-repeat bg-contain "
           style={{ backgroundImage: `url('${projectIMG}')` }}
         ></div>
         <Reveal>
@@ -40,17 +40,17 @@ function ProjectCard({
             <p>{techStack}</p>
           </Reveal>
         </div>
-          <a
-            href={liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#a111e4] py-3 text-white font-Tektur text-xs tracking-widest border-2 border-transparent hover:bg-transparent hover:text-black hover:border-black"
-          >
-            SEE LIVE
-          </a>
+        <a
+          href={liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#a111e4] py-3 text-white font-Tektur text-xs tracking-widest border-2 border-transparent hover:bg-transparent hover:text-black hover:border-black"
+        >
+          SEE LIVE
+        </a>
       </div>
     </div>
-  );
+  )
 }
 
 ProjectCard.propTypes = {
@@ -59,7 +59,7 @@ ProjectCard.propTypes = {
   techStack: PropTypes.string.isRequired,
   liveLink: PropTypes.string.isRequired,
   githubLink: PropTypes.string.isRequired,
-  projectIMG: PropTypes.string.isRequired,
-};
+  projectIMG: PropTypes.string.isRequired
+}
 
-export default ProjectCard;
+export default ProjectCard

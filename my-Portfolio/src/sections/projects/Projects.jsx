@@ -1,6 +1,6 @@
-import ProjectCard from "./ProjectCard";
-import { projects } from "./projectsList";
-import Reveal from "@/components/Reveal/Reveal";
+import ProjectCard from './ProjectCard'
+import { projects } from './projectsList'
+import Reveal from '@/components/Reveal/Reveal'
 
 function Projects() {
   return (
@@ -13,26 +13,26 @@ function Projects() {
                 WORKS
               </h2>
             </Reveal>
-            <Reveal width='p-3 -m-3'>
+            <Reveal width="p-3 -m-3">
               <h1 className="text-5xl font-serif font-medium leading-8">
                 Latest Projects
               </h1>
             </Reveal>
             <Reveal>
               <h2 className="font-medium text-lg text-center text-[#4d4d4d]">
-                Explore My Recent Creations{" "}
+                Explore My Recent Creations{' '}
               </h2>
             </Reveal>
           </div>
           <div className="sm:mt-12 grid md:grid-cols-2 gap-0 md:gap-[100px] scale-90">
             {projects.map((project, index) => (
-              <ProjectCard {...project} key={index}/>
+              <ProjectCard {...project} key={index} />
             ))}
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Projects;
+export default Projects

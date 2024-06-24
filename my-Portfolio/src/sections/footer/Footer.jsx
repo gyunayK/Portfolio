@@ -1,4 +1,4 @@
-import "./footerSyled.css";
+import './footerSyled.css'
 function Footer() {
   return (
     <footer>
@@ -7,20 +7,20 @@ function Footer() {
           <div className="flex space-x-20 pt-7">
             <a
               href="https://github.com/gyunayK"
-              target={"_blank"}
+              target={'_blank'}
               rel="noopener noreferrer"
               className="text-white font-Tektur tracking-widest lineStyle"
             >
-              {" "}
+              {' '}
               GITHUB
             </a>
             <a
               href="https://www.linkedin.com/in/gyunayk/"
-              target={"_blank"}
+              target={'_blank'}
               rel="noopener noreferrer"
               className="text-white font-Tektur tracking-widest lineStyle"
             >
-              {" "}
+              {' '}
               LINKEDIN
             </a>
           </div>
@@ -30,7 +30,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

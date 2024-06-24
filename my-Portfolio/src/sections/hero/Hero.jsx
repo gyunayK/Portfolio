@@ -1,11 +1,11 @@
-import Text from "./animatedText/Text";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import Reveal from "@/components/Reveal/Reveal";
+import Text from './animatedText/Text'
+import { MdKeyboardArrowDown } from 'react-icons/md'
+import { motion } from 'framer-motion'
+import { useState } from 'react'
+import Reveal from '@/components/Reveal/Reveal'
 
 function Hero() {
-  const [isDragging, setIsDragging] = useState(false);
+  const [isDragging, setIsDragging] = useState(false)
   return (
     <>
       <div className="text-white flex flex-col self-center xs:pl-[5%] lg:pl-[15%] pb-2 z-10">
@@ -28,21 +28,21 @@ function Hero() {
             drag
             dragMomentum={{
               velocity: 10,
-              from: "center",
+              from: 'center',
               power: 50,
-              timeConstant: 1000,
+              timeConstant: 1000
             }}
             className={`text-sm md:text-lg tracking-widest mr-2 flex overflow-hidden
-            ${isDragging ? "cursor-grabbing" : "cursor-grab"}
+            ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}
             `}
           >
             DRAG ME
-            <MdKeyboardArrowDown color="#e49dfc" size={"28px"} />
+            <MdKeyboardArrowDown color="#e49dfc" size={'28px'} />
           </motion.h3>
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Hero;
+export default Hero

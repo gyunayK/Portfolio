@@ -1,17 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
 const useScrollCheck = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const checkScroll = () => {
-      let bottomSectionTrigger;
-      const triggerLength = window.innerHeight * 0.1;
+      let bottomSectionTrigger
+      const triggerLength = window.innerHeight * 0.1
 
       if (window.innerWidth > 768) {
-        bottomSectionTrigger = 300;
+        bottomSectionTrigger = 300
       } else {
-        bottomSectionTrigger = 665;
+        bottomSectionTrigger = 665
       }
 
       if (
@@ -21,22 +21,22 @@ const useScrollCheck = () => {
             bottomSectionTrigger &&
         window.innerWidth < 2000
       ) {
-        setIsScrolled(true);
+        setIsScrolled(true)
       } else if (window.scrollY > window.innerHeight - triggerLength) {
-        setIsScrolled(true);
+        setIsScrolled(true)
       } else {
-        setIsScrolled(false);
+        setIsScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", checkScroll);
+    window.addEventListener('scroll', checkScroll)
 
     return () => {
-      window.removeEventListener("scroll", checkScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', checkScroll)
+    }
+  }, [])
 
-  return isScrolled;
-};
+  return isScrolled
+}
 
-export default useScrollCheck;
+export default useScrollCheck
