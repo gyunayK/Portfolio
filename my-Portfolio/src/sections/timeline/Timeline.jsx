@@ -41,9 +41,9 @@ const TimelineItem = ({ item, alignment }) => {
               </div>
               <div className="flex-1 p-4 pr-4 border-l border-gray-300">
                 <p className="text-2xl font-bold text-gray-700 text-bold">
-                  {item.cardTitle}
+                  {item.jobTitle}
                 </p>
-                <p className="text-gray-700 mt-2">{item.cardDetailedText}</p>
+                <p className="text-gray-700 mt-2">{item.jobDetails}</p>
               </div>
             </div>
           </div>
