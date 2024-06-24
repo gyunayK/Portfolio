@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const useActiveSection = (threshold) => {
-  const [activeSection, setActiveSection] = useState(null ?? 'home')
+  const [activeSection, setActiveSection] = useState('home')
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -13,20 +13,28 @@ const useActiveSection = (threshold) => {
         })
       },
       {
-        threshold: threshold
+        threshold
       }
     )
 
-    const sections = document.querySelectorAll('section')
+    const observeSections = () => {
+      const sections = document.querySelectorAll('section')
+      sections.forEach((section) => {
+        observer.observe(section)
+      })
+    }
 
-    sections.forEach((section) => {
-      observer.observe(section)
+    const mutationObserver = new MutationObserver(() => {
+      observeSections()
+    })
+
+    mutationObserver.observe(document.body, {
+      subtree: true
     })
 
     return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section)
-      })
+      observer.disconnect()
+      mutationObserver.disconnect()
     }
   }, [threshold])
 
