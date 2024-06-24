@@ -29,6 +29,7 @@ const useActiveSection = (threshold) => {
     })
 
     mutationObserver.observe(document.body, {
+      childList: true,
       subtree: true
     })
 
