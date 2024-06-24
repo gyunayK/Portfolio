@@ -1,34 +1,36 @@
 import { useState } from "react";
 import useActiveSection from "@/hooks/activeSection_ID";
 import useScrollCheck from "@/hooks/useScrollCheck";
-import "./hamburgeStyle.css";
+import "./hamburgerStyle.css";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const activeSection = useActiveSection(0.39);
+  const activeSection = useActiveSection(0.3);
   const isScrolled = useScrollCheck();
 
-  const SCROLLED_COLOR = "black";
-  const NOT_SCROLLED_COLOR = "white";
+  const scrolledColour = "black";
+  const notScrolledColour = "white";
 
   const navIconStyles = {
-    backgroundColor: isScrolled ? SCROLLED_COLOR : NOT_SCROLLED_COLOR,
+    backgroundColor: isScrolled ? scrolledColour : notScrolledColour,
   };
 
   const scrollToSection = (section) => {
     const headerOffset = window.innerWidth > 768 ? 40 : 0;
-    const elementPosition = document.getElementById(section).getBoundingClientRect().top;
+    const elementPosition = document
+      .getElementById(section)
+      .getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.scrollY - headerOffset;
-  
+
     window.scrollTo({
       top: offsetPosition,
-      behavior: "smooth"
+      behavior: "smooth",
     });
-  
+
     setIsMenuOpen(false);
   };
-  
+
   return (
     <nav className="font-Tektur z-[9999]">
       <div
@@ -54,31 +56,11 @@ function Navbar() {
         }`}
       >
         <ul className="text-3xl flex flex-col items-center justify-center space-y-4 h-full gap-8 ">
-          <li
-            onClick={() => scrollToSection("home")}
-          >
-            HOME{" "}
-          </li>
-          <li
-            onClick={() => scrollToSection("about")}
-          >
-            ABOUT{" "}
-          </li>
-          <li
-            onClick={() => scrollToSection("timeline")}
-          >
-            TIMELINE{" "}
-          </li>
-          <li
-            onClick={() => scrollToSection("work")}
-          >
-            WORK{" "}
-          </li>
-          <li
-            onClick={() => scrollToSection("contact")}
-          >
-            CONTACT{" "}
-          </li>
+          <li onClick={() => scrollToSection("home")}>HOME </li>
+          <li onClick={() => scrollToSection("about")}>ABOUT </li>
+          <li onClick={() => scrollToSection("timeline")}>TIMELINE </li>
+          <li onClick={() => scrollToSection("work")}>WORK </li>
+          <li onClick={() => scrollToSection("contact")}>CONTACT </li>
           <li
             className={`border-2 p-2 mr-1 rounded-md ${
               isScrolled ? "border-black" : "border-white"
@@ -109,7 +91,9 @@ function Navbar() {
           <ul className="text-xl text-white flex gap-10 items-center justify-center p-4 tracking-wide">
             <li
               className={`cursor-pointer border-transparent  border-b-2  ${
-                activeSection === "home" ? "text-[#D16EFF] hover:border-white" : "hover:border-[#D16EFF]"
+                activeSection === "home"
+                  ? "text-[#D16EFF] hover:border-white"
+                  : "hover:border-[#D16EFF]"
               }`}
               onClick={() => scrollToSection("home")}
             >
@@ -117,7 +101,9 @@ function Navbar() {
             </li>
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
-                activeSection === "about" ? "text-[#D16EFF] hover:border-white" : "hover:border-[#D16EFF]"
+                activeSection === "about"
+                  ? "text-[#D16EFF] hover:border-white"
+                  : "hover:border-[#D16EFF]"
               }`}
               onClick={() => scrollToSection("about")}
             >
@@ -125,7 +111,9 @@ function Navbar() {
             </li>
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
-                activeSection === "timeline" ? "text-[#D16EFF] hover:border-white" : "hover:border-[#D16EFF]"
+                activeSection === "timeline"
+                  ? "text-[#D16EFF] hover:border-white"
+                  : "hover:border-[#D16EFF]"
               }`}
               onClick={() => scrollToSection("timeline")}
             >
@@ -133,7 +121,9 @@ function Navbar() {
             </li>
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
-                activeSection === "work" ? "text-[#D16EFF] hover:border-white" : "hover:border-[#D16EFF]"
+                activeSection === "work"
+                  ? "text-[#D16EFF] hover:border-white"
+                  : "hover:border-[#D16EFF]"
               }`}
               onClick={() => scrollToSection("work")}
             >
@@ -142,7 +132,9 @@ function Navbar() {
 
             <li
               className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
-                activeSection === "contact" ? "text-[#D16EFF] hover:border-white" : "hover:border-[#D16EFF]"
+                activeSection === "contact"
+                  ? "text-[#D16EFF] hover:border-white"
+                  : "hover:border-[#D16EFF]"
               }`}
               onClick={() => scrollToSection("contact")}
             >

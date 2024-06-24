@@ -1,8 +1,7 @@
-// useActiveSection.js
 import { useState, useEffect } from "react";
 
 const useActiveSection = (threshold) => {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState(null ?? "home");
 
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -16,5 +16,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "no-unused-vars": "warn",
+    "singleQuote": "true",
+    "semi": "true",
+    "no-multiple-empty-lines": "warn",
+    "semi": ["error", "never"],
   },
 }
