@@ -27,8 +27,8 @@ const TimelineItem = ({ item, alignment }) => {
                 } transform -rotate-45 bg-white shadow lg:block `}
               ></div>
             </div>
-            <div className="relative z-20 flex  items-center">
-              <div className="p-4 md:w-1/5 h-full  flex flex-col text-center items-center">
+            <div className="relative z-20 flex flex-col sm:flex-row items-center">
+              <div className="sm:p-4 pt-6 md:w-1/5 h-full flex gap-x-3 sm:flex-col text-center items-center">
                 <span className="text-lg text-gray-700 ">{item.date}</span>
                 {item.endDate && (
                   <>
@@ -40,10 +40,10 @@ const TimelineItem = ({ item, alignment }) => {
                 )}
               </div>
               <div className="flex-1 p-4 pr-4 border-l border-gray-300">
-                <p className="text-2xl font-bold text-gray-700 text-bold">
+                <p className="text-2xl font-bold text-gray-700 text-bold text-center sm:text-start">
                   {item.jobTitle}
                 </p>
-                <p className="text-gray-700 mt-2">{item.jobDetails}</p>
+                <p className="text-gray-700 mt-2 text-start">{item.jobDetails}</p>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function Timeline() {
     <section className="bg-[#e7e7ea] py-16" id="timeline">
       <div className="flex flex-col justify-center">
         <div className="w-full px-4 mx-auto lg:max-w-5xl">
-          <div className="flex flex-col items-center gap-4 mb-12">
+          <div className="flex flex-col items-center gap-4 sm:mb-12">
             <Reveal>
               <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">
                 TIMELINE
@@ -84,7 +84,7 @@ export default function Timeline() {
           </div>
           <div className="relative scale-90">
             {/* Vertical line */}
-            <div className="absolute hidden w-1 h-full transform -translate-x-1/2 bg-[#c9e2f5]  lg:block left-1/2"></div>
+            <div className="absolute hidden w-1 h-full transform -translate-x-1/2 bg-[#c9e2f5] lg:block left-1/2"></div>
             {/* Items */}
             {timelineEvents.map((item, index) => (
               <TimelineItem
