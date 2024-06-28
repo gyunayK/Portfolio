@@ -8,7 +8,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://ik.imagekit.io/riviaa/Portfolio/image.png?updatedAt=1710376915671" alt="project-screenshot" width="750" height="400/">
+<img src="https://ik.imagekit.io/riviaa/Portfolio/image%20(1).png?updatedAt=1719540653699" alt="project-screenshot" width="750" height="400/">
 
 <img src="https://ik.imagekit.io/riviaa/Portfolio/image-1.png?updatedAt=1710376931763" alt="project-screenshot" width="750" height="400/">
 <img src="https://ik.imagekit.io/riviaa/Portfolio/image-2.png?updatedAt=1704579594232" alt="project-screenshot" width="750" height="400/">
