@@ -1,7 +1,7 @@
 import { FaReact, FaBriefcase } from "react-icons/fa";
 import { MdSchool } from "react-icons/md";
 
-export const timelineEvents = [
+export const TimelineEvents = [
   {
     date: "Aug 2022",
     endDate: "Dec 2024",
