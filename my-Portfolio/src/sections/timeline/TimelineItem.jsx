@@ -10,13 +10,13 @@ export default function TimelineItem({ item, alignment }) {
       } items-start w-full mx-auto`}
     >
       <div
-        className={`w-full lg:w-1/2 ${isLeftAligned ? 'lg:pr-8' : 'lg:pl-8'}`}
+        className={`w-full lg:w-1/2 ${isLeftAligned ? 'lg:pr-6' : 'lg:pl-6'}`}
       >
         <Reveal width={'w-fit px-4'}>
         <div className="relative flex-1 mb-10 bg-white rounded shadow lg:mb-8 ">
           <div
-            className={`absolute inline-block w-4 overflow-hidden -translate-y-1/2 ${
-              isLeftAligned ? 'top-3 -right-4' : 'top-7 -left-4'
+            className={`absolute inline-block w-5 overflow-hidden -translate-y-1/2 ${
+              isLeftAligned ? 'top-3 -right-5' : 'top-6 -left-5'
             }`}
           >
             <div
