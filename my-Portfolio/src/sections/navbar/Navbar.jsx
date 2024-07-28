@@ -16,6 +16,12 @@ function Navbar() {
     backgroundColor: isScrolled ? scrolledColour : notScrolledColour
   }
 
+  const activeSectionColours = (section) => {
+    return activeSection === section
+      ? `text-[#D16EFF] hover:border-white`
+      : 'hover:border-[#D16EFF]'
+  }
+
   const scrollToSection = (section) => {
     const headerOffset = window.innerWidth > 768 ? 100 : 0
     const elementPosition = document
@@ -77,11 +83,7 @@ function Navbar() {
           </h2>
           <ul className="text-xl text-white flex gap-10 items-center justify-center p-4 tracking-wide">
             <li
-              className={`cursor-pointer border-transparent border-b-2 ${
-                activeSection === 'home'
-                  ? 'text-[#D16EFF] hover:border-white'
-                  : 'hover:border-[#D16EFF]'
-              }`}
+              className={`cursor-pointer border-transparent border-b-2 ${activeSectionColours('home')}`}
               onClick={() => scrollToSection('home')}
             >
               HOME
@@ -97,32 +99,20 @@ function Navbar() {
               ABOUT
             </li>
             <li
-              className={`cursor-pointer border-transparent border-b-2 ${
-                activeSection === 'timeline'
-                  ? 'text-[#D16EFF] hover:border-white'
-                  : 'hover:border-[#D16EFF]'
-              }`}
+              className={`cursor-pointer border-transparent border-b-2 ${activeSectionColours('timeline')}`}
               onClick={() => scrollToSection('timeline')}
             >
               TIMELINE
             </li>
             <li
-              className={`cursor-pointer border-transparent border-b-2 ${
-                activeSection === 'work'
-                  ? 'text-[#D16EFF] hover:border-white'
-                  : 'hover:border-[#D16EFF]'
-              }`}
+              className={`cursor-pointer border-transparent border-b-2 ${activeSectionColours('work')}`}
               onClick={() => scrollToSection('work')}
             >
               WORK
             </li>
 
             <li
-              className={`cursor-pointer border-transparent border-b-2 ${
-                activeSection === 'contact'
-                  ? 'text-[#D16EFF] hover:border-white'
-                  : 'hover:border-[#D16EFF]'
-              }`}
+              className={`cursor-pointer border-transparent border-b-2 ${activeSectionColours('contact')}`}
               onClick={() => scrollToSection('contact')}
             >
               CONTACT
