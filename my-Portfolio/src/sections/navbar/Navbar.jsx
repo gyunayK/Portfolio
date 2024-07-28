@@ -66,10 +66,10 @@ function Navbar() {
 
       <div
         className={`bg-black w-full transition-all duration-200 ease-in-out ${
-          isScrolled ? 'h-[80px]' : 'h-0'
+          isScrolled ? 'h-20' : 'h-0'
         } md:fixed hidden md:block relative z-50`}
       >
-        <div className="max-w-[2000px] mx-auto flex justify-between items-center px-10 ">
+        <div className="max-w-[2000px] mx-auto flex justify-between items-center pt-2.5 px-10 ">
           <h2
             className={`hidden md:block text-3xl border-2 text-white rounded-lg px-2 `}
           >
