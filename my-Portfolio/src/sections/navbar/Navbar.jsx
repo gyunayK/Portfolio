@@ -61,19 +61,6 @@ function Navbar() {
           <li onClick={() => scrollToSection('timeline')}>TIMELINE </li>
           <li onClick={() => scrollToSection('work')}>WORK </li>
           <li onClick={() => scrollToSection('contact')}>CONTACT </li>
-          <li
-            className={`border-2 p-2 mr-1 rounded-md ${
-              isScrolled ? 'border-black' : 'border-white'
-            }`}
-          >
-            <a
-              href="/Gyunay_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              RESUME
-            </a>
-          </li>
         </ul>
       </div>
 
@@ -139,15 +126,6 @@ function Navbar() {
               onClick={() => scrollToSection('contact')}
             >
               CONTACT
-            </li>
-            <li className="border-2 p-2 m-1 rounded-md border-white hover:bg-black">
-              <a
-                href="/Gyunay_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RESUME
-              </a>
             </li>
           </ul>
         </div>
