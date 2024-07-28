@@ -31,7 +31,8 @@ export function StyledTextField({ register, errors, name, label, id }) {
         },
         '& .MuiOutlinedInput-root': {
           '& fieldset': {
-            borderColor: '#190622'
+            borderColor: '#190622',
+            borderRadius: '0.3rem'
           },
           '&:hover fieldset': {
             borderColor: '#dc90ff'
@@ -84,7 +85,8 @@ export function StyledTextField2({ register, errors, name, label, id }) {
         },
         '& .MuiOutlinedInput-root': {
           '& fieldset': {
-            borderColor: '#190622'
+            borderColor: '#190622',
+            borderRadius: '0.3rem'
           },
           '&:hover fieldset': {
             borderColor: '#dc90ff'
@@ -120,7 +122,7 @@ export function StyledButton({ isSubmitting, isSubmitted }) {
       sx={{
         width: '100%',
         background: '#a237d3',
-        borderRadius: '0.5rem',
+        borderRadius: '0.3rem',
         color: 'white',
         fontFamily: 'Tektur',
         fontSize: '1.2rem',
@@ -140,9 +142,9 @@ export function StyledButton({ isSubmitting, isSubmitted }) {
       loadingIndicator={<CircularProgress color="primary" size={35} />}
     >
       {isSubmitted ? (
-        <>
-          <GiPartyPopper size={30} /> SUCCESS <GiPartyPopper size={35} />
-        </>
+        <div className="w-full flex items-center justify-center gap-x-3">
+          <GiPartyPopper size={35} /> SENT <GiPartyPopper size={35} />
+        </div>
       ) : (
         'SUBMIT'
       )}

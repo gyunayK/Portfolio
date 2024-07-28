@@ -27,9 +27,9 @@ function Hero() {
             onMouseUp={() => setIsDragging(false)}
             drag
             dragMomentum={{
-              velocity: 10,
+              velocity: 4,
               from: 'center',
-              power: 50,
+              power: 20,
               timeConstant: 1000
             }}
             className={`text-sm md:text-lg tracking-widest mr-2 flex overflow-hidden

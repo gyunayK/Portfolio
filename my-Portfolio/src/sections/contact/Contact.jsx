@@ -46,7 +46,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="relative w-full h-full bg-cover bg-center bg-no-repeat py-16">
-        <div className="absolute inset-0 bg-[#e5e5e5]"></div>
+        <div className="absolute inset-0 bg-stone-200"></div>
         <div className="relative flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4">
             <Reveal>
@@ -60,13 +60,13 @@ function Contact() {
               </h1>
             </Reveal>
             <Reveal>
-              <h2 className=" font-medium text-lg text-center text-gray-500  mt-3 px-5 ">
+              <h2 className="font-medium text-lg text-center text-gray-500 mt-3 px-5 ">
                 Submit the form below and I&apos;ll promptly be in touch
               </h2>
             </Reveal>
           </div>
           <div className="mt-14 mx-auto flex flex-col md:flex-row gap-20 scale-90">
-            <div className="w-[300px]  md:w-[400px] ">
+            <div className="w-[300px] md:w-[400px] ">
               <Box
                 component="form"
                 sx={{
@@ -151,7 +151,7 @@ function Contact() {
               </div>
               <div>
                 <Reveal>
-                  <h2 className="font-Roboto font-bold">ADDRESS</h2>
+                  <h2 className="font-Roboto font-bold">LOCATION</h2>
                 </Reveal>
                 <Reveal>
                   <p>Vancouver BC, Canada</p>

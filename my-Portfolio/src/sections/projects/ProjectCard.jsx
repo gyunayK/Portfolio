@@ -25,13 +25,13 @@ function ProjectCard({
         </div>
 
         <div
-          className="w-full h-[200px] bg-no-repeat bg-contain "
+          className="w-full h-[200px] bg-no-repeat bg-contain"
           style={{ backgroundImage: `url('${projectIMG}')` }}
         ></div>
         <Reveal>
           <div>
             <h2 className="text-lg font-bold mb-1">{title}</h2>
-            <p className="">{description}</p>
+            <p className="text-pretty">{description}</p>
           </div>
         </Reveal>
         <div className="pt-4">
