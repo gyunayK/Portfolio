@@ -6,7 +6,7 @@ import './hamburgerStyle.css'
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const activeSection = useActiveSection(0.3)
+  const activeSection = useActiveSection(0.4)
   const isScrolled = useScrollCheck()
 
   const scrolledColour = 'black'
@@ -17,7 +17,7 @@ function Navbar() {
   }
 
   const scrollToSection = (section) => {
-    const headerOffset = window.innerWidth > 768 ? 40 : 0
+    const headerOffset = window.innerWidth > 768 ? 100 : 0
     const elementPosition = document
       .getElementById(section)
       .getBoundingClientRect().top
