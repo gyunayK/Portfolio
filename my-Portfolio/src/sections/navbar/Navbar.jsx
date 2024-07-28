@@ -77,7 +77,7 @@ function Navbar() {
           </h2>
           <ul className="text-xl text-white flex gap-10 items-center justify-center p-4 tracking-wide">
             <li
-              className={`cursor-pointer border-transparent  border-b-2  ${
+              className={`cursor-pointer border-transparent border-b-2 ${
                 activeSection === 'home'
                   ? 'text-[#D16EFF] hover:border-white'
                   : 'hover:border-[#D16EFF]'
@@ -87,7 +87,7 @@ function Navbar() {
               HOME
             </li>
             <li
-              className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
+              className={`cursor-pointer border-transparent border-b-2 ${
                 activeSection === 'about'
                   ? 'text-[#D16EFF] hover:border-white'
                   : 'hover:border-[#D16EFF]'
@@ -97,7 +97,7 @@ function Navbar() {
               ABOUT
             </li>
             <li
-              className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
+              className={`cursor-pointer border-transparent border-b-2 ${
                 activeSection === 'timeline'
                   ? 'text-[#D16EFF] hover:border-white'
                   : 'hover:border-[#D16EFF]'
@@ -107,7 +107,7 @@ function Navbar() {
               TIMELINE
             </li>
             <li
-              className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
+              className={`cursor-pointer border-transparent border-b-2 ${
                 activeSection === 'work'
                   ? 'text-[#D16EFF] hover:border-white'
                   : 'hover:border-[#D16EFF]'
@@ -118,7 +118,7 @@ function Navbar() {
             </li>
 
             <li
-              className={`cursor-pointer border-transparent  border-b-2 hover:border-white ${
+              className={`cursor-pointer border-transparent border-b-2 ${
                 activeSection === 'contact'
                   ? 'text-[#D16EFF] hover:border-white'
                   : 'hover:border-[#D16EFF]'
