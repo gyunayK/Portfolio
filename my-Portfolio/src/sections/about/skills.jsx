@@ -1,18 +1,5 @@
-import {
-  FaReact,
-  FaHtml5,
-  FaSass,
-  FaNodeJs,
-  FaDocker,
-  FaAws
-} from 'react-icons/fa'
-import {
-  SiJavascript,
-  SiTailwindcss,
-  SiMongodb,
-  SiTypescript,
-  SiGraphql
-} from 'react-icons/si'
+import { FaReact, FaHtml5, FaSass, FaNodeJs, FaDocker, FaAws } from 'react-icons/fa'
+import { SiJavascript, SiTailwindcss, SiMongodb, SiTypescript, SiGraphql } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 
 export const skills = [

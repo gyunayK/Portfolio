@@ -2,7 +2,7 @@ import Text from './animatedText/Text'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import Reveal from '@/components/Reveal/Reveal'
+import Reveal from '@/components/Reveal'
 
 function Hero() {
   const [isDragging, setIsDragging] = useState(false)

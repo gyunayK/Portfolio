@@ -1,10 +1,6 @@
 import Box from '@mui/material/Box'
-import Reveal from '@/components/Reveal/Reveal'
-import {
-  StyledTextField,
-  StyledTextField2,
-  StyledButton
-} from './StyledComponentsMUI'
+import Reveal from '@/components/Reveal'
+import { StyledTextField, StyledTextField2, StyledButton } from './StyledComponentsMUI'
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -50,14 +46,10 @@ function Contact() {
         <div className="relative flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4">
             <Reveal>
-              <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">
-                CONTACT
-              </h2>
+              <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">CONTACT</h2>
             </Reveal>
             <Reveal width="p-3 -m-3">
-              <h1 className="text-5xl font-serif font-medium leading-8 ">
-                Say Hello
-              </h1>
+              <h1 className="text-5xl font-serif font-medium leading-8 ">Say Hello</h1>
             </Reveal>
             <Reveal>
               <h2 className="font-medium text-lg text-center text-gray-500 mt-3 px-5 ">
@@ -117,10 +109,7 @@ function Contact() {
                   />
                 </Reveal>
                 <Reveal width="w-full">
-                  <StyledButton
-                    isSubmitting={isSubmitting}
-                    isSubmitted={isSubmitSuccessful}
-                  />
+                  <StyledButton isSubmitting={isSubmitting} isSubmitted={isSubmitSuccessful} />
                 </Reveal>
               </Box>
             </div>
@@ -139,11 +128,7 @@ function Contact() {
                 </Reveal>
                 <Reveal>
                   <p className="underline">
-                    <a
-                      href="mailto:web-dev@gyunay-kadirov.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href="mailto:web-dev@gyunay-kadirov.com" target="_blank" rel="noopener noreferrer">
                       web-dev@gyunay-kadirov.com
                     </a>
                   </p>

@@ -1,4 +1,4 @@
-import Reveal from '@/components/Reveal/Reveal'
+import Reveal from '@/components/Reveal'
 import { TbTilde } from 'react-icons/tb'
 
 export default function TimelineItem({ item, alignment }) {

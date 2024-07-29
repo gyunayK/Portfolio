@@ -1,5 +1,11 @@
 {
   "semi": false,
   "singleQuote": true,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "tabWidth": 2,
+  "htmlWhitespaceSensitivity": "ignore",
+  "printWidth": 110,
+  "proseWrap": "always",
+  "endOfLine": "auto",
+  "bracketSpacing": true
 }

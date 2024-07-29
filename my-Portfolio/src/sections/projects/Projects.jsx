@@ -1,6 +1,6 @@
 import ProjectCard from './ProjectCard'
 import { projects } from './projectsList'
-import Reveal from '@/components/Reveal/Reveal'
+import Reveal from '@/components/Reveal'
 
 function Projects() {
   return (

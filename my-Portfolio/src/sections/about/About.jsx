@@ -1,4 +1,4 @@
-import Reveal from '@/components/Reveal/Reveal'
+import Reveal from '@/components/Reveal'
 import { skills } from './skills'
 import { motion } from 'framer-motion'
 
@@ -9,19 +9,13 @@ const About = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4">
             <Reveal>
-              <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">
-                ABOUT
-              </h2>
+              <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">ABOUT</h2>
             </Reveal>
             <Reveal width="p-3 -m-3">
-              <h1 className="text-5xl font-serif font-medium leading-8">
-                Personal Info
-              </h1>
+              <h1 className="text-5xl font-serif font-medium leading-8">Personal Info</h1>
             </Reveal>
             <Reveal>
-              <h2 className="font-medium text-lg text-[#4d4d4d]">
-                Get to know more about me{' '}
-              </h2>
+              <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know more about me </h2>
             </Reveal>
           </div>
 
@@ -32,22 +26,18 @@ const About = () => {
               </Reveal>
               <Reveal width="mt-4">
                 <p>
-                  I am a software developer specializing in front-end and
-                  back-end development. My passion lies in crafting web
-                  applications that stand out for their performance and
-                  user-centric design. Each project is an opportunity to blend
-                  innovative functionality with aesthetic appeal, ensuring a
-                  seamless and engaging user experience.
+                  I am a software developer specializing in front-end and back-end development. My passion
+                  lies in crafting web applications that stand out for their performance and user-centric
+                  design. Each project is an opportunity to blend innovative functionality with aesthetic
+                  appeal, ensuring a seamless and engaging user experience.
                 </p>
               </Reveal>
               <Reveal width="mt-10">
                 <p>
-                  I focus on application performance, striving for
-                  responsiveness and efficiency. My goal is to create software
-                  that is not just powerful and reliable, but also intuitive and
-                  enjoyable to use. Collaborating with teams to bring
-                  high-quality, scalable applications to life is what drives me
-                  in the tech industry.
+                  I focus on application performance, striving for responsiveness and efficiency. My goal is
+                  to create software that is not just powerful and reliable, but also intuitive and enjoyable
+                  to use. Collaborating with teams to bring high-quality, scalable applications to life is
+                  what drives me in the tech industry.
                 </p>
               </Reveal>
             </div>
