@@ -23,7 +23,7 @@ export default function () {
           {[...TimelineEvents].reverse().map((event, index) => (
             <TimelineItem
               key={index}
-              className="group-hover:opacity-25 hover:!opacity-100 transition-opacity duration-30"
+              className="sm:group-hover:opacity-25 sm:hover:!opacity-100 transition-opacity duration-30"
             >
               <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="inherit" color="text.secondary">
                 <Link href={event.link} target="_blank" rel="noopener noreferrer" className="w-min">
@@ -33,9 +33,7 @@ export default function () {
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot>
-                  <Link href={event.link} target="_blank" rel="noopener noreferrer">
-                    <img src={event.logo} alt={event.title} className="w-full h-full object-contain" />
-                  </Link>
+                    <img src={event.logo} alt={event.title} />
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>

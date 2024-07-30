@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles'
+import { m } from 'framer-motion'
 
 const theme = createTheme({
   components: {
@@ -30,6 +31,34 @@ const theme = createTheme({
         }
       }
     },
+    MuiTypography: {
+      variants: [
+        {
+          props: { variant: 'h6' },
+          style: {
+            fontFamily: 'Tektur, Arial, sans-serif',
+            fontSize: '1rem',
+            fontWeight: 'bolder',
+            lineHeight: '1.5',
+          }
+        },
+        {
+          props: { variant: 'h7' },
+          style: {
+            fontSize: '0.9rem',
+            fontWeight: 'normal',
+          }
+        }
+      ]
+    },
+    MuiTimelineOppositeContent: {
+      styleOverrides: {
+        root: {
+          fontFamily: 'Tektur, Arial, sans-serif',
+          fontSize: '1rem',
+        }
+      }
+    }
   }
 })
 
