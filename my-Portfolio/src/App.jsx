@@ -8,7 +8,7 @@ import theme from './theme'
 const Projects = lazy(() => import('./sections/projects/Projects'))
 const Contact = lazy(() => import('./sections/contact/Contact'))
 const Footer = lazy(() => import('./sections/footer/Footer'))
-const Timeline = lazy(() => import('./sections/timeline/Timeline'))
+const TimeLineTwo = lazy(() => import('./sections/timeline/TimeLineTwo'))
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           </section>
           <About />
           <Suspense fallback={<div>Loading...</div>}>
-            <Timeline />
+            <TimeLineTwo />
             <Projects />
             <Contact />
             <Footer />

@@ -5,7 +5,7 @@ import Reveal from '@/components/Reveal'
 function Projects() {
   return (
     <section id="work">
-      <div className="w-full h-full bg-[#ededed] py-16">
+      <div className="w-full h-full bg-white py-16">
         <div className="flex flex-col items-center justify-center ">
           <div className=" flex flex-col items-center gap-4">
             <Reveal>

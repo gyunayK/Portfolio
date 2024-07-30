@@ -42,7 +42,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="relative w-full h-full bg-cover bg-center bg-no-repeat py-16">
-        <div className="absolute inset-0 bg-stone-200"></div>
+        <div className="absolute inset-0 bg-stone-100"></div>
         <div className="relative flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4">
             <Reveal>

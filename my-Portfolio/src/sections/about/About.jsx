@@ -18,8 +18,7 @@ const About = () => {
               <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know more about me </h2>
             </Reveal>
           </div>
-
-          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 mt-12 px-5 scale-90">
+          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 sm:mt-12 px-5 scale-90">
             <div className="w-full max-w-[500px] text-lg">
               <Reveal width="w-fit">
                 <h1 className="text-2xl font-semibold">Hey there!</h1>

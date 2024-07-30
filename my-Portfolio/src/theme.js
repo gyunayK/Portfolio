@@ -10,7 +10,26 @@ const theme = createTheme({
           fontSize: 'inherit'
         }
       }
-    }
+    },
+    MuiTimelineDot: {
+      styleOverrides: {
+        root: {
+          width: '35px',
+          height: '35px',
+          padding: '0',
+          overflow: 'hidden',
+          border: 'none'
+        }
+      }
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: 'inherit',
+          textDecoration: 'none'
+        }
+      }
+    },
   }
 })
 
