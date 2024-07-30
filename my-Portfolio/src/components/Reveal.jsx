@@ -15,10 +15,7 @@ function Reveal({ children, width }) {
     }
   }, [isInView])
   return (
-    <div
-      ref={ref}
-      className={`relative ${width ? width : 'w-fit'} overflow-hidden`}
-    >
+    <div ref={ref} className={`relative ${width ? width : 'w-fit'} overflow-hidden`}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -26,7 +23,7 @@ function Reveal({ children, width }) {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.4, delay: 0.25 }}
+        transition={{ duration: 0, delay: 0.1 }}
       >
         {children}
       </motion.div>

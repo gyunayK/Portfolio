@@ -1,6 +1,7 @@
 import { skills } from './skills'
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
+import Reveal from '@/components/Reveal'
 
 const About = () => {
   const cardsRef = useRef()
@@ -38,18 +39,20 @@ const About = () => {
           <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 sm:mt-12 px-5 scale-90">
             <div className="w-full max-w-[500px] text-lg">
               <h1 className="text-2xl font-semibold">Hey there!</h1>
-              <p className="mt-4">
-                I am a software developer specializing in front-end and back-end development. My passion lies
-                in crafting web applications that stand out for their performance and user-centric design.
-                Each project is an opportunity to blend innovative functionality with aesthetic appeal,
-                ensuring a seamless and engaging user experience.
-              </p>
-              <p className="mt-10">
-                I focus on application performance, striving for responsiveness and efficiency. My goal is to
-                create software that is not just powerful and reliable, but also intuitive and enjoyable to
-                use. Collaborating with teams to bring high-quality, scalable applications to life is what
-                drives me in the tech industry.
-              </p>
+              <Reveal>
+                <p className="mt-4">
+                  I am a software developer specializing in front-end and back-end development. My passion
+                  lies in crafting web applications that stand out for their performance and user-centric
+                  design. Each project is an opportunity to blend innovative functionality with aesthetic
+                  appeal, ensuring a seamless and engaging user experience.
+                </p>
+                <p className="mt-10">
+                  I focus on application performance, striving for responsiveness and efficiency. My goal is
+                  to create software that is not just powerful and reliable, but also intuitive and enjoyable
+                  to use. Collaborating with teams to bring high-quality, scalable applications to life is
+                  what drives me in the tech industry.
+                </p>
+              </Reveal>
             </div>
             <div className="w-full max-w-[500px]">
               <h1 className="text-2xl font-semibold pb-5">Skills</h1>

@@ -26,8 +26,8 @@ function ProjectCard({ title, description, techStack, liveLink, githubLink, proj
           className="w-full h-[200px] bg-no-repeat bg-contain"
           style={{ backgroundImage: `url('${projectIMG}')` }}
         />
-s          <h2 className="text-lg font-bold mb-1">{title}</h2>
-          <p className="text-pretty">{description}</p>
+        <h2 className="text-lg font-bold mb-1">{title}</h2>
+        <p className="text-pretty">{description}</p>
         <div className="pt-4 w-full">
           <h2 className="font-bold mb-1">Tech Stack</h2>
           <p>{techStack}</p>

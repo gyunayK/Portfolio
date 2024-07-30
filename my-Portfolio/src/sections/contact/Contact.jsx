@@ -45,17 +45,11 @@ function Contact() {
         <div className="absolute inset-0 bg-stone-100"></div>
         <div className="relative flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4">
-            <Reveal>
-              <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">CONTACT</h2>
-            </Reveal>
-            <Reveal width="p-3 -m-3">
-              <h1 className="text-5xl font-serif font-medium leading-8 ">Say Hello</h1>
-            </Reveal>
-            <Reveal>
-              <h2 className="font-medium text-lg text-center text-gray-500 mt-3 px-5 ">
-                Submit the form below and I&apos;ll promptly be in touch
-              </h2>
-            </Reveal>
+            <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">CONTACT</h2>
+            <h1 className="text-5xl font-serif font-medium leading-8 ">Say Hello</h1>
+            <h2 className="font-medium text-lg text-center text-gray-500 mt-3 px-5 ">
+              Submit the form below and I&apos;ll promptly be in touch
+            </h2>
           </div>
           <div className="mt-14 mx-auto flex flex-col md:flex-row gap-20 scale-90">
             <div className="w-[300px] md:w-[400px] ">
