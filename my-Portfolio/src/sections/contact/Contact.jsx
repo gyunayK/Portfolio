@@ -71,61 +71,47 @@ function Contact() {
                 autoComplete="off"
                 ref={form}
               >
-                <Reveal width="w-full py-2 -my-2">
-                  <StyledTextField
-                    id={'name'}
-                    register={register}
-                    errors={errors}
-                    name={'user_name'}
-                    label={'Name'}
-                  />
-                </Reveal>
-                <Reveal width="w-full py-2 -my-2">
-                  <StyledTextField
-                    id={'email'}
-                    register={register}
-                    errors={errors}
-                    name={'user_email'}
-                    label={'Email'}
-                  />
-                </Reveal>
-                <Reveal width="w-full py-2 -my-2">
-                  <StyledTextField
-                    id={'subject'}
-                    register={register}
-                    errors={errors}
-                    name={'user_subject'}
-                    label={'Subject'}
-                    formname={'_subject'}
-                  />
-                </Reveal>
-                <Reveal width="w-full py-2 -my-2">
-                  <StyledTextField2
-                    id={'message'}
-                    register={register}
-                    errors={errors}
-                    name={'message'}
-                    label={'Message'}
-                  />
-                </Reveal>
-                <Reveal width="w-full">
-                  <StyledButton isSubmitting={isSubmitting} isSubmitted={isSubmitSuccessful} />
-                </Reveal>
+                <StyledTextField
+                  id={'name'}
+                  register={register}
+                  errors={errors}
+                  name={'user_name'}
+                  label={'Name'}
+                />
+                <StyledTextField
+                  id={'email'}
+                  register={register}
+                  errors={errors}
+                  name={'user_email'}
+                  label={'Email'}
+                />
+                <StyledTextField
+                  id={'subject'}
+                  register={register}
+                  errors={errors}
+                  name={'user_subject'}
+                  label={'Subject'}
+                  formname={'_subject'}
+                />
+                <StyledTextField2
+                  id={'message'}
+                  register={register}
+                  errors={errors}
+                  name={'message'}
+                  label={'Message'}
+                />
+                <StyledButton isSubmitting={isSubmitting} isSubmitted={isSubmitSuccessful} />
               </Box>
             </div>
             <div className="text-black space-y-10 px-1">
               <div>
-                <Reveal>
-                  <h2 className="font-Roboto font-extrabold">PHONE</h2>
-                </Reveal>
+                <h2 className="font-Roboto font-extrabold">PHONE</h2>
                 <Reveal>
                   <p>+1 (778) 861-9031</p>
                 </Reveal>
               </div>
               <div>
-                <Reveal>
-                  <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
-                </Reveal>
+                <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
                 <Reveal>
                   <p className="underline">
                     <a href="mailto:web-dev@gyunay-kadirov.com" target="_blank" rel="noopener noreferrer">
@@ -135,9 +121,7 @@ function Contact() {
                 </Reveal>
               </div>
               <div>
-                <Reveal>
-                  <h2 className="font-Roboto font-bold">LOCATION</h2>
-                </Reveal>
+                <h2 className="font-Roboto font-bold">LOCATION</h2>
                 <Reveal>
                   <p>Vancouver BC, Canada</p>
                 </Reveal>
