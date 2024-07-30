@@ -10,7 +10,7 @@ import { TimelineEvents } from './TimelineEvents.js'
 import Reveal from '@/components/Reveal'
 import { Link } from '@mui/material'
 
-export default function TimeLineTwo() {
+export default function () {
   return (
     <section className="bg-stone-100 py-16" id="timeline">
       <div className="flex flex-col justify-center mb-10">
