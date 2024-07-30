@@ -24,7 +24,7 @@ function Projects() {
               </h2>
             </Reveal>
           </div>
-          <div className="sm:mt-12 grid md:grid-cols-2 gap-0 md:gap-[100px] scale-90">
+          <div className="sm:mt-12 grid md:grid-cols-2 gap-0 md:gap-20 scale-90">
             {projects.map((project, index) => (
               <ProjectCard {...project} key={index} />
             ))}
