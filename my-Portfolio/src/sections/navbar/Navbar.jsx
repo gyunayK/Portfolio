@@ -70,7 +70,7 @@ function Navbar() {
           isScrolled ? 'h-20' : 'h-0'
         } md:fixed hidden md:block relative z-50`}
       >
-        <div className="max-w-[2000px] mx-auto flex justify-between items-center pt-1 px-10 ">
+        <div className="max-w-[2000px] mx-auto flex justify-between items-center pt-1 px-10">
           <h2 className="hidden md:block text-2xl border-2 text-white rounded-md px-2">GK</h2>
           <ul className="text-lg text-white flex gap-10 items-center justify-center p-4 tracking-wide">
             <li className={`border-transparent border-b-2 ${activeSectionColours('home')}`}>

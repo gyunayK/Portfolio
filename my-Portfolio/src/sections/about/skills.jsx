@@ -36,7 +36,6 @@ export const skills = [
     name: 'SASS',
     icon: <FaSass />
   },
-
   {
     name: 'HTML',
     icon: <FaHtml5 />
