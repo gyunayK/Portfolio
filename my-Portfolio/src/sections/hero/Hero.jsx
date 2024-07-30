@@ -25,6 +25,7 @@ function Hero() {
           <motion.h3
             onMouseDown={() => setIsDragging(true)}
             onMouseUp={() => setIsDragging(false)}
+            onMouseLeave={() => setIsDragging(false)}
             drag
             dragMomentum={{
               velocity: 4,
@@ -32,11 +33,17 @@ function Hero() {
               power: 20,
               timeConstant: 1000
             }}
+            dragConstraints={{
+              top: -500,
+              left: -100,
+              right: 500,
+              bottom: 100
+            }}
             className={`text-sm md:text-lg tracking-widest mr-2 flex overflow-hidden
             ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}
             `}
           >
-            DRAG ME
+            PULL ME
             <MdKeyboardArrowDown color="#e49dfc" size={'28px'} />
           </motion.h3>
         </div>

@@ -1,9 +1,10 @@
 import Reveal from '@/components/Reveal'
 import { skills } from './skills'
 import { motion } from 'framer-motion'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const About = () => {
+  const [isDragging, setIsDragging] = useState(false)
   const cardsRef = useRef()
 
   useEffect(() => {
@@ -75,11 +76,21 @@ const About = () => {
               >
                 {skills.map((skill, index) => (
                   <motion.div
+                    onMouseDown={() => setIsDragging(true)}
+                    onMouseUp={() => setIsDragging(false)}
+                    onMouseLeave={() => setIsDragging(false)}
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
-                    className="card"
+                    drag
+                    dragConstraints={{
+                      top: -100,
+                      left: -100,
+                      right: 100,
+                      bottom: 100
+                    }}
+                    className={`card ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
                     key={index}
                   >
                     <div className="card-content">
