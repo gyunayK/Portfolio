@@ -1,5 +1,5 @@
 import { FaReact, FaHtml5, FaSass, FaNodeJs, FaDocker, FaAws } from 'react-icons/fa'
-import { SiJavascript, SiTailwindcss, SiMongodb, SiTypescript, SiGraphql } from 'react-icons/si'
+import { SiJavascript, SiTailwindcss, SiMongodb, SiTypescript, SiGraphql, SiVuedotjs } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 
 export const skills = [
@@ -10,6 +10,10 @@ export const skills = [
   {
     name: 'Next.js',
     icon: <TbBrandNextjs />
+  },
+  {
+    name: 'Vue.js',
+    icon: <SiVuedotjs />
   },
   {
     name: 'JavaScript',
@@ -35,10 +39,6 @@ export const skills = [
   {
     name: 'SASS',
     icon: <FaSass />
-  },
-  {
-    name: 'HTML',
-    icon: <FaHtml5 />
   },
   {
     name: 'Docker',

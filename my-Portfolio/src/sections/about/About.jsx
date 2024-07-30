@@ -1,15 +1,37 @@
 import Reveal from '@/components/Reveal'
 import { skills } from './skills'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 
 const About = () => {
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const cards = document.getElementsByClassName('card')
+      for (const card of cards) {
+        const rect = card.getBoundingClientRect(),
+          x = e.clientX - rect.left,
+          y = e.clientY - rect.top
+
+        card.style.setProperty('--mouse-x', `${x}px`)
+        card.style.setProperty('--mouse-y', `${y}px`)
+      }
+    }
+
+    const cardsContainer = document.getElementById('cards')
+    cardsContainer.addEventListener('mousemove', handleMouseMove)
+
+    return () => {
+      cardsContainer.removeEventListener('mousemove', handleMouseMove)
+    }
+  }, [])
+
   return (
     <section id="about">
       <div className="w-full h-full bg-white py-16">
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4">
             <Reveal>
-              <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">ABOUT</h2>
+              <h2 className="font-Tektur text-[#ae00ff] text-lg font-bold tracking-wider">ABOUT</h2>
             </Reveal>
             <Reveal width="p-3 -m-3">
               <h1 className="text-5xl font-serif font-medium leading-8">Personal Info</h1>
@@ -45,18 +67,23 @@ const About = () => {
                 <h1 className="text-2xl font-semibold">Skills</h1>
               </Reveal>
               <div className="mt-4">
-                <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-10 text-white">
+                <div
+                  className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-5 text-white bg-fixed"
+                  id="cards"
+                >
                   {skills.map((skill, index) => (
                     <motion.div
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5 }}
-                      className="bg-[#4d4d4d] p-3 rounded-md flex flex-col items-center gap-y-1 text-4xl"
+                      className="bg-black card"
                       key={index}
                     >
-                      {skill.icon}
-                      <h2 className="text-xl">{skill.name}</h2>
+                      <div className="card-content">
+                        {skill.icon}
+                        <h2 className="text-xl">{skill.name}</h2>
+                      </div>
                     </motion.div>
                   ))}
                 </div>
