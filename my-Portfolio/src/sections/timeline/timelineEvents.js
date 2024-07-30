@@ -30,7 +30,7 @@ export const TimelineEvents = [
   {
     date: 'Apr 2024 - Present',
     title: 'Software Developer Intern',
-    location: 'IcePanel',
+    location: 'IcePanel YC-W23',
     link: 'https://icepanel.io/',
     logo: '/timeline/icepanel_logo.jpg'
   }
