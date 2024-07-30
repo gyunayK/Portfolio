@@ -36,6 +36,7 @@ Technologies used in the project:
 *   zod
 *   Material UI
 *   Tailwind CSS
+*   framer-motion
 
 <h2>🛡️ License:</h2>
 
