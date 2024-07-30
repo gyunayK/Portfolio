@@ -1,12 +1,14 @@
 import Reveal from '@/components/Reveal'
 import { skills } from './skills'
 import { motion } from 'framer-motion'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 const About = () => {
+  const cardsRef = useRef()
+
   useEffect(() => {
     const handleMouseMove = (e) => {
-      const cards = document.getElementsByClassName('card')
+      const cards = cardsRef.current.children
       for (const card of cards) {
         const rect = card.getBoundingClientRect(),
           x = e.clientX - rect.left,
@@ -17,7 +19,7 @@ const About = () => {
       }
     }
 
-    const cardsContainer = document.getElementById('cards')
+    const cardsContainer = cardsRef.current
     cardsContainer.addEventListener('mousemove', handleMouseMove)
 
     return () => {
@@ -64,29 +66,28 @@ const About = () => {
             </div>
             <div className="w-full max-w-[500px]">
               <Reveal>
-                <h1 className="text-2xl font-semibold">Skills</h1>
+                <h1 className="text-2xl font-semibold pb-5">Skills</h1>
               </Reveal>
-              <div className="mt-4">
-                <div
-                  className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-5 text-white bg-fixed"
-                  id="cards"
-                >
-                  {skills.map((skill, index) => (
-                    <motion.div
-                      initial={{ scale: 0 }}
-                      whileInView={{ scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5 }}
-                      className="bg-black card"
-                      key={index}
-                    >
-                      <div className="card-content">
-                        {skill.icon}
-                        <h2 className="text-xl">{skill.name}</h2>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
+              <div
+                className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-5 text-white bg-fixed"
+                id="cards"
+                ref={cardsRef}
+              >
+                {skills.map((skill, index) => (
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="card"
+                    key={index}
+                  >
+                    <div className="card-content">
+                      {skill.icon}
+                      <h2 className="text-xl">{skill.name}</h2>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </div>

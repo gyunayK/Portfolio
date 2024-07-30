@@ -8,12 +8,12 @@ export const skills = [
     icon: <FaReact />
   },
   {
-    name: 'Next.js',
-    icon: <TbBrandNextjs />
-  },
-  {
     name: 'Vue.js',
     icon: <SiVuedotjs />
+  },
+  {
+    name: 'Next.js',
+    icon: <TbBrandNextjs />
   },
   {
     name: 'JavaScript',
