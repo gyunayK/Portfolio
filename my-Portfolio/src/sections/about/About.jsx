@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 
 const About = () => {
-  const [isDragging, setIsDragging] = useState(false)
   const cardsRef = useRef()
 
   useEffect(() => {
@@ -21,10 +20,10 @@ const About = () => {
     }
 
     const cardsContainer = cardsRef.current
-    cardsContainer.addEventListener('mousemove', handleMouseMove)
+    cardsContainer?.addEventListener('mousemove', handleMouseMove)
 
     return () => {
-      cardsContainer.removeEventListener('mousemove', handleMouseMove)
+      cardsContainer?.removeEventListener('mousemove', handleMouseMove)
     }
   }, [])
 
@@ -75,29 +74,7 @@ const About = () => {
                 ref={cardsRef}
               >
                 {skills.map((skill, index) => (
-                  <motion.div
-                    onMouseDown={() => setIsDragging(true)}
-                    onMouseUp={() => setIsDragging(false)}
-                    onMouseLeave={() => setIsDragging(false)}
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                    drag
-                    dragConstraints={{
-                      top: -100,
-                      left: -100,
-                      right: 100,
-                      bottom: 100
-                    }}
-                    className={`card ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
-                    key={index}
-                  >
-                    <div className="card-content">
-                      {skill.icon}
-                      <h2 className="text-xl">{skill.name}</h2>
-                    </div>
-                  </motion.div>
+                  <SkillItem item={skill} key={index} />
                 ))}
               </div>
             </div>
@@ -105,6 +82,40 @@ const About = () => {
         </div>
       </div>
     </section>
+  )
+}
+
+const SkillItem = ({ item }) => {
+  const [isDragging, setIsDragging] = useState(false)
+
+  return (
+    <motion.div
+      onMouseDown={() => setIsDragging(true)}
+      onMouseUp={() => setIsDragging(false)}
+      onMouseLeave={() => setIsDragging(false)}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.1 }}
+      drag
+      dragConstraints={{
+        top: -150,
+        left: -150,
+        right: 150,
+        bottom: 150
+      }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 1.1 }}
+      style={{
+        cursor: isDragging ? 'grabbing' : 'grab'
+      }}
+      className="card"
+    >
+      <div className="card-content">
+        {item.icon}
+        <h2 className="text-xl">{item.name}</h2>
+      </div>
+    </motion.div>
   )
 }
 
