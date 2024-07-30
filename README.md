@@ -6,18 +6,6 @@
 
 [https://gyunay-kadirov.com/](https://gyunay-kadirov.com/)
 
-<h2>Project Screenshots:</h2>
-
-<img src="https://ik.imagekit.io/riviaa/Portfolio/image%20(1).png?updatedAt=1719540653699" alt="project-screenshot" width="750" height="400/">
-
-<img src="https://ik.imagekit.io/riviaa/Portfolio/image-1.png?updatedAt=1710376931763" alt="project-screenshot" width="750" height="400/">
-<img src="https://ik.imagekit.io/riviaa/Portfolio/image-2.png?updatedAt=1704579594232" alt="project-screenshot" width="750" height="400/">
-
-<img src="https://ik.imagekit.io/riviaa/Portfolio/image-3.png?updatedAt=1704579596171" alt="project-screenshot" width="750" height="400/">
-
-<img src="https://ik.imagekit.io/riviaa/Portfolio/image-4.png?updatedAt=1704579593867" alt="project-screenshot" width="750" height="400/">
-
-  
   
 <h2>🧐 Features</h2>
 
