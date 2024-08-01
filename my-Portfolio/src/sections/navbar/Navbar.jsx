@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import useActiveSection from '@/hooks/activeSection_ID'
 import useScrollCheck from '@/hooks/useScrollCheck'
 import { Button } from '@mui/material'
@@ -33,6 +33,15 @@ function Navbar() {
 
     setIsMenuOpen(false)
   }
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isMenuOpen])
 
   return (
     <nav className="font-Tektur z-[9999]">
