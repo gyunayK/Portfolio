@@ -13,13 +13,13 @@ import { Link } from '@mui/material'
 function TimelineSection () {
   return (
     <section className="bg-stone-100 py-16" id="timeline">
-      <div className="flex flex-col justify-center mb-10">
-        <div className="flex flex-col items-center gap-4 mb-16">
+      <div className="flex flex-col justify-center">
+        <div className="flex flex-col items-center gap-4">
           <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">TIMELINE</h2>
           <h1 className="text-5xl font-serif font-medium leading-10 text-center">Professional Path</h1>
           <h2 className="font-medium text-lg text-[#4d4d4d]">A Chronicle of My Career</h2>
         </div>
-        <Timeline position="right" className="group w-fit mx-auto">
+        <Timeline position="right" className="group w-fit mx-auto mt-16 mb-8">
           {[...TimelineEvents].reverse().map((event, index) => (
             <TimelineItem
               key={index}

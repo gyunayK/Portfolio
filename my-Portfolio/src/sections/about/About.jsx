@@ -28,15 +28,14 @@ const About = () => {
   }, [])
 
   return (
-    <section id="about">
-      <div className="w-full h-full bg-white py-16">
+    <section id="about" className="w-full h-full bg-white py-16">
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center gap-4">
             <h2 className="font-Tektur text-[#ae00ff] text-lg font-bold tracking-wider">ABOUT</h2>
             <h1 className="text-5xl font-serif font-medium p-3 -m-3 leading-8">Personal Info</h1>
             <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know more about me </h2>
           </div>
-          <div className="flex flex-col lg:flex-row justify-center gap-14 xxl:lgap-40 sm:mt-12 px-5 scale-90">
+          <div className="flex flex-col lg:flex-row justify-center gap-14 xxl:lgap-40 sm:mt-16 px-5 scale-90">
             <div className="w-full max-w-[500px] text-lg">
               <h1 className="text-2xl font-semibold">Hey there!</h1>
               <p className="mt-4">
@@ -62,7 +61,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   )
 }

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="bg-black text-center flex flex-col items-center justify-center">
-        <div className="flex space-x-20 pt-7 text-white font-Tektur tracking-widest">
+        <div className="flex space-x-20 pt-4 text-white font-Tektur tracking-widest">
           <a
             href="https://github.com/gyunayK"
             target="_blank"
@@ -22,7 +22,7 @@ function Footer() {
             <Button>LINKEDIN</Button>
           </a>
         </div>
-        <p className="text-[#acacac] font-Roboto pt-6 pb-2">All rights reserved © 2024 by Gyunay K.</p>
+        <p className="pt-1.5 pb-5 opacity-100"><span className='text-white opacity-80'>Created in beautiful British Columbia by Gyunay</span> 🇨🇦</p>
       </div>
     </footer>
   )
