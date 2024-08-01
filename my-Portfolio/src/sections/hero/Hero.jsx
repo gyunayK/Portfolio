@@ -16,9 +16,7 @@ function Hero() {
           </h2>
         </Reveal>
         <Reveal>
-          <h1 className="text-5xl md:text-6xl font-Tektur w-fit">
-            I am Gyunay Kadirov
-          </h1>
+          <h1 className="text-5xl md:text-6xl font-Tektur w-fit">I am Gyunay Kadirov</h1>
         </Reveal>
         <Text />
         <div className="flex items-center translate-y-20">
@@ -27,17 +25,11 @@ function Hero() {
             onMouseUp={() => setIsDragging(false)}
             onMouseLeave={() => setIsDragging(false)}
             drag={window.innerWidth > 768}
-            dragMomentum={{
-              velocity: 4,
-              from: 'center',
-              power: 20,
-              timeConstant: 1000
-            }}
             dragConstraints={{
-              top: -500,
-              left: -100,
-              right: 500,
-              bottom: 100
+              top: -2000,
+              left: -2000,
+              right: 2000,
+              bottom: 1000
             }}
             className={`text-sm md:text-lg tracking-widest mr-2 flex overflow-hidden
             ${isDragging ? 'md:cursor-grabbing' : 'md:cursor-grab'}
