@@ -4,6 +4,7 @@ import About from './sections/about/About'
 import Hero from './sections/hero/Hero'
 import Navbar from './sections/navbar/Navbar'
 import theme from './theme'
+import Loading from './components/loading'
 
 const Projects = lazy(() => import('./sections/projects/Projects'))
 const Contact = lazy(() => import('./sections/contact/Contact'))
@@ -20,7 +21,7 @@ function App() {
             <Hero />
           </section>
           <About />
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Timeline />
             <Projects />
             <Contact />

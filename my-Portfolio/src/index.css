@@ -10,7 +10,6 @@
 
 body {
   background-color: black;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +25,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-items: start;
-  gap: 0.5rem;
 }
 
 #cards:hover > .card::after {

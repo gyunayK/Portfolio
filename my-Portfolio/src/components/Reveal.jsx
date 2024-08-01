@@ -26,7 +26,7 @@ function Reveal({ children, width }) {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.4, delay: 0.25 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
       >
         {children}
       </motion.div>
@@ -37,7 +37,7 @@ function Reveal({ children, width }) {
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: 0.4, ease: 'easeIn' }}
+        transition={{ duration: 0.4, ease: 'easeIn', delay: 0.25 }}
         className="absolute top-0 left-0 bottom-0 right-0 bg-purple-500 "
       />
     </div>
