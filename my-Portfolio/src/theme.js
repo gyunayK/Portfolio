@@ -36,12 +36,14 @@ const theme = createTheme({
           props: { variant: 'h5' },
           style: {
             fontFamily: 'Arial, sans-serif',
+            fontSize: '1.25rem'
           }
         },
         {
           props: { variant: 'h6' },
           style: {
             fontFamily: 'Arial, sans-serif',
+            fontSize: '1rem'
           }
         }
       ]

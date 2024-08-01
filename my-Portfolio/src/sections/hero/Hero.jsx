@@ -26,7 +26,7 @@ function Hero() {
             onMouseDown={() => setIsDragging(true)}
             onMouseUp={() => setIsDragging(false)}
             onMouseLeave={() => setIsDragging(false)}
-            drag={window.innerWidth > 640}
+            drag={window.innerWidth > 768}
             dragMomentum={{
               velocity: 4,
               from: 'center',
@@ -40,7 +40,7 @@ function Hero() {
               bottom: 100
             }}
             className={`text-sm md:text-lg tracking-widest mr-2 flex overflow-hidden
-            ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}
+            ${isDragging ? 'md:cursor-grabbing' : 'md:cursor-grab'}
             `}
           >
             PULL ME

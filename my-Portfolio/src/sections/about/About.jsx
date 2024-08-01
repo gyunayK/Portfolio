@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const About = () => {
   const cardsRef = useRef()
+  const maxZIndex = useRef(1)
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -52,14 +53,10 @@ const About = () => {
               </p>
             </div>
             <div className="w-full max-w-[500px]">
-              <h1 className="text-2xl font-semibold pb-5">Skills</h1>
-              <div
-                className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-5 text-white bg-fixed"
-                id="cards"
-                ref={cardsRef}
-              >
+              <h1 className="text-2xl font-semibold">Skills</h1>
+              <div className="text-white bg-fixed" id="cards" ref={cardsRef}>
                 {skills.map((skill, index) => (
-                  <SkillItem item={skill} key={index} />
+                  <SkillItem item={skill} key={index} maxZIndex={maxZIndex} />
                 ))}
               </div>
             </div>
@@ -70,19 +67,22 @@ const About = () => {
   )
 }
 
-const SkillItem = ({ item }) => {
-  const [isDragging, setIsDragging] = useState(false)
+const SkillItem = ({ item, maxZIndex }) => {
+  const [zIndex, setZIndex] = useState(0)
+
+  const bringToFront = () => {
+    maxZIndex.current++
+    setZIndex(maxZIndex.current)
+  }
 
   return (
     <motion.div
-      onMouseDown={() => setIsDragging(true)}
-      onMouseUp={() => setIsDragging(false)}
-      onMouseLeave={() => setIsDragging(false)}
+      onMouseDown={bringToFront}
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.3 }}
-      drag
+      drag={window.innerWidth > 768}
       dragConstraints={{
         top: -150,
         left: -150,
@@ -90,9 +90,9 @@ const SkillItem = ({ item }) => {
         bottom: 150
       }}
       whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
-      whileTap={{ scale: 1.1, transition: { duration: 0.1 } }}
-      style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
-      className="card"
+      whileTap={{ scale: 1.1, transition: { duration: 0.1 }, cursor: 'grabbing' }}
+      style={{ cursor: 'grab', zIndex }}
+      className="card mt-4"
     >
       <div className="card-content">
         {item.icon}
