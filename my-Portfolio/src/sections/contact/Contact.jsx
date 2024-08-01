@@ -46,7 +46,7 @@ function Contact() {
           <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">CONTACT</h2>
           <h1 className="text-5xl font-serif font-medium leading-8">Say Hello</h1>
           <h2 className="font-medium text-lg text-center text-gray-500 mt-3 px-5 ">
-            Submit the form below and I&apos;ll promptly be in touch
+            Fill out the form below and I&apos;ll get back to you shortly.
           </h2>
         </div>
         <div className="mt-5 sm:mt-16 mx-auto flex flex-col md:flex-row gap-20 scale-90">

@@ -17,7 +17,7 @@ function TimelineSection () {
         <div className="flex flex-col items-center gap-4">
           <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-wider">TIMELINE</h2>
           <h1 className="text-5xl font-serif font-medium leading-10 text-center">Professional Path</h1>
-          <h2 className="font-medium text-lg text-[#4d4d4d]">A Chronicle of My Career</h2>
+          <h2 className="font-medium text-lg text-[#4d4d4d]">My Work Journey</h2>
         </div>
         <Timeline position="right" className="group w-fit mx-auto mt-16 mb-8">
           {[...TimelineEvents].reverse().map((event, index) => (
