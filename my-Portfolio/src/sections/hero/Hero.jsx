@@ -26,7 +26,7 @@ function Hero() {
             onMouseDown={() => setIsDragging(true)}
             onMouseUp={() => setIsDragging(false)}
             onMouseLeave={() => setIsDragging(false)}
-            drag
+            drag={window.innerWidth > 640}
             dragMomentum={{
               velocity: 4,
               from: 'center',

@@ -13,8 +13,8 @@ const About = () => {
           x = e.clientX - rect.left,
           y = e.clientY - rect.top
 
-        card.style.setProperty('--mouse-x', `${x}px`)
-        card.style.setProperty('--mouse-y', `${y}px`)
+        card.style.setProperty('--mouse-x', `${Math.round(x)}px`)
+        card.style.setProperty('--mouse-y', `${Math.round(y)}px`)
       }
     }
 
@@ -35,7 +35,7 @@ const About = () => {
             <h1 className="text-5xl font-serif font-medium p-3 -m-3 leading-8">Personal Info</h1>
             <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know more about me </h2>
           </div>
-          <div className="flex flex-col lg:flex-row justify-center gap-14 2xl:gap-40 sm:mt-12 px-5 scale-90">
+          <div className="flex flex-col lg:flex-row justify-center gap-14 xxl:lgap-40 sm:mt-12 px-5 scale-90">
             <div className="w-full max-w-[500px] text-lg">
               <h1 className="text-2xl font-semibold">Hey there!</h1>
               <p className="mt-4">

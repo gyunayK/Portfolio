@@ -10,7 +10,7 @@ import { TimelineEvents } from './TimelineEvents.js'
 import Reveal from '@/components/Reveal'
 import { Link } from '@mui/material'
 
-export default function () {
+function TimelineSection () {
   return (
     <section className="bg-stone-100 py-16" id="timeline">
       <div className="flex flex-col justify-center mb-10">
@@ -39,11 +39,11 @@ export default function () {
               </TimelineSeparator>
               <TimelineContent sx={{ py: '20px', px: 2 }}>
                 <Link href={event.link} target="_blank" rel="noopener noreferrer" className="flex flex-col">
-                  <Typography variant="h6" component="span">
+                  <Typography variant="h5" component="span">
                     {event.title}
                   </Typography>
                   <Reveal>
-                    <Typography variant="h7" component="span" fontWeight={400}>
+                    <Typography variant="h6" component="span" fontWeight={300}>
                       {event.organization}
                     </Typography>
                   </Reveal>
@@ -56,3 +56,5 @@ export default function () {
     </section>
   )
 }
+
+export default TimelineSection
