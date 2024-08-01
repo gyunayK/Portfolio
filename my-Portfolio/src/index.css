@@ -10,7 +10,6 @@
 
 body {
   background-color: black;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -86,7 +85,7 @@ body {
   z-index: 2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 420px) {
   #cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

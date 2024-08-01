@@ -3,8 +3,8 @@ import './footerSyled.css'
 function Footer() {
   return (
     <footer>
-      <div className="bg-black text-center flex flex-col items-center justify-center">
-        <div className="flex space-x-20 pt-4 text-white font-Tektur tracking-widest">
+      <div className="bg-black flex flex-col items-center justify-center">
+        <div className="flex space-x-20 pt-3 text-white font-Tektur tracking-widest">
           <a
             href="https://github.com/gyunayK"
             target="_blank"
