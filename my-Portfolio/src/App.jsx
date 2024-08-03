@@ -5,11 +5,11 @@ import Hero from './sections/hero/Hero'
 import Navbar from './sections/navbar/Navbar'
 import theme from './theme'
 import Loading from './components/loading'
+import Timeline from './sections/timeline/Timeline'
 
 const Projects = lazy(() => import('./sections/projects/Projects'))
 const Contact = lazy(() => import('./sections/contact/Contact'))
 const Footer = lazy(() => import('./sections/footer/Footer'))
-const Timeline = lazy(() => import('./sections/timeline/Timeline'))
 
 function App() {
   return (
