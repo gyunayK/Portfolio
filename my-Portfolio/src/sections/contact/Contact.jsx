@@ -97,12 +97,6 @@ function Contact() {
           </div>
           <div className="text-black space-y-10 px-1">
             <div>
-              <h2 className="font-Roboto font-extrabold">PHONE</h2>
-              <Reveal>
-                <p>+1 (778) 861-9031</p>
-              </Reveal>
-            </div>
-            <div>
               <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
               <Reveal>
                 <p className="underline">
