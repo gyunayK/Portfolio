@@ -29,43 +29,43 @@ const About = () => {
 
   return (
     <section id="about" className="w-full h-full bg-white py-16">
-        <div className="flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center gap-4">
-            <h2 className="font-Tektur text-[#ae00ff] text-lg font-bold tracking-wider">ABOUT</h2>
-            <h1 className="text-5xl font-serif font-medium p-3 -m-3 leading-8">Personal Info</h1>
-            <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know me </h2>
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center gap-4">
+          <h2 className="font-Tektur text-[#ae00ff] text-lg font-bold tracking-wider">ABOUT</h2>
+          <h1 className="text-5xl font-serif font-medium p-3 -m-3 leading-8">Personal Info</h1>
+          <h2 className="font-medium text-lg text-[#4d4d4d]">Get to know me </h2>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-center gap-14 xxl:lgap-40 sm:mt-16 px-5 scale-90">
+          <div className="w-full max-w-[500px] text-lg">
+            <h1 className="text-2xl font-semibold">Hey there!</h1>
+            <p className="mt-4">
+              I am a software developer specializing in front-end and back-end development. My passion lies in
+              crafting web applications that stand out for their performance and user-centric design. Each
+              project is an opportunity to blend innovative functionality with aesthetic appeal, ensuring a
+              seamless and engaging user experience.
+            </p>
+            <p className="mt-10">
+              I focus on application performance, striving for responsiveness and efficiency. My goal is to
+              create software that is not just powerful and reliable, but also intuitive and enjoyable to use.
+              Collaborating with teams to bring high-quality, scalable applications to life is what drives me
+              in the tech industry.
+            </p>
           </div>
-          <div className="flex flex-col lg:flex-row justify-center gap-14 xxl:lgap-40 sm:mt-16 px-5 scale-90">
-            <div className="w-full max-w-[500px] text-lg">
-              <h1 className="text-2xl font-semibold">Hey there!</h1>
-              <p className="mt-4">
-                I am a software developer specializing in front-end and back-end development. My passion lies
-                in crafting web applications that stand out for their performance and user-centric design.
-                Each project is an opportunity to blend innovative functionality with aesthetic appeal,
-                ensuring a seamless and engaging user experience.
-              </p>
-              <p className="mt-10">
-                I focus on application performance, striving for responsiveness and efficiency. My goal is to
-                create software that is not just powerful and reliable, but also intuitive and enjoyable to
-                use. Collaborating with teams to bring high-quality, scalable applications to life is what
-                drives me in the tech industry.
-              </p>
-            </div>
-            <div className="w-full max-w-[500px]">
-              <h1 className="text-2xl font-semibold">Skills</h1>
-              <div className="text-white bg-fixed" id="cards" ref={cardsRef}>
-                {skills.map((skill, index) => (
-                  <SkillItem item={skill} key={index} maxZIndex={maxZIndex} />
-                ))}
-              </div>
+          <div className="w-full max-w-[500px]">
+            <h1 className="text-2xl font-semibold">Skills</h1>
+            <div className="text-white bg-fixed" id="cards" ref={cardsRef}>
+              {skills.map((skill, index) => (
+                <SkillItem item={skill} key={index} maxZIndex={maxZIndex} index={index} />
+              ))}
             </div>
           </div>
         </div>
+      </div>
     </section>
   )
 }
 
-const SkillItem = ({ item, maxZIndex }) => {
+const SkillItem = ({ item, maxZIndex, index }) => {
   const [zIndex, setZIndex] = useState(0)
 
   const bringToFront = () => {
@@ -73,13 +73,28 @@ const SkillItem = ({ item, maxZIndex }) => {
     setZIndex(maxZIndex.current)
   }
 
+  const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100
+    },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.05 * index
+      }
+    })
+  }
+
   return (
     <motion.div
       onMouseDown={bringToFront}
-      initial={{ scale: 0 }}
-      whileInView={{ scale: 1 }}
+      variants={fadeInAnimationVariants}
+      initial="initial"
+      whileInView="animate"
       viewport={{ once: true }}
-      transition={{ duration: 0.3 }}
+      custom={index}
       drag={window.innerWidth > 768}
       dragConstraints={{
         top: -150,
