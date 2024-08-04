@@ -6,13 +6,9 @@ import { motion } from 'framer-motion'
 function ProjectCard({ title, description, techStack, liveLink, githubLink, projectIMG }) {
   return (
     <motion.div
-      initial={{ scale: 0, rotate: -180 }}
-      whileInView={{ rotate: 360, scale: 0.9 }}
-      transition={{
-        type: 'spring',
-        stiffness: 150,
-        damping: 20
-      }}
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.3 }}
       viewport={{ once: true }}
       className="max-w-sm bg-white xs:mx-4 md:mx-0 items-center justify-center py-8 rounded-md border-2 border-transparent hover:border-[#850fbb]"
     >
