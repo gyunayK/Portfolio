@@ -22,7 +22,10 @@ function Footer() {
             <Button>LINKEDIN</Button>
           </a>
         </div>
-        <p className="pt-1.5 pb-5 opacity-100"><span className='text-white opacity-80'>Created in beautiful British Columbia by Gyunay</span> 🇨🇦</p>
+        <div className="pt-1.5 pb-5 opacity-100 flex items-center justify-center gap-x-3">
+          <span className="text-white opacity-80">Created in beautiful British Columbia by Gyunay</span>
+          <img src="/img/canada.svg" alt="canada-flag" width={25} height={25} />
+        </div>
       </div>
     </footer>
   )
