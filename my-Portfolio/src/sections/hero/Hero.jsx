@@ -10,8 +10,8 @@ function Hero() {
     <>
       <div className="text-white flex flex-col self-center xs:pl-[5%] lg:pl-[15%] pb-2 z-10">
         <Reveal>
-          <h2 className="mb-1 text-2xl text-special-purple">
-            <span className="inline-block h-[2px] w-8 bg-[#e49dfc] mr-2 mb-1"></span>
+          <h2 className="mb-1 text-2xl text-lavender">
+            <span className="inline-block h-[2px] w-8 bg-lavender mr-2 mb-1"/>
             HELLO THERE
           </h2>
         </Reveal>

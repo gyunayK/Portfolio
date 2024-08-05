@@ -7,7 +7,8 @@ export default {
         hero: "linear-gradient(180deg, rgba(0, 0, 0, 0.5), #000000 100%),url('/img/beach.webp')"
       },
       colors: {
-        'special-purple': '#e49dfc'
+        lavender: '#e49dfc',
+        'light-purple': '#AE00FF'
       }
     },
 

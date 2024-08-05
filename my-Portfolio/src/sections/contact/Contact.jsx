@@ -43,7 +43,7 @@ function Contact() {
     <section id="contact" className="bg-stone-100 py-16">
       <div className="relative flex flex-col items-center justify-center">
         <div className="flex flex-col items-center gap-4">
-          <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">CONTACT</h2>
+          <h2 className="font-Tektur text-light-purple text-lg font-bold tracking-widest">CONTACT</h2>
           <h1 className="text-5xl font-serif font-medium leading-8">Say Hello</h1>
           <h2 className="font-medium text-lg text-center text-gray-600 mt-3 px-5 ">
             Fill out the form below and I&apos;ll get back to you shortly.
