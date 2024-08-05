@@ -45,7 +45,7 @@ function Contact() {
         <div className="flex flex-col items-center gap-4">
           <h2 className="font-Tektur text-[#AE00FF] text-lg font-bold tracking-widest">CONTACT</h2>
           <h1 className="text-5xl font-serif font-medium leading-8">Say Hello</h1>
-          <h2 className="font-medium text-lg text-center text-gray-500 mt-3 px-5 ">
+          <h2 className="font-medium text-lg text-center text-gray-600 mt-3 px-5 ">
             Fill out the form below and I&apos;ll get back to you shortly.
           </h2>
         </div>
