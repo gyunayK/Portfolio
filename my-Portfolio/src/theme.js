@@ -52,7 +52,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           fontFamily: 'Tektur, Arial, sans-serif',
-          fontSize: '1rem',
+          fontSize: '1rem'
         }
       }
     }
