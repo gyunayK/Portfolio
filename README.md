@@ -9,12 +9,12 @@
   
 <h2>🧐 Features</h2>
 
-Here're some of the project's best features:
+Some key features of this project:
 
-*   Responsive Design: The portfolio employs responsive design techniques to ensure optimal viewing across a variety of devices.
-*   Contact Form: An easy-to-use contact form is integrated simplifying the process for visitors to get in touch.
-*   Interactive UI/UX: An interactive and intuitive user interface ensures a pleasant and engaging user experience.
-*   Performance Optimized: The website is performance-optimized to ensure rapid load times and a smooth browsing experience.
+*   Interactive UI: A user-friendly interface for easy navigation.
+*   Contact Form: Simple contact form for visitors to reach out.
+*   Optimized Performance: Fast load times for a smooth browsing experience.
+*   Responsive Design: Adapts to different screen sizes for better viewing.
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -33,7 +33,7 @@ Technologies used in the project:
 *   React
 *   EmailJS
 *   React-Hook-Form
-*   zod
+*   Zod
 *   Material UI
 *   Tailwind CSS
 *   framer-motion
