@@ -39,16 +39,14 @@ const About = () => {
           <div className="w-full max-w-[500px] text-lg">
             <h1 className="text-2xl font-semibold">Hey there!</h1>
             <p className="mt-4">
-              I am a software developer specializing in front-end and back-end development. My passion lies in
-              crafting web applications that stand out for their performance and user-centric design. Each
-              project is an opportunity to blend innovative functionality with aesthetic appeal, ensuring a
-              seamless and engaging user experience.
+              I am a software developer passionate about building reliable, efficient, and user-friendly web
+              applications. I work on both the front-end and back-end, striving to create software that
+              effectively addresses user needs without introducing unnecessary complexity.
             </p>
             <p className="mt-10">
-              I focus on application performance, striving for responsiveness and efficiency. My goal is to
-              create software that is not just powerful and reliable, but also intuitive and enjoyable to use.
-              Collaborating with teams to bring high-quality, scalable applications to life is what drives me
-              in the tech industry.
+              I prioritize clean code and collaboration, and I continuously seek ways to enhance both my
+              skills and the quality of my work. My goal is to develop applications that people find genuinely
+              useful and enjoyable.
             </p>
           </div>
           <div className="w-full max-w-[500px]">
