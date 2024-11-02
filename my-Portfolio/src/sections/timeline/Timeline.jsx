@@ -19,14 +19,14 @@ function TimelineSection () {
           <h1 className="text-5xl font-serif font-medium leading-10 text-center">Professional Path</h1>
           <h2 className="font-medium text-lg text-[#4d4d4d]">My Work Journey</h2>
         </div>
-        <Timeline position="right" className="group w-fit mx-auto mt-16 mb-8">
-          {[...TimelineEvents].reverse().map((event, index) => (
+        <Timeline position="right" className="group mx-auto mt-16 mb-8 !p-0 max-w-xl">
+          {TimelineEvents.map((event, index) => (
             <TimelineItem
               key={index}
               className="sm:group-hover:opacity-25 sm:hover:!opacity-100 transition-opacity duration-30"
             >
               <TimelineOppositeContent sx={{ m: 'auto 0' }} variant="inherit" color="text.secondary">
-                <Link href={event.link} target="_blank" rel="noopener noreferrer" className="w-min">
+                <Link href={event.link} target="_blank" rel="noopener noreferrer">
                   {event.date}
                 </Link>
               </TimelineOppositeContent>
@@ -37,7 +37,7 @@ function TimelineSection () {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent sx={{ py: '20px', px: 2 }}>
+              <TimelineContent sx={{ py: '20px', maxWidth: '380px' }}>
                 <Link href={event.link} target="_blank" rel="noopener noreferrer" className="flex flex-col">
                   <Typography variant="h5" component="span">
                     {event.title}
