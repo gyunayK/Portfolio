@@ -50,12 +50,12 @@ function Navbar() {
         className={`p-7 fixed top-7 right-6 z-50 sm:block md:hidden scale-75 ${isMenuOpen ? 'open' : ''}`}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        <span style={navIconStyles}></span>
-        <span style={navIconStyles}></span>
-        <span style={navIconStyles}></span>
-        <span style={navIconStyles}></span>
-        <span style={navIconStyles}></span>
-        <span style={navIconStyles}></span>
+        <span style={navIconStyles}/>
+        <span style={navIconStyles}/>
+        <span style={navIconStyles}/>
+        <span style={navIconStyles}/>
+        <span style={navIconStyles}/>
+        <span style={navIconStyles}/>
       </div>
 
       <div
