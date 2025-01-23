@@ -69,7 +69,7 @@ function Navbar() {
           <li onClick={() => scrollToSection('home')}>HOME </li>
           <li onClick={() => scrollToSection('about')}>ABOUT </li>
           <li onClick={() => scrollToSection('timeline')}>TIMELINE </li>
-          <li onClick={() => scrollToSection('work')}>WORK </li>
+          {/* <li onClick={() => scrollToSection('work')}>WORK </li> */}
           <li onClick={() => scrollToSection('contact')}>CONTACT </li>
         </ul>
       </div>
@@ -91,10 +91,9 @@ function Navbar() {
             <li className={`border-transparent border-b-2 ${activeSectionColours('timeline')}`}>
               <Button onClick={() => scrollToSection('timeline')}>TIMELINE</Button>
             </li>
-            <li className={` border-transparent border-b-2 ${activeSectionColours('work')}`}>
+            {/* <li className={` border-transparent border-b-2 ${activeSectionColours('work')}`}>
               <Button onClick={() => scrollToSection('work')}>WORK</Button>
-            </li>
-
+            </li> */}
             <li className={`border-transparent border-b-2 ${activeSectionColours('contact')}`}>
               <Button onClick={() => scrollToSection('contact')}>CONTACT</Button>
             </li>

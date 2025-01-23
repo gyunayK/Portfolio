@@ -7,7 +7,7 @@ import theme from './theme'
 import Loading from './components/loading'
 import Timeline from './sections/timeline/Timeline'
 
-const Projects = lazy(() => import('./sections/projects/Projects'))
+// const Projects = lazy(() => import('./sections/projects/Projects'))
 const Contact = lazy(() => import('./sections/contact/Contact'))
 const Footer = lazy(() => import('./sections/footer/Footer'))
 
@@ -23,7 +23,7 @@ function App() {
           <About />
           <Suspense fallback={<Loading />}>
             <Timeline />
-            <Projects />
+            {/* <Projects /> */}
             <Contact />
             <Footer />
           </Suspense>

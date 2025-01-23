@@ -15,7 +15,7 @@ function ProjectCard({ title, description, techStack, liveLink, githubLink, proj
       <div className="flex flex-col space-y-5 text-center px-5 relative h-full max-h-[800px] justify-between ">
         <div className="absolute right-5 -top-6">
           <a href={githubLink} aria-label="Github Link" target="_black" rel="noopener noreferrer">
-            <FaGithub className=" text-3xl cursor-pointer" />
+            <FaGithub className="text-3xl cursor-pointer" />
           </a>
         </div>
         <div
