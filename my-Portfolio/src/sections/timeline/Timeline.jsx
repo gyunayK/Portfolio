@@ -6,11 +6,11 @@ import TimelineContent from '@mui/lab/TimelineContent'
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent'
 import TimelineDot from '@mui/lab/TimelineDot'
 import Typography from '@mui/material/Typography'
-import { TimelineEvents } from './TimelineEvents.js'
+import { TimelineEvents } from './timelineEvents.js'
 import Reveal from '@/components/Reveal'
 import { Link } from '@mui/material'
 
-function TimelineSection () {
+function TimelineSection() {
   return (
     <section className="bg-stone-100 py-16" id="timeline">
       <div className="flex flex-col justify-center">
@@ -33,7 +33,7 @@ function TimelineSection () {
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot>
-                    <img src={event.logo} alt={event.title} />
+                  <img src={event.logo} alt={event.title} />
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
