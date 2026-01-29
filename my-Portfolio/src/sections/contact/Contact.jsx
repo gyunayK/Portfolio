@@ -21,9 +21,7 @@ function Contact() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting, isSubmitSuccessful }
-  } = useForm({
-    resolver: zodResolver(schema)
-  })
+  } = useForm({ resolver: zodResolver(schema) })
 
   const sendEmail = async () => {
     const serviceID = import.meta.env.VITE_SERVICE_ID
@@ -53,23 +51,12 @@ function Contact() {
           <div className="w-[300px] md:w-[400px] ">
             <Box
               component="form"
-              sx={{
-                textEmphasisColor: 'white',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '2rem'
-              }}
+              sx={{ textEmphasisColor: 'white', display: 'flex', flexDirection: 'column', gap: '2rem' }}
               onSubmit={handleSubmit(sendEmail)}
               autoComplete="off"
               ref={form}
             >
-              <StyledTextField
-                id="name"
-                register={register}
-                errors={errors}
-                name="user_name"
-                label="Name"
-              />
+              <StyledTextField id="name" register={register} errors={errors} name="user_name" label="Name" />
               <StyledTextField
                 id="email"
                 register={register}
@@ -92,7 +79,7 @@ function Contact() {
                 name="message"
                 label="Message"
               />
-                  <StyledButton isSubmitting={isSubmitting} isSubmitted={isSubmitSuccessful} />
+              <StyledButton isSubmitting={isSubmitting} isSubmitted={isSubmitSuccessful} />
             </Box>
           </div>
           <div className="text-black space-y-10 px-1">
@@ -100,8 +87,8 @@ function Contact() {
               <h2 className="font-Roboto font-extrabold ">EMAIL</h2>
               <Reveal>
                 <p className="underline">
-                  <a href="mailto:web-dev@gyunay-kadirov.com" target="_blank" rel="noopener noreferrer">
-                    web-dev@gyunay-kadirov.com
+                  <a href="mailto:gyunay70@gmail.com" target="_blank" rel="noopener noreferrer">
+                    gyunay70@gmail.com
                   </a>
                 </p>
               </Reveal>

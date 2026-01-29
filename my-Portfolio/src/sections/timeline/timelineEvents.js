@@ -1,5 +1,19 @@
 export const TimelineEvents = [
   {
+    date: 'Oct 2025 - Present',
+    title: 'Software Developer',
+    organization: 'Cornerstone Canadian Institute',
+    link: 'https://ciccc.ca/en',
+    logo: '/timeline/cornerstone_digital_education_logo.jpg'
+  },
+  {
+    date: 'Aug 2025 - Present',
+    title: 'A.S. in Computer Science',
+    organization: 'Langara College',
+    link: 'https://langara.ca/',
+    logo: '/timeline/langara_college_logo.jpg'
+  },
+  {
     date: 'Apr 2024 - Aug 2024',
     title: 'Software Developer Intern',
     organization: 'IcePanel YC W23',
