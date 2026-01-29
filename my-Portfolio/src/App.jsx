@@ -7,7 +7,6 @@ import theme from './theme'
 import Loading from './components/loading'
 import Timeline from './sections/timeline/Timeline'
 
-// const Projects = lazy(() => import('./sections/projects/Projects'))
 const Contact = lazy(() => import('./sections/contact/Contact'))
 const Footer = lazy(() => import('./sections/footer/Footer'))
 
@@ -17,7 +16,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar />
         <div className="flex flex-col mx-auto max-w-[2560px]">
-          <section className="bg-hero w-full h-[100svh] bg-cover bg-no-repeat bg-center flex overflow-hidden" id="home">
+          <section className="bg-hero w-full h-[100svh] bg-cover bg-no-repeat bg-center flex " id="home">
             <Hero />
           </section>
           <About />

@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 module.exports = {
   env: { browser: true, es2020: true },
   extends: [
@@ -7,19 +5,14 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'prettier',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended' // This line does all the heavy lifting!
   ],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh', 'prettier'],
+  settings: { react: { version: 'detect' } },
+  plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'no-unused-vars': 'warn',
-    quotes: ['error', 'single'],
-    semi: ['error', 'never'],
-    'no-multiple-empty-lines': 'warn',
-    'prettier/prettier': ['error', { semi: false, trailingComma: 'none' }],
-    endOfLine: 'auto'
+    'prettier/prettier': 'error'
   }
 }

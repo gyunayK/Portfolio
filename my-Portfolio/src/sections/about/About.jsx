@@ -1,6 +1,7 @@
 import { skills } from './skills'
 import { motion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
+import PropTypes from 'prop-types'
 
 const About = () => {
   const cardsRef = useRef()
@@ -28,7 +29,7 @@ const About = () => {
   }, [])
 
   return (
-    <section id="about" className="w-full h-full bg-white py-16">
+    <section id="about" className="w-full h-full bg-white py-16 scroll-m-20">
       <div className="flex flex-col items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <h2 className="font-Tektur text-[#ae00ff] text-lg font-bold tracking-wider">ABOUT</h2>
@@ -72,17 +73,8 @@ const SkillItem = ({ item, maxZIndex, index }) => {
   }
 
   const fadeInAnimationVariants = {
-    initial: {
-      opacity: 0,
-      y: 100
-    },
-    animate: (index) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.05 * index
-      }
-    })
+    initial: { opacity: 0, y: 100 },
+    animate: (index) => ({ opacity: 1, y: 0, transition: { delay: 0.05 * index } })
   }
 
   return (
@@ -94,12 +86,7 @@ const SkillItem = ({ item, maxZIndex, index }) => {
       viewport={{ once: true }}
       custom={index}
       drag={window.innerWidth > 768}
-      dragConstraints={{
-        top: -150,
-        left: -150,
-        right: 150,
-        bottom: 150
-      }}
+      dragConstraints={{ top: -150, left: -150, right: 150, bottom: 150 }}
       whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
       whileTap={{ scale: 1.1, transition: { duration: 0.1 }, cursor: 'grabbing' }}
       style={{ cursor: 'grab', zIndex }}
@@ -111,6 +98,12 @@ const SkillItem = ({ item, maxZIndex, index }) => {
       </div>
     </motion.div>
   )
+}
+
+SkillItem.propTypes = {
+  item: PropTypes.shape({ icon: PropTypes.node.isRequired, name: PropTypes.string.isRequired }).isRequired,
+  maxZIndex: PropTypes.shape({ current: PropTypes.number }).isRequired,
+  index: PropTypes.number.isRequired
 }
 
 export default About

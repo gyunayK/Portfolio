@@ -13,8 +13,8 @@ body {
   user-select: none;
 }
 
-#contact{
-  user-select: auto;
+#contact {
+  user-select: text;
 }
 
 ::-webkit-scrollbar {
