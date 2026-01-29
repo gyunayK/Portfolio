@@ -64,35 +64,35 @@ function Contact() {
               ref={form}
             >
               <StyledTextField
-                id={'name'}
+                id="name"
                 register={register}
                 errors={errors}
-                name={'user_name'}
-                label={'Name'}
+                name="user_name"
+                label="Name"
               />
               <StyledTextField
-                id={'email'}
+                id="email"
                 register={register}
                 errors={errors}
-                name={'user_email'}
-                label={'Email'}
+                name="user_email"
+                label="Email"
               />
               <StyledTextField
-                id={'subject'}
+                id="subject"
                 register={register}
                 errors={errors}
-                name={'user_subject'}
-                label={'Subject'}
-                formname={'_subject'}
+                name="user_subject"
+                label="Subject"
+                formname="_subject"
               />
               <StyledTextField2
-                id={'message'}
+                id="message"
                 register={register}
                 errors={errors}
-                name={'message'}
-                label={'Message'}
+                name="message"
+                label="Message"
               />
-              <StyledButton isSubmitting={isSubmitting} isSubmitted={isSubmitSuccessful} />
+                  <StyledButton isSubmitting={isSubmitting} isSubmitted={isSubmitSuccessful} />
             </Box>
           </div>
           <div className="text-black space-y-10 px-1">
