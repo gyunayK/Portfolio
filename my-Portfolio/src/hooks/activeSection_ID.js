@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const useActiveSection = (threshold) => {
+const useActiveSection = () => {
   const [activeSection, setActiveSection] = useState('home')
 
   useEffect(() => {
@@ -13,31 +13,27 @@ const useActiveSection = (threshold) => {
         })
       },
       {
-        threshold
+        rootMargin: '-50% 0px -50% 0px',
+        threshold: 0
       }
     )
 
     const observeSections = () => {
-      const sections = document.querySelectorAll('section')
-      sections.forEach((section) => {
+      document.querySelectorAll('section').forEach((section) => {
         observer.observe(section)
       })
     }
 
-    const mutationObserver = new MutationObserver(() => {
-      observeSections()
-    })
+    observeSections()
 
-    mutationObserver.observe(document.body, {
-      childList: true,
-      subtree: true
-    })
+    const mutationObserver = new MutationObserver(observeSections)
+    mutationObserver.observe(document.body, { childList: true, subtree: true })
 
     return () => {
       observer.disconnect()
       mutationObserver.disconnect()
     }
-  }, [threshold])
+  }, [])
 
   return activeSection
 }
